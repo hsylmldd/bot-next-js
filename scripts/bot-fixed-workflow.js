@@ -1061,13 +1061,13 @@ async function completeEvidenceClose(chatId, telegramId, session) {
     userSessions.delete(chatId);
     
     bot.sendMessage(chatId, 
-      '🎉 **Evidence Close Berhasil Diselesaikan!**\n\n' +
-      `📋 **Order**: ${session.data.customer_name || 'Order'}\n` +
-      `🏠 **Alamat**: ${session.data.customer_address || 'Alamat'}\n` +
-      `📝 **Nama ODP**: ${session.data.odp_name}\n` +
-      `📱 **SN ONT**: ${session.data.ont_sn}\n` +
-      `📸 **Total Foto**: 7/7 ✅\n\n` +
-      '🔒 **Status Order**: CLOSED\n' +
+      'Evidence Close Berhasil Diselesaikan!\n\n' +
+      `Order: ${session.data.customer_name || 'Order'}\n` +
+      ` Alamat: ${session.data.customer_address || 'Alamat'}\n` +
+      `Nama ODP: ${session.data.odp_name}\n` +
+      `SN ONT: ${session.data.ont_sn}\n` +
+      `Total Foto: 7/7 ✅\n\n` +
+      'Status Order: CLOSED\n' +
       '✅ Order telah ditutup dan dihapus dari daftar order Anda\n' +
       '📊 Progress telah diupdate ke database\n' +
       '🎯 Semua evidence telah tersimpan dengan lengkap'

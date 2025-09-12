@@ -50708,3 +50708,287 @@
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
   code: 'EFATAL'
 }
+2025-09-12T08:32:55: ❌ Polling error: RequestError: Error: read ECONNRESET
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T08:36:13: ❌ Polling error: RequestError: Error: read ECONNRESET
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T08:36:36: ❌ Polling error: RequestError: Error: connect ETIMEDOUT 149.154.167.220:443
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T08:37:02: ❌ Polling error: RequestError: Error: read ECONNRESET
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T08:37:53: ❌ Polling error: RequestError: Error: read ECONNRESET
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T08:37:53: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T08:44:48: 📨 Received /start from Afiah (6924062588)
+2025-09-12T08:44:56: 📨 Received callback: my_orders from Afiah
+2025-09-12T08:45:34: 📨 Received /start from M (5173181010)
+2025-09-12T08:45:38: 📨 Received callback: create_order from M
+2025-09-12T08:46:07: 📨 Received callback: assign_tech_6fb80525-c1ed-4f58-b385-57b1f5a8af82 from M
+2025-09-12T08:46:22: 📨 Received callback: my_orders from Afiah
+2025-09-12T08:46:31: 📨 Received callback: work_order_09f2f14e-0469-4776-a1ca-dde8e8424c6d from Afiah
+2025-09-12T08:46:41: 📨 Received callback: survey_09f2f14e-0469-4776-a1ca-dde8e8424c6d_ready from Afiah
+2025-09-12T08:47:28: 📨 Received photo from Afiah (6924062588)
+2025-09-12T08:47:28: 📨 Received photo from Afiah (6924062588)
+2025-09-12T08:47:28: 📨 Received photo from Afiah (6924062588)
+2025-09-12T08:47:28: 📨 Received photo from Afiah (6924062588)
+2025-09-12T08:47:28: 📨 Received photo from Afiah (6924062588)
+2025-09-12T08:47:28: 📨 Received photo from Afiah (6924062588)
+2025-09-12T08:47:28: 📨 Received photo from Afiah (6924062588)
+2025-09-12T09:02:46: ❌ Polling error: RequestError: Error: read ECONNRESET
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:02:57: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:03:17: ❌ Polling error: RequestError: Error: connect ECONNABORTED 149.154.167.220:443
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:04:52: ❌ Polling error: RequestError: Error: read ECONNRESET
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:06:12: ❌ Polling error: RequestError: Error: socket hang up
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketOnEnd (node:_http_client:524:9)
+    at TLSSocket.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:07:11: ❌ Polling error: RequestError: Error: read ECONNRESET
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:07:33: ❌ Polling error: RequestError: Error: connect ETIMEDOUT 149.154.167.220:443
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:07:50: ❌ Polling error: RequestError: Error: read ECONNRESET
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:10:11: ❌ Polling error: RequestError: Error: read ECONNRESET
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:11:41: ❌ Polling error: RequestError: Error: read ECONNRESET
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:12:28: ❌ Polling error: RequestError: Error: read ECONNRESET
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:12:50: ❌ Polling error: RequestError: Error: connect ETIMEDOUT 149.154.167.220:443
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
