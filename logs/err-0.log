@@ -50967,3 +50967,1086 @@
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
   code: 'EFATAL'
 }
+2025-09-12T09:35:00: ❌ Polling error: RequestError: Error: read ECONNRESET
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:08: ❌ Polling error: RequestError: Error: read ECONNRESET
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:30: ❌ Polling error: RequestError: Error: connect ETIMEDOUT 149.154.167.220:443
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:30: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:31: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:31: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:31: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:31: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:32: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:32: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:32: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:33: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:33: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:33: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:34: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:34: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:34: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:35: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:35: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:35: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:36: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:36: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:36: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:37: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:37: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:37: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:38: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:38: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:38: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:38: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:39: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:39: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:39: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:40: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:40: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:40: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:41: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:41: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:41: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:42: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:42: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:42: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:43: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:43: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:43: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:37:50: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:38:02: ❌ Polling error: RequestError: Error: connect ECONNABORTED 149.154.167.220:443
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:38:02: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:38:03: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:38:03: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:38:04: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:38:04: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:38:05: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:38:05: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:38:05: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:38:06: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:38:07: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:38:07: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:38:07: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:38:08: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:38:08: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:38:30: ❌ Polling error: RequestError: Error: connect ETIMEDOUT 149.154.167.220:443
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:38:51: ❌ Polling error: RequestError: Error: connect ETIMEDOUT 149.154.167.220:443
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:39:13: ❌ Polling error: RequestError: Error: connect ETIMEDOUT 149.154.167.220:443
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:39:34: ❌ Polling error: RequestError: Error: connect ETIMEDOUT 149.154.167.220:443
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:39:55: ❌ Polling error: RequestError: Error: connect ETIMEDOUT 149.154.167.220:443
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:40:17: ❌ Polling error: RequestError: Error: connect ETIMEDOUT 149.154.167.220:443
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:40:31: ❌ Polling error: RequestError: Error: connect ECONNABORTED 149.154.167.220:443
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:40:31: ❌ Polling error: RequestError: Error: getaddrinfo ENOTFOUND api.telegram.org
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T09:49:17: ❌ Polling error: RequestError: Error: read ECONNRESET
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}
+2025-09-12T10:35:33: Error saving survey progress: {
+  code: '23514',
+  details: 'Failing row contains (80b14093-c14f-465b-93fa-64ea6e0b37ae, 462d8ac1-96ee-487d-8b2b-2030dfeb7aa9, Survey, not, null, 2025-09-12 03:35:33.578+00).',
+  hint: null,
+  message: 'new row for relation "progress" violates check constraint "progress_status_check"'
+}
+2025-09-12T10:40:45: Error saving survey progress: {
+  code: '23514',
+  details: 'Failing row contains (56851147-22dd-4e37-86a1-552e1d610596, 462d8ac1-96ee-487d-8b2b-2030dfeb7aa9, Survey, not, null, 2025-09-12 03:40:45.152+00).',
+  hint: null,
+  message: 'new row for relation "progress" violates check constraint "progress_status_check"'
+}
+2025-09-12T10:40:50: Error saving survey progress: {
+  code: '23514',
+  details: 'Failing row contains (c3a4fd13-6f40-4511-978c-989d61f94294, 462d8ac1-96ee-487d-8b2b-2030dfeb7aa9, Survey, not, null, 2025-09-12 03:40:49.947+00).',
+  hint: null,
+  message: 'new row for relation "progress" violates check constraint "progress_status_check"'
+}
+2025-09-12T11:55:27: ❌ Polling error: RequestError: Error: read ECONNRESET
+    at new RequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\errors.js:14:15)
+    at plumbing.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\request-promise-core\lib\plumbing.js:46:31)
+    at self.callback (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:183:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (C:\Users\lazir\OneDrive\Dokumen\bot-next-js\node_modules\@cypress\request\request.js:869:8)
+    at ClientRequest.emit (node:events:519:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:519:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EFATAL'
+}

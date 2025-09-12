@@ -2,7 +2,7 @@ module.exports = {
   "apps": [
     {
       "name": "telegram-bot",
-      "script": "scripts/bot-fixed-workflow.js",
+      "script": "scripts/bot.js",
       "instances": 1,
       "autorestart": true,
       "watch": false,

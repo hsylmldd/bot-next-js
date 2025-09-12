@@ -3,13 +3,9 @@ const axios = require('axios');
 require('dotenv').config({ path: '.env.local' });
 
 const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, { polling: true });
-
-// User sessions untuk menyimpan state
 const userSessions = new Map();
 
-console.log('🤖 Starting New Workflow Order Management Bot...');
-console.log('📱 Bot will handle new workflow properly');
-console.log('⚠️  Press Ctrl+C to stop');
+console.log('🤖 Starting Fixed Workflow Bot...');
 
 // Handle /start command
 bot.onText(/\/start/, (msg) => {
@@ -19,27 +15,10 @@ bot.onText(/\/start/, (msg) => {
   
   console.log(`📨 Received /start from ${firstName} (${chatId})`);
   
-  // Clear any existing session
   userSessions.delete(chatId);
   
   // Check if user is registered
-  checkUserRegistration(chatId, telegramId, firstName, msg.from.last_name || '');
-});
-
-// Handle /help command
-bot.onText(/\/help/, (msg) => {
-  const chatId = msg.chat.id;
-  const telegramId = msg.from.id.toString();
-  
-  console.log(`📨 Received /help from ${msg.from.first_name} (${chatId})`);
-  
-  getUserRole(telegramId).then(role => {
-    if (role) {
-      showHelpByRole(chatId, role);
-    } else {
-      bot.sendMessage(chatId, '❌ Anda belum terdaftar. Gunakan /start untuk mendaftar.');
-    }
-  });
+  checkUserRegistration(chatId, telegramId, firstName);
 });
 
 // Handle /myorders command
@@ -54,22 +33,6 @@ bot.onText(/\/myorders/, (msg) => {
       showMyOrders(chatId, telegramId, role);
     } else {
       bot.sendMessage(chatId, '❌ Anda belum terdaftar. Gunakan /start untuk mendaftar.');
-    }
-  });
-});
-
-// Handle /order command (HD only)
-bot.onText(/\/order/, (msg) => {
-  const chatId = msg.chat.id;
-  const telegramId = msg.from.id.toString();
-  
-  console.log(`📨 Received /order from ${msg.from.first_name} (${chatId})`);
-  
-  getUserRole(telegramId).then(role => {
-    if (role === 'HD') {
-      startCreateOrder(chatId, telegramId);
-    } else {
-      bot.sendMessage(chatId, '❌ Hanya Helpdesk yang dapat membuat order.');
     }
   });
 });
@@ -101,12 +64,10 @@ bot.on('message', (msg) => {
   const telegramId = msg.from.id.toString();
   const text = msg.text;
   
-  // Skip if it's a command
   if (text && text.startsWith('/')) {
     return;
   }
   
-  // Handle session input
   const session = userSessions.get(chatId);
   if (session) {
     handleSessionInput(chatId, telegramId, text, session);
@@ -114,7 +75,7 @@ bot.on('message', (msg) => {
 });
 
 // Helper functions
-async function checkUserRegistration(chatId, telegramId, firstName, lastName) {
+async function checkUserRegistration(chatId, telegramId, firstName) {
   try {
     const { createClient } = require('@supabase/supabase-js');
     const supabase = createClient(
@@ -129,7 +90,6 @@ async function checkUserRegistration(chatId, telegramId, firstName, lastName) {
       .single();
     
     if (error || !user) {
-      // User not registered, show registration options
       bot.sendMessage(chatId, 
         `Halo ${firstName}! 👋\n\n` +
         'Selamat datang di Order Management Bot!\n\n' +
@@ -145,7 +105,6 @@ async function checkUserRegistration(chatId, telegramId, firstName, lastName) {
         }
       );
     } else {
-      // User is registered, show welcome message
       showWelcomeMessage(chatId, user.role, user.name);
     }
   } catch (error) {
@@ -195,8 +154,7 @@ function getMainMenuKeyboard(role) {
       reply_markup: {
         inline_keyboard: [
           [{ text: '📋 Buat Order Baru', callback_data: 'create_order' }],
-          [{ text: '📊 Lihat Semua Order', callback_data: 'view_orders' }],
-          [{ text: '❓ Bantuan', callback_data: 'help' }]
+          [{ text: '📊 Lihat Semua Order', callback_data: 'view_orders' }]
         ]
       }
     };
@@ -204,26 +162,11 @@ function getMainMenuKeyboard(role) {
     return {
       reply_markup: {
         inline_keyboard: [
-          [{ text: '📋 Order Saya', callback_data: 'my_orders' }],
-          [{ text: '❓ Bantuan', callback_data: 'help' }]
+          [{ text: '📋 Order Saya', callback_data: 'my_orders' }]
         ]
       }
     };
   }
-}
-
-async function startCreateOrder(chatId, telegramId) {
-  // Set session untuk order creation
-  userSessions.set(chatId, {
-    type: 'create_order',
-    step: 'customer_name',
-    data: {}
-  });
-  
-  bot.sendMessage(chatId, 
-    '📋 **Membuat Order Baru**\n\n' +
-    'Silakan masukkan nama pelanggan:'
-  );
 }
 
 async function showMyOrders(chatId, telegramId, role) {
@@ -237,7 +180,6 @@ async function showMyOrders(chatId, telegramId, role) {
     let query = supabase.from('orders').select('*');
     
     if (role === 'Teknisi') {
-      // Get user ID first
       const { data: user } = await supabase
         .from('users')
         .select('id')
@@ -354,7 +296,6 @@ async function handleCreateOrderInput(chatId, telegramId, text, session) {
     session.data.contact = text;
     session.step = 'assign_technician';
     
-    // Get available technicians
     const { data: technicians, error } = await supabase
       .from('users')
       .select('id, name')
@@ -387,7 +328,6 @@ async function handleCreateOrderInput(chatId, telegramId, text, session) {
 }
 
 async function handleSurveyInput(chatId, telegramId, text, session) {
-  // Handle survey input (jaringan ready/tidak)
   bot.sendMessage(chatId, '✅ Survey berhasil dicatat!');
   userSessions.delete(chatId);
 }
@@ -400,7 +340,6 @@ async function handleTimeTrackingInput(chatId, telegramId, text, session) {
   );
   
   try {
-    // Validate time format (HH:MM)
     const timeRegex = /^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/;
     if (!timeRegex.test(text)) {
       bot.sendMessage(chatId, 
@@ -410,7 +349,6 @@ async function handleTimeTrackingInput(chatId, telegramId, text, session) {
       return;
     }
     
-    // Get order details
     const { data: order, error } = await supabase
       .from('orders')
       .select('*')
@@ -424,11 +362,10 @@ async function handleTimeTrackingInput(chatId, telegramId, text, session) {
     }
     
     const timeTypeNames = {
-      'penarikan': 'Penarikan Kabel',
-      'p2p': 'P2P (Point-to-Point)'
+      'penarikan': 'Penarikan',
+      'p2p': 'P2P'
     };
     
-    // Save progress
     const { error: progressError } = await supabase
       .from('progress')
       .insert({
@@ -445,21 +382,18 @@ async function handleTimeTrackingInput(chatId, telegramId, text, session) {
       return;
     }
     
-    // Determine next step
     if (session.timeType === 'penarikan') {
-      // After penarikan, ask for P2P time
       session.timeType = 'p2p';
       bot.sendMessage(chatId, 
-        `✅ **Waktu ${timeTypeNames[session.timeType]} Berhasil Dicatat!**\n\n` +
+        `✅ **Waktu Penarikan Berhasil Dicatat!**\n\n` +
         `📋 **Order**: ${order.customer_name}\n` +
         `🏠 **Alamat**: ${order.customer_address}\n` +
         `⏰ **Waktu Penarikan**: ${text}\n\n` +
         'Silakan masukkan waktu selesai P2P (format: HH:MM):'
       );
     } else if (session.timeType === 'p2p') {
-      // After P2P, automatically start evidence close
       bot.sendMessage(chatId, 
-        `✅ **Waktu ${timeTypeNames[session.timeType]} Berhasil Dicatat!**\n\n` +
+        `✅ **Waktu P2P Berhasil Dicatat!**\n\n` +
         `📋 **Order**: ${order.customer_name}\n` +
         `🏠 **Alamat**: ${order.customer_address}\n` +
         `⏰ **Waktu P2P**: ${text}\n\n` +
@@ -467,10 +401,8 @@ async function handleTimeTrackingInput(chatId, telegramId, text, session) {
         'Sekarang lanjut ke Evidence Close...'
       );
       
-      // Clear time tracking session
       userSessions.delete(chatId);
       
-      // Automatically start evidence close
       setTimeout(() => {
         startEvidenceClose(chatId, telegramId, session.orderId);
       }, 2000);
@@ -502,7 +434,6 @@ async function handleEvidenceCloseInput(chatId, telegramId, text, session) {
     session.data.ont_sn = text;
     session.step = 'photo_upload';
     
-    // Get order details for display
     const { data: order, error } = await supabase
       .from('orders')
       .select('*')
@@ -570,19 +501,6 @@ async function handleCallbackQuery(callbackQuery) {
       const orderId = data.split('_')[1];
       const result = data.split('_')[2];
       await handleSurveyResult(chatId, telegramId, orderId, result);
-    } else if (data.startsWith('time_')) {
-      const orderId = data.split('_')[1];
-      const timeType = data.split('_')[2];
-      await handleTimeTracking(chatId, telegramId, orderId, timeType);
-    } else if (data.startsWith('evidence_close_')) {
-      const orderId = data.split('_')[2];
-      await startEvidenceClose(chatId, telegramId, orderId);
-    } else if (data === 'help') {
-      getUserRole(telegramId).then(role => {
-        if (role) {
-          showHelpByRole(chatId, role);
-        }
-      });
     } else {
       bot.sendMessage(chatId, 'Fitur ini sedang dalam pengembangan.');
     }
@@ -591,6 +509,19 @@ async function handleCallbackQuery(callbackQuery) {
     console.error('Error handling callback query:', error);
     bot.sendMessage(chatId, '❌ Terjadi kesalahan. Silakan coba lagi.');
   }
+}
+
+async function startCreateOrder(chatId, telegramId) {
+  userSessions.set(chatId, {
+    type: 'create_order',
+    step: 'customer_name',
+    data: {}
+  });
+  
+  bot.sendMessage(chatId, 
+    '📋 **Membuat Order Baru**\n\n' +
+    'Silakan masukkan nama pelanggan:'
+  );
 }
 
 async function assignTechnician(chatId, telegramId, techId) {
@@ -607,14 +538,12 @@ async function assignTechnician(chatId, telegramId, techId) {
       return;
     }
     
-    // Get technician name
     const { data: tech } = await supabase
       .from('users')
       .select('name')
       .eq('id', techId)
       .single();
     
-    // Create order
     const { data: order, error } = await supabase
       .from('orders')
       .insert({
@@ -633,10 +562,8 @@ async function assignTechnician(chatId, telegramId, techId) {
       return;
     }
     
-    // Clear session
     userSessions.delete(chatId);
     
-    // Send success message
     bot.sendMessage(chatId, 
       '✅ **Order Berhasil Dibuat!**\n\n' +
       `📋 **Order ID**: ${order.id}\n` +
@@ -648,7 +575,6 @@ async function assignTechnician(chatId, telegramId, techId) {
       'Teknisi akan mendapat notifikasi order baru.'
     );
     
-    // Notify technician
     await notifyTechnician(techId, order);
     
   } catch (error) {
@@ -665,7 +591,6 @@ async function notifyTechnician(techId, order) {
       process.env.SUPABASE_SERVICE_ROLE_KEY
     );
     
-    // Get technician telegram ID
     const { data: tech } = await supabase
       .from('users')
       .select('telegram_id, name')
@@ -696,7 +621,6 @@ async function showWorkOrderMenu(chatId, telegramId, orderId) {
       process.env.SUPABASE_SERVICE_ROLE_KEY
     );
     
-    // Get order details
     const { data: order, error } = await supabase
       .from('orders')
       .select('*')
@@ -714,7 +638,6 @@ async function showWorkOrderMenu(chatId, telegramId, orderId) {
     message += `📞 **Kontak**: ${order.contact}\n`;
     message += `📊 **Status**: ${getStatusEmoji(order.status)} ${order.status}\n\n`;
     
-    // Check progress
     const { data: progress, error: progressError } = await supabase
       .from('progress')
       .select('*')
@@ -733,7 +656,6 @@ async function showWorkOrderMenu(chatId, telegramId, orderId) {
       message += '\n';
     }
     
-    // Determine next action based on status
     const keyboard = [];
     
     if (order.status === 'Pending') {
@@ -747,7 +669,6 @@ async function showWorkOrderMenu(chatId, telegramId, orderId) {
       message += '⏰ **Langkah Selanjutnya: Tracking Waktu**\n\n';
       message += 'Silakan mulai dengan input waktu penarikan kabel:';
       
-      // Automatically start time tracking for penarikan
       setTimeout(() => {
         handleTimeTracking(chatId, telegramId, orderId, 'penarikan');
       }, 1000);
@@ -756,11 +677,15 @@ async function showWorkOrderMenu(chatId, telegramId, orderId) {
       message += 'Menunggu jaringan siap dari HD.';
     }
     
-    bot.sendMessage(chatId, message, {
-      reply_markup: {
-        inline_keyboard: keyboard
-      }
-    });
+    if (keyboard.length > 0) {
+      bot.sendMessage(chatId, message, {
+        reply_markup: {
+          inline_keyboard: keyboard
+        }
+      });
+    } else {
+      bot.sendMessage(chatId, message);
+    }
     
   } catch (error) {
     console.error('Error showing work order menu:', error);
@@ -786,7 +711,6 @@ async function handleSurveyResult(chatId, telegramId, orderId, result) {
       process.env.SUPABASE_SERVICE_ROLE_KEY
     );
     
-    // Get order details
     const { data: order, error } = await supabase
       .from('orders')
       .select('*')
@@ -798,13 +722,18 @@ async function handleSurveyResult(chatId, telegramId, orderId, result) {
       return;
     }
     
-    // Save survey progress
+    // Convert result to proper case for database constraint
+    const statusMap = {
+      'ready': 'Ready',
+      'not_ready': 'Not Ready'
+    };
+    
     const { error: progressError } = await supabase
       .from('progress')
       .insert({
         order_id: orderId,
         stage: 'Survey',
-        status: result,
+        status: statusMap[result] || result,
         note: null,
         timestamp: new Date().toISOString()
       });
@@ -816,43 +745,41 @@ async function handleSurveyResult(chatId, telegramId, orderId, result) {
     }
     
     if (result === 'ready') {
-      // Update order status to In Progress
       await supabase
         .from('orders')
         .update({ status: 'In Progress' })
         .eq('id', orderId);
       
       bot.sendMessage(chatId, 
-        `✅ **Survey Selesai!**\n\n` +
-        `📋 **Order**: ${order.customer_name}\n` +
-        `🏠 **Alamat**: ${order.customer_address}\n` +
-        `🔍 **Hasil Survey**: ✅ Jaringan Ready\n\n` +
-        'Order status telah diupdate ke **In Progress**.\n' +
-        'Sekarang lanjut ke tracking waktu...'
+        `✅ <b>Survey Selesai!</b>\n\n` +
+        `📋 <b>Order</b>: ${order.customer_name}\n` +
+        `🏠 <b>Alamat</b>: ${order.customer_address}\n` +
+        `🔍 <b>Hasil Survey</b>: ✅ Jaringan Ready\n\n` +
+        'Order status telah diupdate ke <b>In Progress</b>.\n' +
+        'Sekarang lanjut ke tracking waktu...',
+        { parse_mode: 'HTML' }
       );
       
-      // Automatically start time tracking for penarikan
       setTimeout(() => {
         handleTimeTracking(chatId, telegramId, orderId, 'penarikan');
       }, 2000);
       
     } else {
-      // Update order status to On Hold
       await supabase
         .from('orders')
         .update({ status: 'On Hold' })
         .eq('id', orderId);
       
       bot.sendMessage(chatId, 
-        `❌ **Survey Selesai!**\n\n` +
-        `📋 **Order**: ${order.customer_name}\n` +
-        `🏠 **Alamat**: ${order.customer_address}\n` +
-        `🔍 **Hasil Survey**: ❌ Jaringan Not Ready\n\n` +
-        'Order status telah diupdate ke **On Hold**.\n' +
-        'HD akan mendapat notifikasi untuk update LME PT2.'
+        `❌ <b>Survey Selesai!</b>\n\n` +
+        `📋 <b>Order</b>: ${order.customer_name}\n` +
+        `🏠 <b>Alamat</b>: ${order.customer_address}\n` +
+        `🔍 <b>Hasil Survey</b>: ❌ Jaringan Not Ready\n\n` +
+        'Order status telah diupdate ke <b>On Hold</b>.\n' +
+        'HD akan mendapat notifikasi untuk update LME PT2.',
+        { parse_mode: 'HTML' }
       );
       
-      // Notify HD about network not ready
       await notifyHDAboutNetworkNotReady(orderId);
     }
     
@@ -870,7 +797,6 @@ async function notifyHDAboutNetworkNotReady(orderId) {
       process.env.SUPABASE_SERVICE_ROLE_KEY
     );
     
-    // Get order details
     const { data: order, error } = await supabase
       .from('orders')
       .select('*, users!assigned_technician(*)')
@@ -882,7 +808,6 @@ async function notifyHDAboutNetworkNotReady(orderId) {
       return;
     }
     
-    // Get all HD users
     const { data: hdUsers, error: hdError } = await supabase
       .from('users')
       .select('telegram_id, name')
@@ -893,7 +818,6 @@ async function notifyHDAboutNetworkNotReady(orderId) {
       return;
     }
     
-    // Notify all HD users
     for (const hd of hdUsers) {
       if (hd.telegram_id) {
         bot.sendMessage(hd.telegram_id, 
@@ -921,7 +845,6 @@ async function handleTimeTracking(chatId, telegramId, orderId, timeType) {
       process.env.SUPABASE_SERVICE_ROLE_KEY
     );
     
-    // Get order details
     const { data: order, error } = await supabase
       .from('orders')
       .select('*')
@@ -934,11 +857,10 @@ async function handleTimeTracking(chatId, telegramId, orderId, timeType) {
     }
     
     const timeTypeNames = {
-      'penarikan': 'Penarikan Kabel',
-      'p2p': 'P2P (Point-to-Point)'
+      'penarikan': 'Penarikan',
+      'p2p': 'P2P'
     };
     
-    // Set session for time tracking
     userSessions.set(chatId, {
       type: 'time_tracking',
       orderId: orderId,
@@ -947,7 +869,7 @@ async function handleTimeTracking(chatId, telegramId, orderId, timeType) {
     });
     
     bot.sendMessage(chatId, 
-      `⏰ **Tracking Waktu ${timeTypeNames[timeType]}**\n\n` +
+      `⏰ **Tracking Waktu ${timeType === 'penarikan' ? 'Penarikan Kabel' : 'P2P (Point-to-Point)'}**\n\n` +
       `📋 **Order**: ${order.customer_name}\n` +
       `🏠 **Alamat**: ${order.customer_address}\n\n` +
       'Masukkan waktu selesai (format: HH:MM):'
@@ -967,7 +889,6 @@ async function startEvidenceClose(chatId, telegramId, orderId) {
       process.env.SUPABASE_SERVICE_ROLE_KEY
     );
     
-    // Get order details
     const { data: order, error } = await supabase
       .from('orders')
       .select('*')
@@ -979,7 +900,6 @@ async function startEvidenceClose(chatId, telegramId, orderId) {
       return;
     }
     
-    // Set session for evidence close
     userSessions.set(chatId, {
       type: 'evidence_close',
       step: 'odp_name',
@@ -1010,7 +930,6 @@ async function handlePhotoUpload(msg, telegramId) {
       process.env.SUPABASE_SERVICE_ROLE_KEY
     );
     
-    // Check if user is in evidence close session
     const session = userSessions.get(chatId);
     if (!session || session.type !== 'evidence_close') {
       bot.sendMessage(chatId, 
@@ -1020,23 +939,18 @@ async function handlePhotoUpload(msg, telegramId) {
       return;
     }
     
-    // Get the highest quality photo
     const photo = msg.photo[msg.photo.length - 1];
     const fileId = photo.file_id;
     
-    // Get file info from Telegram
     const fileInfo = await bot.getFile(fileId);
     const fileUrl = `https://api.telegram.org/file/bot${process.env.TELEGRAM_BOT_TOKEN}/${fileInfo.file_path}`;
     
-    // Download photo using axios
     const response = await axios.get(fileUrl, { responseType: 'arraybuffer' });
     const buffer = Buffer.from(response.data);
     
-    // Generate unique filename
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
     const filename = `evidence-${session.orderId}-${session.data.photoCount || 1}-${timestamp}-${fileId}.jpg`;
     
-    // Upload to Supabase Storage
     const { data, error } = await supabase.storage
       .from('evidence-photos')
       .upload(filename, buffer, {
@@ -1050,12 +964,10 @@ async function handlePhotoUpload(msg, telegramId) {
       return;
     }
     
-    // Get public URL
     const { data: urlData } = supabase.storage
       .from('evidence-photos')
       .getPublicUrl(filename);
     
-    // Store photo URL in session
     if (!session.data.photos) {
       session.data.photos = [];
     }
@@ -1087,7 +999,6 @@ async function handlePhotoUpload(msg, telegramId) {
         `**Silakan upload foto ke-${session.data.photoCount + 1}: ${nextPhotoName}**`
       );
     } else {
-      // All photos uploaded, save to database and close order
       await completeEvidenceClose(chatId, telegramId, session);
     }
     
@@ -1108,7 +1019,6 @@ async function completeEvidenceClose(chatId, telegramId, session) {
       process.env.SUPABASE_SERVICE_ROLE_KEY
     );
     
-    // Save evidence to database
     const { error: evidenceError } = await supabase
       .from('evidence')
       .upsert({
@@ -1131,7 +1041,6 @@ async function completeEvidenceClose(chatId, telegramId, session) {
       return;
     }
     
-    // Update order status to Closed
     const { error: orderError } = await supabase
       .from('orders')
       .update({ status: 'Closed' })
@@ -1141,7 +1050,6 @@ async function completeEvidenceClose(chatId, telegramId, session) {
       console.error('Error updating order status:', orderError);
     }
     
-    // Add final progress
     await supabase
       .from('progress')
       .insert({
@@ -1152,11 +1060,10 @@ async function completeEvidenceClose(chatId, telegramId, session) {
         timestamp: new Date().toISOString()
       });
     
-    // Clear session
     userSessions.delete(chatId);
     
     bot.sendMessage(chatId, 
-     'Evidence Close Berhasil Diselesaikan!\n\n' +
+      'Evidence Close Berhasil Diselesaikan!\n\n' +
       `Order: ${session.data.customer_name || 'Order'}\n` +
       ` Alamat: ${session.data.customer_address || 'Alamat'}\n` +
       `Nama ODP: ${session.data.odp_name}\n` +
@@ -1172,40 +1079,6 @@ async function completeEvidenceClose(chatId, telegramId, session) {
     console.error('Error completing evidence close:', error);
     bot.sendMessage(chatId, '❌ Terjadi kesalahan. Silakan coba lagi.');
   }
-}
-
-function showHelpByRole(chatId, role) {
-  let helpText = `**Panduan Penggunaan Bot**\n\n`;
-  
-  if (role === 'HD') {
-    helpText += `**Untuk Helpdesk (HD):**\n\n` +
-      `📋 **Buat Order Baru** - Membuat order instalasi baru\n` +
-      `📊 **Lihat Semua Order** - Melihat semua order dalam sistem\n\n` +
-      `**Commands:**\n` +
-      `/start - Memulai bot\n` +
-      `/help - Menampilkan panduan ini\n` +
-      `/order - Membuat order baru\n` +
-      `/myorders - Melihat semua order\n\n` +
-      `**Flow Order:**\n` +
-      `1. Buat order → Assign teknisi\n` +
-      `2. Monitor progress teknisi\n` +
-      `3. Terima notifikasi jika jaringan tidak ready`;
-  } else {
-    helpText += `**Untuk Teknisi:**\n\n` +
-      `📋 **Order Saya** - Melihat order yang ditugaskan\n\n` +
-      `**Commands:**\n` +
-      `/start - Memulai bot\n` +
-      `/help - Menampilkan panduan ini\n` +
-      `/myorders - Melihat order saya\n\n` +
-      `**Flow Instalasi:**\n` +
-      `1. Terima notifikasi order baru\n` +
-      `2. Survey jaringan (Ready/Not Ready)\n` +
-      `3. Jika Ready: Tracking waktu penarikan & P2P\n` +
-      `4. Evidence close: Input data + upload 7 foto\n` +
-      `5. Order otomatis close jika evidence lengkap`;
-  }
-  
-  bot.sendMessage(chatId, helpText);
 }
 
 async function registerUser(telegramId, firstName, role) {
@@ -1232,7 +1105,6 @@ async function registerUser(telegramId, firstName, role) {
   }
 }
 
-// Handle errors
 bot.on('error', (error) => {
   console.error('❌ Bot error:', error);
 });
@@ -1241,10 +1113,10 @@ bot.on('polling_error', (error) => {
   console.error('❌ Polling error:', error);
 });
 
-console.log('✅ New workflow bot started successfully!');
+console.log('✅ Fixed workflow bot started successfully!');
 console.log('📱 Send /start to your bot to test');
 console.log('🔧 Bot features:');
-console.log('   - New workflow: Survey → Time Tracking → Evidence Close');
+console.log('   - Fixed workflow: Survey → Time Tracking → Evidence Close');
 console.log('   - Evidence close with 7 photos');
 console.log('   - Auto close order when evidence complete');
 console.log('   - Database integration');

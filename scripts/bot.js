@@ -1430,12 +1430,13 @@ async function handleSurveyResult(chatId, telegramId, orderId, result) {
         .eq('id', orderId);
       
       bot.sendMessage(chatId, 
-        `✅ **Survey Selesai!**\n\n` +
-        `📋 **Order**: ${order.customer_name}\n` +
-        `🏠 **Alamat**: ${order.customer_address}\n` +
-        `🔍 **Hasil Survey**: ✅ Jaringan Ready\n\n` +
-        'Order status telah diupdate ke **In Progress**.\n' +
-        'Silakan lanjutkan ke tahapan berikutnya.'
+        `✅ <b>Survey Selesai!</b>\n\n` +
+        `📋 <b>Order</b>: ${order.customer_name}\n` +
+        `🏠 <b>Alamat</b>: ${order.customer_address}\n` +
+        `🔍 <b>Hasil Survey</b>: ✅ Jaringan Ready\n\n` +
+        'Order status telah diupdate ke <b>In Progress</b>.\n' +
+        'Silakan lanjutkan ke tahapan berikutnya.',
+        { parse_mode: 'HTML' }
       );
       
     } else {
@@ -1446,12 +1447,13 @@ async function handleSurveyResult(chatId, telegramId, orderId, result) {
         .eq('id', orderId);
       
       bot.sendMessage(chatId, 
-        `❌ **Survey Selesai!**\n\n` +
-        `📋 **Order**: ${order.customer_name}\n` +
-        `🏠 **Alamat**: ${order.customer_address}\n` +
-        `🔍 **Hasil Survey**: ❌ Jaringan Not Ready\n\n` +
-        'Order status telah diupdate ke **On Hold**.\n' +
-        'HD akan mendapat notifikasi untuk update LME PT2.'
+        `❌ <b>Survey Selesai!</b>\n\n` +
+        `📋 <b>Order</b>: ${order.customer_name}\n` +
+        `🏠 <b>Alamat</b>: ${order.customer_address}\n` +
+        `🔍 <b>Hasil Survey</b>: ❌ Jaringan Not Ready\n\n` +
+        'Order status telah diupdate ke <b>On Hold</b>.\n' +
+        'HD akan mendapat notifikasi untuk update LME PT2.',
+        { parse_mode: 'HTML' }
       );
       
       // Notify HD about network not ready
