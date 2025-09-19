@@ -75,3 +75,3261 @@
 2025-09-12T10:35:32: 📨 Received callback: survey_462d8ac1-96ee-487d-8b2b-2030dfeb7aa9_not_ready from Afiah
 2025-09-12T10:40:44: 📨 Received callback: survey_462d8ac1-96ee-487d-8b2b-2030dfeb7aa9_not_ready from Afiah
 2025-09-12T10:40:49: 📨 Received callback: survey_462d8ac1-96ee-487d-8b2b-2030dfeb7aa9_not_ready from Afiah
+2025-09-12T12:15:07: 📨 Received /start from M (5173181010)
+2025-09-12T12:15:13: 📨 Received callback: create_order from M
+2025-09-12T12:18:13: 📨 Received /start from M (5173181010)
+2025-09-12T12:18:15: 📨 Received callback: create_order from M
+2025-09-12T12:19:07: 🤖 Starting Fixed Workflow Bot...
+2025-09-12T12:19:07: ✅ Fixed workflow bot started successfully!
+2025-09-12T12:19:07: 📱 Send /start to your bot to test
+2025-09-12T12:19:07: 🔧 Bot features:
+2025-09-12T12:19:07:    - Fixed workflow: Survey → Time Tracking → Evidence Close
+2025-09-12T12:19:07:    - Evidence close with 7 photos
+2025-09-12T12:19:07:    - Auto close order when evidence complete
+2025-09-12T12:19:07:    - Database integration
+2025-09-12T12:19:07:    - Session management
+2025-09-12T12:19:07:    - Technician notifications
+2025-09-12T12:19:45: 🤖 Starting Fixed Workflow Bot...
+2025-09-12T12:19:45: ✅ Fixed workflow bot started successfully!
+2025-09-12T12:19:45: 📱 Send /start to your bot to test
+2025-09-12T12:19:45: 🔧 Bot features:
+2025-09-12T12:19:45:    - Fixed workflow: Survey → Time Tracking → Evidence Close
+2025-09-12T12:19:45:    - Evidence close with 7 photos
+2025-09-12T12:19:45:    - Auto close order when evidence complete
+2025-09-12T12:19:45:    - Database integration
+2025-09-12T12:19:45:    - Session management
+2025-09-12T12:19:45:    - Technician notifications
+2025-09-12T12:20:32: 🤖 Starting Fixed Workflow Bot...
+2025-09-12T12:20:32: ✅ Fixed workflow bot started successfully!
+2025-09-12T12:20:32: 📱 Send /start to your bot to test
+2025-09-12T12:20:32: 🔧 Bot features:
+2025-09-12T12:20:32:    - Fixed workflow: Survey → Time Tracking → Evidence Close
+2025-09-12T12:20:32:    - Evidence close with 7 photos
+2025-09-12T12:20:32:    - Auto close order when evidence complete
+2025-09-12T12:20:32:    - Database integration
+2025-09-12T12:20:32:    - Session management
+2025-09-12T12:20:32:    - Technician notifications
+2025-09-12T12:20:54: 📨 Received /start from M (5173181010)
+2025-09-12T12:20:57: 📨 Received callback: create_order from M
+2025-09-12T12:22:48: 🤖 Starting Complete Order Management Bot...
+2025-09-12T12:22:48: 📱 Bot will handle all features properly
+2025-09-12T12:22:48: ⚠️  Press Ctrl+C to stop
+2025-09-12T12:22:48: ✅ Complete bot started successfully!
+2025-09-12T12:22:48: 📱 Send /start to your bot to test
+2025-09-12T12:22:48: 🔧 Bot features:
+2025-09-12T12:22:48:    - Complete user registration
+2025-09-12T12:22:48:    - Full order creation flow
+2025-09-12T12:22:48:    - Progress tracking
+2025-09-12T12:22:48:    - Evidence upload (basic)
+2025-09-12T12:22:48:    - Report generation
+2025-09-12T12:22:48:    - Database integration
+2025-09-12T12:22:48:    - Session management
+2025-09-12T12:22:48:    - Technician notifications
+2025-09-12T12:23:04: 🤖 Starting Complete Order Management Bot...
+2025-09-12T12:23:04: 📱 Bot will handle all features properly
+2025-09-12T12:23:04: ⚠️  Press Ctrl+C to stop
+2025-09-12T12:23:04: ✅ Complete bot started successfully!
+2025-09-12T12:23:04: 📱 Send /start to your bot to test
+2025-09-12T12:23:04: 🔧 Bot features:
+2025-09-12T12:23:04:    - Complete user registration
+2025-09-12T12:23:04:    - Full order creation flow
+2025-09-12T12:23:04:    - Progress tracking
+2025-09-12T12:23:04:    - Evidence upload (basic)
+2025-09-12T12:23:04:    - Report generation
+2025-09-12T12:23:04:    - Database integration
+2025-09-12T12:23:04:    - Session management
+2025-09-12T12:23:04:    - Technician notifications
+2025-09-12T12:23:38: 🤖 Starting Complete Order Management Bot...
+2025-09-12T12:23:38: 📱 Bot will handle all features properly
+2025-09-12T12:23:38: ⚠️  Press Ctrl+C to stop
+2025-09-12T12:23:38: ✅ Complete bot started successfully!
+2025-09-12T12:23:38: 📱 Send /start to your bot to test
+2025-09-12T12:23:38: 🔧 Bot features:
+2025-09-12T12:23:38:    - Complete user registration
+2025-09-12T12:23:38:    - Full order creation flow
+2025-09-12T12:23:38:    - Progress tracking
+2025-09-12T12:23:38:    - Evidence upload (basic)
+2025-09-12T12:23:38:    - Report generation
+2025-09-12T12:23:38:    - Database integration
+2025-09-12T12:23:38:    - Session management
+2025-09-12T12:23:38:    - Technician notifications
+2025-09-12T12:23:58: 🤖 Starting Complete Order Management Bot...
+2025-09-12T12:23:58: 📱 Bot will handle all features properly
+2025-09-12T12:23:58: ⚠️  Press Ctrl+C to stop
+2025-09-12T12:23:58: ✅ Complete bot started successfully!
+2025-09-12T12:23:58: 📱 Send /start to your bot to test
+2025-09-12T12:23:58: 🔧 Bot features:
+2025-09-12T12:23:58:    - Complete user registration
+2025-09-12T12:23:58:    - Full order creation flow
+2025-09-12T12:23:58:    - Progress tracking
+2025-09-12T12:23:58:    - Evidence upload (basic)
+2025-09-12T12:23:58:    - Report generation
+2025-09-12T12:23:58:    - Database integration
+2025-09-12T12:23:58:    - Session management
+2025-09-12T12:23:58:    - Technician notifications
+2025-09-12T12:24:04: 📨 Received /start from M (5173181010)
+2025-09-12T12:24:11: 📨 Received callback: create_order from M
+2025-09-12T12:24:36: 📨 Received callback: assign_tech_3875fae9-b447-441f-a789-ef0db04d7cb8 from M
+2025-09-12T12:25:28: 📨 Received /start from Afiah (6924062588)
+2025-09-12T12:25:30: 📨 Received callback: my_orders from Afiah
+2025-09-12T12:25:47: 🤖 Starting Complete Order Management Bot...
+2025-09-12T12:25:47: 📱 Bot will handle all features properly
+2025-09-12T12:25:47: ⚠️  Press Ctrl+C to stop
+2025-09-12T12:25:47: ✅ Complete bot started successfully!
+2025-09-12T12:25:47: 📱 Send /start to your bot to test
+2025-09-12T12:25:47: 🔧 Bot features:
+2025-09-12T12:25:47:    - Complete user registration
+2025-09-12T12:25:47:    - Full order creation flow
+2025-09-12T12:25:47:    - Progress tracking
+2025-09-12T12:25:47:    - Evidence upload (basic)
+2025-09-12T12:25:47:    - Report generation
+2025-09-12T12:25:47:    - Database integration
+2025-09-12T12:25:47:    - Session management
+2025-09-12T12:25:47:    - Technician notifications
+2025-09-12T12:26:26: 🤖 Starting Complete Order Management Bot...
+2025-09-12T12:26:26: 📱 Bot will handle all features properly
+2025-09-12T12:26:26: ⚠️  Press Ctrl+C to stop
+2025-09-12T12:26:26: ✅ Complete bot started successfully!
+2025-09-12T12:26:26: 📱 Send /start to your bot to test
+2025-09-12T12:26:26: 🔧 Bot features:
+2025-09-12T12:26:26:    - Complete user registration
+2025-09-12T12:26:26:    - Full order creation flow
+2025-09-12T12:26:26:    - Progress tracking
+2025-09-12T12:26:26:    - Evidence upload (basic)
+2025-09-12T12:26:26:    - Report generation
+2025-09-12T12:26:26:    - Database integration
+2025-09-12T12:26:26:    - Session management
+2025-09-12T12:26:26:    - Technician notifications
+2025-09-12T12:26:39: 🤖 Starting Complete Order Management Bot...
+2025-09-12T12:26:39: 📱 Bot will handle all features properly
+2025-09-12T12:26:39: ⚠️  Press Ctrl+C to stop
+2025-09-12T12:26:39: ✅ Complete bot started successfully!
+2025-09-12T12:26:39: 📱 Send /start to your bot to test
+2025-09-12T12:26:39: 🔧 Bot features:
+2025-09-12T12:26:39:    - Complete user registration
+2025-09-12T12:26:39:    - Full order creation flow
+2025-09-12T12:26:39:    - Progress tracking
+2025-09-12T12:26:39:    - Evidence upload (basic)
+2025-09-12T12:26:39:    - Report generation
+2025-09-12T12:26:39:    - Database integration
+2025-09-12T12:26:39:    - Session management
+2025-09-12T12:26:39:    - Technician notifications
+2025-09-12T14:15:23: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:15:23: 📱 Bot will handle all features properly
+2025-09-12T14:15:23: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:15:23: ✅ Complete bot started successfully!
+2025-09-12T14:15:23: 📱 Send /start to your bot to test
+2025-09-12T14:15:23: 🔧 Bot features:
+2025-09-12T14:15:23:    - Complete user registration
+2025-09-12T14:15:23:    - Full order creation flow
+2025-09-12T14:15:23:    - Progress tracking
+2025-09-12T14:15:23:    - Evidence upload (basic)
+2025-09-12T14:15:23:    - Report generation
+2025-09-12T14:15:23:    - Database integration
+2025-09-12T14:15:23:    - Session management
+2025-09-12T14:15:23:    - Technician notifications
+2025-09-12T14:15:29: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:15:29: 📱 Bot will handle all features properly
+2025-09-12T14:15:29: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:15:29: ✅ Complete bot started successfully!
+2025-09-12T14:15:29: 📱 Send /start to your bot to test
+2025-09-12T14:15:29: 🔧 Bot features:
+2025-09-12T14:15:29:    - Complete user registration
+2025-09-12T14:15:29:    - Full order creation flow
+2025-09-12T14:15:29:    - Progress tracking
+2025-09-12T14:15:29:    - Evidence upload (basic)
+2025-09-12T14:15:29:    - Report generation
+2025-09-12T14:15:29:    - Database integration
+2025-09-12T14:15:29:    - Session management
+2025-09-12T14:15:29:    - Technician notifications
+2025-09-12T14:16:13: 📨 Received /start from Afiah (6924062588)
+2025-09-12T14:16:18: 📨 Received callback: my_orders from Afiah
+2025-09-12T14:16:30: 📨 Received callback: update_progress from Afiah
+2025-09-12T14:16:41: 📨 Received callback: progress_order_71acafa8-c7cc-4c18-91c4-2ca3cb7e1e09 from Afiah
+2025-09-12T14:17:36: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:17:36: 📱 Bot will handle all features properly
+2025-09-12T14:17:36: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:17:36: ✅ Complete bot started successfully!
+2025-09-12T14:17:36: 📱 Send /start to your bot to test
+2025-09-12T14:17:36: 🔧 Bot features:
+2025-09-12T14:17:36:    - Complete user registration
+2025-09-12T14:17:36:    - Full order creation flow
+2025-09-12T14:17:36:    - Progress tracking
+2025-09-12T14:17:36:    - Evidence upload (basic)
+2025-09-12T14:17:36:    - Report generation
+2025-09-12T14:17:36:    - Database integration
+2025-09-12T14:17:36:    - Session management
+2025-09-12T14:17:36:    - Technician notifications
+2025-09-12T14:17:41: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:17:41: 📱 Bot will handle all features properly
+2025-09-12T14:17:41: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:17:41: ✅ Complete bot started successfully!
+2025-09-12T14:17:41: 📱 Send /start to your bot to test
+2025-09-12T14:17:41: 🔧 Bot features:
+2025-09-12T14:17:41:    - Complete user registration
+2025-09-12T14:17:41:    - Full order creation flow
+2025-09-12T14:17:41:    - Progress tracking
+2025-09-12T14:17:41:    - Evidence upload (basic)
+2025-09-12T14:17:41:    - Report generation
+2025-09-12T14:17:41:    - Database integration
+2025-09-12T14:17:41:    - Session management
+2025-09-12T14:17:41:    - Technician notifications
+2025-09-12T14:17:49: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:17:49: 📱 Bot will handle all features properly
+2025-09-12T14:17:49: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:17:49: ✅ Complete bot started successfully!
+2025-09-12T14:17:49: 📱 Send /start to your bot to test
+2025-09-12T14:17:49: 🔧 Bot features:
+2025-09-12T14:17:49:    - Complete user registration
+2025-09-12T14:17:49:    - Full order creation flow
+2025-09-12T14:17:49:    - Progress tracking
+2025-09-12T14:17:49:    - Evidence upload (basic)
+2025-09-12T14:17:49:    - Report generation
+2025-09-12T14:17:49:    - Database integration
+2025-09-12T14:17:49:    - Session management
+2025-09-12T14:17:49:    - Technician notifications
+2025-09-12T14:17:54: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:17:54: 📱 Bot will handle all features properly
+2025-09-12T14:17:54: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:17:54: ✅ Complete bot started successfully!
+2025-09-12T14:17:54: 📱 Send /start to your bot to test
+2025-09-12T14:17:54: 🔧 Bot features:
+2025-09-12T14:17:54:    - Complete user registration
+2025-09-12T14:17:54:    - Full order creation flow
+2025-09-12T14:17:54:    - Progress tracking
+2025-09-12T14:17:54:    - Evidence upload (basic)
+2025-09-12T14:17:54:    - Report generation
+2025-09-12T14:17:54:    - Database integration
+2025-09-12T14:17:54:    - Session management
+2025-09-12T14:17:54:    - Technician notifications
+2025-09-12T14:17:59: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:17:59: 📱 Bot will handle all features properly
+2025-09-12T14:17:59: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:17:59: ✅ Complete bot started successfully!
+2025-09-12T14:17:59: 📱 Send /start to your bot to test
+2025-09-12T14:17:59: 🔧 Bot features:
+2025-09-12T14:17:59:    - Complete user registration
+2025-09-12T14:17:59:    - Full order creation flow
+2025-09-12T14:17:59:    - Progress tracking
+2025-09-12T14:17:59:    - Evidence upload (basic)
+2025-09-12T14:17:59:    - Report generation
+2025-09-12T14:17:59:    - Database integration
+2025-09-12T14:17:59:    - Session management
+2025-09-12T14:17:59:    - Technician notifications
+2025-09-12T14:18:06: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:18:06: 📱 Bot will handle all features properly
+2025-09-12T14:18:06: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:18:06: ✅ Complete bot started successfully!
+2025-09-12T14:18:06: 📱 Send /start to your bot to test
+2025-09-12T14:18:06: 🔧 Bot features:
+2025-09-12T14:18:06:    - Complete user registration
+2025-09-12T14:18:06:    - Full order creation flow
+2025-09-12T14:18:06:    - Progress tracking
+2025-09-12T14:18:06:    - Evidence upload (basic)
+2025-09-12T14:18:06:    - Report generation
+2025-09-12T14:18:06:    - Database integration
+2025-09-12T14:18:06:    - Session management
+2025-09-12T14:18:06:    - Technician notifications
+2025-09-12T14:18:16: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:18:16: 📱 Bot will handle all features properly
+2025-09-12T14:18:16: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:18:16: ✅ Complete bot started successfully!
+2025-09-12T14:18:16: 📱 Send /start to your bot to test
+2025-09-12T14:18:16: 🔧 Bot features:
+2025-09-12T14:18:16:    - Complete user registration
+2025-09-12T14:18:16:    - Full order creation flow
+2025-09-12T14:18:16:    - Progress tracking
+2025-09-12T14:18:16:    - Evidence upload (basic)
+2025-09-12T14:18:16:    - Report generation
+2025-09-12T14:18:16:    - Database integration
+2025-09-12T14:18:16:    - Session management
+2025-09-12T14:18:16:    - Technician notifications
+2025-09-12T14:18:21: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:18:21: 📱 Bot will handle all features properly
+2025-09-12T14:18:21: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:18:21: ✅ Complete bot started successfully!
+2025-09-12T14:18:21: 📱 Send /start to your bot to test
+2025-09-12T14:18:21: 🔧 Bot features:
+2025-09-12T14:18:21:    - Complete user registration
+2025-09-12T14:18:21:    - Full order creation flow
+2025-09-12T14:18:21:    - Progress tracking
+2025-09-12T14:18:21:    - Evidence upload (basic)
+2025-09-12T14:18:21:    - Report generation
+2025-09-12T14:18:21:    - Database integration
+2025-09-12T14:18:21:    - Session management
+2025-09-12T14:18:21:    - Technician notifications
+2025-09-12T14:18:28: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:18:28: 📱 Bot will handle all features properly
+2025-09-12T14:18:28: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:18:28: ✅ Complete bot started successfully!
+2025-09-12T14:18:28: 📱 Send /start to your bot to test
+2025-09-12T14:18:28: 🔧 Bot features:
+2025-09-12T14:18:28:    - Complete user registration
+2025-09-12T14:18:28:    - Full order creation flow
+2025-09-12T14:18:28:    - Progress tracking
+2025-09-12T14:18:28:    - Evidence upload (basic)
+2025-09-12T14:18:28:    - Report generation
+2025-09-12T14:18:28:    - Database integration
+2025-09-12T14:18:28:    - Session management
+2025-09-12T14:18:28:    - Technician notifications
+2025-09-12T14:18:34: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:18:34: 📱 Bot will handle all features properly
+2025-09-12T14:18:34: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:18:34: ✅ Complete bot started successfully!
+2025-09-12T14:18:34: 📱 Send /start to your bot to test
+2025-09-12T14:18:34: 🔧 Bot features:
+2025-09-12T14:18:34:    - Complete user registration
+2025-09-12T14:18:34:    - Full order creation flow
+2025-09-12T14:18:34:    - Progress tracking
+2025-09-12T14:18:34:    - Evidence upload (basic)
+2025-09-12T14:18:34:    - Report generation
+2025-09-12T14:18:34:    - Database integration
+2025-09-12T14:18:34:    - Session management
+2025-09-12T14:18:34:    - Technician notifications
+2025-09-12T14:18:40: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:18:40: 📱 Bot will handle all features properly
+2025-09-12T14:18:40: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:18:40: ✅ Complete bot started successfully!
+2025-09-12T14:18:40: 📱 Send /start to your bot to test
+2025-09-12T14:18:40: 🔧 Bot features:
+2025-09-12T14:18:40:    - Complete user registration
+2025-09-12T14:18:40:    - Full order creation flow
+2025-09-12T14:18:40:    - Progress tracking
+2025-09-12T14:18:40:    - Evidence upload (basic)
+2025-09-12T14:18:40:    - Report generation
+2025-09-12T14:18:40:    - Database integration
+2025-09-12T14:18:40:    - Session management
+2025-09-12T14:18:40:    - Technician notifications
+2025-09-12T14:18:45: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:18:45: 📱 Bot will handle all features properly
+2025-09-12T14:18:45: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:18:45: ✅ Complete bot started successfully!
+2025-09-12T14:18:45: 📱 Send /start to your bot to test
+2025-09-12T14:18:45: 🔧 Bot features:
+2025-09-12T14:18:45:    - Complete user registration
+2025-09-12T14:18:45:    - Full order creation flow
+2025-09-12T14:18:45:    - Progress tracking
+2025-09-12T14:18:45:    - Evidence upload (basic)
+2025-09-12T14:18:45:    - Report generation
+2025-09-12T14:18:45:    - Database integration
+2025-09-12T14:18:45:    - Session management
+2025-09-12T14:18:45:    - Technician notifications
+2025-09-12T14:18:51: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:18:51: 📱 Bot will handle all features properly
+2025-09-12T14:18:51: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:18:51: ✅ Complete bot started successfully!
+2025-09-12T14:18:51: 📱 Send /start to your bot to test
+2025-09-12T14:18:51: 🔧 Bot features:
+2025-09-12T14:18:51:    - Complete user registration
+2025-09-12T14:18:51:    - Full order creation flow
+2025-09-12T14:18:51:    - Progress tracking
+2025-09-12T14:18:51:    - Evidence upload (basic)
+2025-09-12T14:18:51:    - Report generation
+2025-09-12T14:18:51:    - Database integration
+2025-09-12T14:18:51:    - Session management
+2025-09-12T14:18:51:    - Technician notifications
+2025-09-12T14:18:57: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:18:57: 📱 Bot will handle all features properly
+2025-09-12T14:18:57: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:18:57: ✅ Complete bot started successfully!
+2025-09-12T14:18:57: 📱 Send /start to your bot to test
+2025-09-12T14:18:57: 🔧 Bot features:
+2025-09-12T14:18:57:    - Complete user registration
+2025-09-12T14:18:57:    - Full order creation flow
+2025-09-12T14:18:57:    - Progress tracking
+2025-09-12T14:18:57:    - Evidence upload (basic)
+2025-09-12T14:18:57:    - Report generation
+2025-09-12T14:18:57:    - Database integration
+2025-09-12T14:18:57:    - Session management
+2025-09-12T14:18:57:    - Technician notifications
+2025-09-12T14:19:03: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:19:03: 📱 Bot will handle all features properly
+2025-09-12T14:19:03: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:19:03: ✅ Complete bot started successfully!
+2025-09-12T14:19:03: 📱 Send /start to your bot to test
+2025-09-12T14:19:03: 🔧 Bot features:
+2025-09-12T14:19:03:    - Complete user registration
+2025-09-12T14:19:03:    - Full order creation flow
+2025-09-12T14:19:03:    - Progress tracking
+2025-09-12T14:19:03:    - Evidence upload (basic)
+2025-09-12T14:19:03:    - Report generation
+2025-09-12T14:19:03:    - Database integration
+2025-09-12T14:19:03:    - Session management
+2025-09-12T14:19:03:    - Technician notifications
+2025-09-12T14:19:18: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:19:18: 📱 Bot will handle all features properly
+2025-09-12T14:19:18: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:19:18: ✅ Complete bot started successfully!
+2025-09-12T14:19:18: 📱 Send /start to your bot to test
+2025-09-12T14:19:18: 🔧 Bot features:
+2025-09-12T14:19:18:    - Complete user registration
+2025-09-12T14:19:18:    - Full order creation flow
+2025-09-12T14:19:18:    - Progress tracking
+2025-09-12T14:19:18:    - Evidence upload (basic)
+2025-09-12T14:19:18:    - Report generation
+2025-09-12T14:19:18:    - Database integration
+2025-09-12T14:19:18:    - Session management
+2025-09-12T14:19:18:    - Technician notifications
+2025-09-12T14:19:26: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:19:26: 📱 Bot will handle all features properly
+2025-09-12T14:19:26: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:19:26: ✅ Complete bot started successfully!
+2025-09-12T14:19:26: 📱 Send /start to your bot to test
+2025-09-12T14:19:26: 🔧 Bot features:
+2025-09-12T14:19:26:    - Complete user registration
+2025-09-12T14:19:26:    - Full order creation flow
+2025-09-12T14:19:26:    - Progress tracking
+2025-09-12T14:19:26:    - Evidence upload (basic)
+2025-09-12T14:19:26:    - Report generation
+2025-09-12T14:19:26:    - Database integration
+2025-09-12T14:19:26:    - Session management
+2025-09-12T14:19:26:    - Technician notifications
+2025-09-12T14:19:31: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:19:31: 📱 Bot will handle all features properly
+2025-09-12T14:19:31: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:19:31: ✅ Complete bot started successfully!
+2025-09-12T14:19:31: 📱 Send /start to your bot to test
+2025-09-12T14:19:31: 🔧 Bot features:
+2025-09-12T14:19:31:    - Complete user registration
+2025-09-12T14:19:31:    - Full order creation flow
+2025-09-12T14:19:31:    - Progress tracking
+2025-09-12T14:19:31:    - Evidence upload (basic)
+2025-09-12T14:19:31:    - Report generation
+2025-09-12T14:19:31:    - Database integration
+2025-09-12T14:19:31:    - Session management
+2025-09-12T14:19:31:    - Technician notifications
+2025-09-12T14:19:41: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:19:45: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:19:45: 📱 Bot will handle all features properly
+2025-09-12T14:19:45: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:19:45: ✅ Complete bot started successfully!
+2025-09-12T14:19:45: 📱 Send /start to your bot to test
+2025-09-12T14:19:45: 🔧 Bot features:
+2025-09-12T14:19:45:    - Complete user registration
+2025-09-12T14:19:45:    - Full order creation flow
+2025-09-12T14:19:45:    - Progress tracking
+2025-09-12T14:19:45:    - Evidence upload (basic)
+2025-09-12T14:19:45:    - Report generation
+2025-09-12T14:19:45:    - Database integration
+2025-09-12T14:19:45:    - Session management
+2025-09-12T14:19:45:    - Technician notifications
+2025-09-12T14:20:06: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:20:06: 📱 Bot will handle all features properly
+2025-09-12T14:20:06: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:20:06: ✅ Complete bot started successfully!
+2025-09-12T14:20:06: 📱 Send /start to your bot to test
+2025-09-12T14:20:06: 🔧 Bot features:
+2025-09-12T14:20:06:    - Complete user registration
+2025-09-12T14:20:06:    - Full order creation flow
+2025-09-12T14:20:06:    - Progress tracking
+2025-09-12T14:20:06:    - Evidence upload (basic)
+2025-09-12T14:20:06:    - Report generation
+2025-09-12T14:20:06:    - Database integration
+2025-09-12T14:20:06:    - Session management
+2025-09-12T14:20:06:    - Technician notifications
+2025-09-12T14:20:10: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:20:10: 📱 Bot will handle all features properly
+2025-09-12T14:20:10: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:20:10: ✅ Complete bot started successfully!
+2025-09-12T14:20:10: 📱 Send /start to your bot to test
+2025-09-12T14:20:10: 🔧 Bot features:
+2025-09-12T14:20:10:    - Complete user registration
+2025-09-12T14:20:10:    - Full order creation flow
+2025-09-12T14:20:10:    - Progress tracking
+2025-09-12T14:20:10:    - Evidence upload (basic)
+2025-09-12T14:20:10:    - Report generation
+2025-09-12T14:20:10:    - Database integration
+2025-09-12T14:20:10:    - Session management
+2025-09-12T14:20:10:    - Technician notifications
+2025-09-12T14:20:19: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:20:19: 📱 Bot will handle all features properly
+2025-09-12T14:20:19: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:20:19: ✅ Complete bot started successfully!
+2025-09-12T14:20:19: 📱 Send /start to your bot to test
+2025-09-12T14:20:19: 🔧 Bot features:
+2025-09-12T14:20:19:    - Complete user registration
+2025-09-12T14:20:19:    - Full order creation flow
+2025-09-12T14:20:19:    - Progress tracking
+2025-09-12T14:20:19:    - Evidence upload (basic)
+2025-09-12T14:20:19:    - Report generation
+2025-09-12T14:20:19:    - Database integration
+2025-09-12T14:20:19:    - Session management
+2025-09-12T14:20:19:    - Technician notifications
+2025-09-12T14:20:25: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:20:25: 📱 Bot will handle all features properly
+2025-09-12T14:20:25: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:20:25: ✅ Complete bot started successfully!
+2025-09-12T14:20:25: 📱 Send /start to your bot to test
+2025-09-12T14:20:25: 🔧 Bot features:
+2025-09-12T14:20:25:    - Complete user registration
+2025-09-12T14:20:25:    - Full order creation flow
+2025-09-12T14:20:25:    - Progress tracking
+2025-09-12T14:20:25:    - Evidence upload (basic)
+2025-09-12T14:20:25:    - Report generation
+2025-09-12T14:20:25:    - Database integration
+2025-09-12T14:20:25:    - Session management
+2025-09-12T14:20:25:    - Technician notifications
+2025-09-12T14:20:31: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:20:31: 📱 Bot will handle all features properly
+2025-09-12T14:20:31: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:20:31: ✅ Complete bot started successfully!
+2025-09-12T14:20:31: 📱 Send /start to your bot to test
+2025-09-12T14:20:31: 🔧 Bot features:
+2025-09-12T14:20:31:    - Complete user registration
+2025-09-12T14:20:31:    - Full order creation flow
+2025-09-12T14:20:31:    - Progress tracking
+2025-09-12T14:20:31:    - Evidence upload (basic)
+2025-09-12T14:20:31:    - Report generation
+2025-09-12T14:20:31:    - Database integration
+2025-09-12T14:20:31:    - Session management
+2025-09-12T14:20:31:    - Technician notifications
+2025-09-12T14:20:44: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:20:44: 📱 Bot will handle all features properly
+2025-09-12T14:20:44: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:20:44: ✅ Complete bot started successfully!
+2025-09-12T14:20:44: 📱 Send /start to your bot to test
+2025-09-12T14:20:44: 🔧 Bot features:
+2025-09-12T14:20:44:    - Complete user registration
+2025-09-12T14:20:44:    - Full order creation flow
+2025-09-12T14:20:44:    - Progress tracking
+2025-09-12T14:20:44:    - Evidence upload (basic)
+2025-09-12T14:20:44:    - Report generation
+2025-09-12T14:20:44:    - Database integration
+2025-09-12T14:20:44:    - Session management
+2025-09-12T14:20:44:    - Technician notifications
+2025-09-12T14:20:51: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:20:51: 📱 Bot will handle all features properly
+2025-09-12T14:20:51: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:20:51: ✅ Complete bot started successfully!
+2025-09-12T14:20:51: 📱 Send /start to your bot to test
+2025-09-12T14:20:51: 🔧 Bot features:
+2025-09-12T14:20:51:    - Complete user registration
+2025-09-12T14:20:51:    - Full order creation flow
+2025-09-12T14:20:51:    - Progress tracking
+2025-09-12T14:20:51:    - Evidence upload (basic)
+2025-09-12T14:20:51:    - Report generation
+2025-09-12T14:20:51:    - Database integration
+2025-09-12T14:20:51:    - Session management
+2025-09-12T14:20:51:    - Technician notifications
+2025-09-12T14:21:10: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:21:10: 📱 Bot will handle all features properly
+2025-09-12T14:21:10: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:21:10: ✅ Complete bot started successfully!
+2025-09-12T14:21:10: 📱 Send /start to your bot to test
+2025-09-12T14:21:10: 🔧 Bot features:
+2025-09-12T14:21:10:    - Complete user registration
+2025-09-12T14:21:10:    - Full order creation flow
+2025-09-12T14:21:10:    - Progress tracking
+2025-09-12T14:21:10:    - Evidence upload (basic)
+2025-09-12T14:21:10:    - Report generation
+2025-09-12T14:21:10:    - Database integration
+2025-09-12T14:21:10:    - Session management
+2025-09-12T14:21:10:    - Technician notifications
+2025-09-12T14:21:26: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:21:32: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:21:42: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:21:42: 📱 Bot will handle all features properly
+2025-09-12T14:21:42: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:21:42: ✅ Complete bot started successfully!
+2025-09-12T14:21:42: 📱 Send /start to your bot to test
+2025-09-12T14:21:42: 🔧 Bot features:
+2025-09-12T14:21:42:    - Complete user registration
+2025-09-12T14:21:42:    - Full order creation flow
+2025-09-12T14:21:42:    - Progress tracking
+2025-09-12T14:21:42:    - Evidence upload (basic)
+2025-09-12T14:21:42:    - Report generation
+2025-09-12T14:21:42:    - Database integration
+2025-09-12T14:21:42:    - Session management
+2025-09-12T14:21:42:    - Technician notifications
+2025-09-12T14:22:06: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:22:06: 📱 Bot will handle all features properly
+2025-09-12T14:22:06: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:22:06: ✅ Complete bot started successfully!
+2025-09-12T14:22:06: 📱 Send /start to your bot to test
+2025-09-12T14:22:06: 🔧 Bot features:
+2025-09-12T14:22:06:    - Complete user registration
+2025-09-12T14:22:06:    - Full order creation flow
+2025-09-12T14:22:06:    - Progress tracking
+2025-09-12T14:22:06:    - Evidence upload (basic)
+2025-09-12T14:22:06:    - Report generation
+2025-09-12T14:22:06:    - Database integration
+2025-09-12T14:22:06:    - Session management
+2025-09-12T14:22:06:    - Technician notifications
+2025-09-12T14:22:32: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:22:32: 📱 Bot will handle all features properly
+2025-09-12T14:22:32: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:22:32: ✅ Complete bot started successfully!
+2025-09-12T14:22:32: 📱 Send /start to your bot to test
+2025-09-12T14:22:32: 🔧 Bot features:
+2025-09-12T14:22:32:    - Complete user registration
+2025-09-12T14:22:32:    - Full order creation flow
+2025-09-12T14:22:32:    - Progress tracking
+2025-09-12T14:22:32:    - Evidence upload (basic)
+2025-09-12T14:22:32:    - Report generation
+2025-09-12T14:22:32:    - Database integration
+2025-09-12T14:22:32:    - Session management
+2025-09-12T14:22:32:    - Technician notifications
+2025-09-12T14:22:54: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:22:54: 📱 Bot will handle all features properly
+2025-09-12T14:22:54: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:22:54: ✅ Complete bot started successfully!
+2025-09-12T14:22:54: 📱 Send /start to your bot to test
+2025-09-12T14:22:54: 🔧 Bot features:
+2025-09-12T14:22:54:    - Complete user registration
+2025-09-12T14:22:54:    - Full order creation flow
+2025-09-12T14:22:54:    - Progress tracking
+2025-09-12T14:22:54:    - Evidence upload (basic)
+2025-09-12T14:22:54:    - Report generation
+2025-09-12T14:22:54:    - Database integration
+2025-09-12T14:22:54:    - Session management
+2025-09-12T14:22:54:    - Technician notifications
+2025-09-12T14:23:03: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:23:03: 📱 Bot will handle all features properly
+2025-09-12T14:23:03: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:23:03: ✅ Complete bot started successfully!
+2025-09-12T14:23:03: 📱 Send /start to your bot to test
+2025-09-12T14:23:03: 🔧 Bot features:
+2025-09-12T14:23:03:    - Complete user registration
+2025-09-12T14:23:03:    - Full order creation flow
+2025-09-12T14:23:03:    - Progress tracking
+2025-09-12T14:23:03:    - Evidence upload (basic)
+2025-09-12T14:23:03:    - Report generation
+2025-09-12T14:23:03:    - Database integration
+2025-09-12T14:23:03:    - Session management
+2025-09-12T14:23:03:    - Technician notifications
+2025-09-12T14:23:06: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:23:06: 📱 Bot will handle all features properly
+2025-09-12T14:23:06: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:23:06: ✅ Complete bot started successfully!
+2025-09-12T14:23:06: 📱 Send /start to your bot to test
+2025-09-12T14:23:06: 🔧 Bot features:
+2025-09-12T14:23:06:    - Complete user registration
+2025-09-12T14:23:06:    - Full order creation flow
+2025-09-12T14:23:06:    - Progress tracking
+2025-09-12T14:23:06:    - Evidence upload (basic)
+2025-09-12T14:23:06:    - Report generation
+2025-09-12T14:23:06:    - Database integration
+2025-09-12T14:23:06:    - Session management
+2025-09-12T14:23:06:    - Technician notifications
+2025-09-12T14:23:12: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:23:12: 📱 Bot will handle all features properly
+2025-09-12T14:23:12: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:23:12: ✅ Complete bot started successfully!
+2025-09-12T14:23:12: 📱 Send /start to your bot to test
+2025-09-12T14:23:12: 🔧 Bot features:
+2025-09-12T14:23:12:    - Complete user registration
+2025-09-12T14:23:12:    - Full order creation flow
+2025-09-12T14:23:12:    - Progress tracking
+2025-09-12T14:23:12:    - Evidence upload (basic)
+2025-09-12T14:23:12:    - Report generation
+2025-09-12T14:23:12:    - Database integration
+2025-09-12T14:23:12:    - Session management
+2025-09-12T14:23:12:    - Technician notifications
+2025-09-12T14:23:48: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:23:48: 📱 Bot will handle all features properly
+2025-09-12T14:23:48: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:23:48: ✅ Complete bot started successfully!
+2025-09-12T14:23:48: 📱 Send /start to your bot to test
+2025-09-12T14:23:48: 🔧 Bot features:
+2025-09-12T14:23:48:    - Complete user registration
+2025-09-12T14:23:48:    - Full order creation flow
+2025-09-12T14:23:48:    - Progress tracking
+2025-09-12T14:23:48:    - Evidence upload (basic)
+2025-09-12T14:23:48:    - Report generation
+2025-09-12T14:23:48:    - Database integration
+2025-09-12T14:23:48:    - Session management
+2025-09-12T14:23:48:    - Technician notifications
+2025-09-12T14:23:59: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:23:59: 📱 Bot will handle all features properly
+2025-09-12T14:23:59: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:23:59: ✅ Complete bot started successfully!
+2025-09-12T14:23:59: 📱 Send /start to your bot to test
+2025-09-12T14:23:59: 🔧 Bot features:
+2025-09-12T14:23:59:    - Complete user registration
+2025-09-12T14:23:59:    - Full order creation flow
+2025-09-12T14:23:59:    - Progress tracking
+2025-09-12T14:23:59:    - Evidence upload (basic)
+2025-09-12T14:23:59:    - Report generation
+2025-09-12T14:23:59:    - Database integration
+2025-09-12T14:23:59:    - Session management
+2025-09-12T14:23:59:    - Technician notifications
+2025-09-12T14:24:04: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:24:08: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:24:08: 📱 Bot will handle all features properly
+2025-09-12T14:24:08: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:24:08: ✅ Complete bot started successfully!
+2025-09-12T14:24:08: 📱 Send /start to your bot to test
+2025-09-12T14:24:08: 🔧 Bot features:
+2025-09-12T14:24:08:    - Complete user registration
+2025-09-12T14:24:08:    - Full order creation flow
+2025-09-12T14:24:08:    - Progress tracking
+2025-09-12T14:24:08:    - Evidence upload (basic)
+2025-09-12T14:24:08:    - Report generation
+2025-09-12T14:24:08:    - Database integration
+2025-09-12T14:24:08:    - Session management
+2025-09-12T14:24:08:    - Technician notifications
+2025-09-12T14:24:12: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:24:12: 📱 Bot will handle all features properly
+2025-09-12T14:24:12: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:24:12: ✅ Complete bot started successfully!
+2025-09-12T14:24:12: 📱 Send /start to your bot to test
+2025-09-12T14:24:12: 🔧 Bot features:
+2025-09-12T14:24:12:    - Complete user registration
+2025-09-12T14:24:12:    - Full order creation flow
+2025-09-12T14:24:12:    - Progress tracking
+2025-09-12T14:24:12:    - Evidence upload (basic)
+2025-09-12T14:24:12:    - Report generation
+2025-09-12T14:24:12:    - Database integration
+2025-09-12T14:24:12:    - Session management
+2025-09-12T14:24:12:    - Technician notifications
+2025-09-12T14:24:20: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:24:20: 📱 Bot will handle all features properly
+2025-09-12T14:24:20: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:24:20: ✅ Complete bot started successfully!
+2025-09-12T14:24:20: 📱 Send /start to your bot to test
+2025-09-12T14:24:20: 🔧 Bot features:
+2025-09-12T14:24:20:    - Complete user registration
+2025-09-12T14:24:20:    - Full order creation flow
+2025-09-12T14:24:20:    - Progress tracking
+2025-09-12T14:24:20:    - Evidence upload (basic)
+2025-09-12T14:24:20:    - Report generation
+2025-09-12T14:24:20:    - Database integration
+2025-09-12T14:24:20:    - Session management
+2025-09-12T14:24:20:    - Technician notifications
+2025-09-12T14:24:31: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:24:31: 📱 Bot will handle all features properly
+2025-09-12T14:24:31: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:24:31: ✅ Complete bot started successfully!
+2025-09-12T14:24:31: 📱 Send /start to your bot to test
+2025-09-12T14:24:31: 🔧 Bot features:
+2025-09-12T14:24:31:    - Complete user registration
+2025-09-12T14:24:31:    - Full order creation flow
+2025-09-12T14:24:31:    - Progress tracking
+2025-09-12T14:24:31:    - Evidence upload (basic)
+2025-09-12T14:24:31:    - Report generation
+2025-09-12T14:24:31:    - Database integration
+2025-09-12T14:24:31:    - Session management
+2025-09-12T14:24:31:    - Technician notifications
+2025-09-12T14:24:39: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:24:39: 📱 Bot will handle all features properly
+2025-09-12T14:24:39: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:24:39: ✅ Complete bot started successfully!
+2025-09-12T14:24:39: 📱 Send /start to your bot to test
+2025-09-12T14:24:39: 🔧 Bot features:
+2025-09-12T14:24:39:    - Complete user registration
+2025-09-12T14:24:39:    - Full order creation flow
+2025-09-12T14:24:39:    - Progress tracking
+2025-09-12T14:24:39:    - Evidence upload (basic)
+2025-09-12T14:24:39:    - Report generation
+2025-09-12T14:24:39:    - Database integration
+2025-09-12T14:24:39:    - Session management
+2025-09-12T14:24:39:    - Technician notifications
+2025-09-12T14:25:31: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:25:31: 📱 Bot will handle all features properly
+2025-09-12T14:25:31: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:25:31: ✅ Complete bot started successfully!
+2025-09-12T14:25:31: 📱 Send /start to your bot to test
+2025-09-12T14:25:31: 🔧 Bot features:
+2025-09-12T14:25:31:    - Complete user registration
+2025-09-12T14:25:31:    - Full order creation flow
+2025-09-12T14:25:31:    - Progress tracking
+2025-09-12T14:25:31:    - Evidence upload (basic)
+2025-09-12T14:25:31:    - Report generation
+2025-09-12T14:25:31:    - Database integration
+2025-09-12T14:25:31:    - Session management
+2025-09-12T14:25:31:    - Technician notifications
+2025-09-12T14:25:39: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:25:39: 📱 Bot will handle all features properly
+2025-09-12T14:25:39: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:25:39: ✅ Complete bot started successfully!
+2025-09-12T14:25:39: 📱 Send /start to your bot to test
+2025-09-12T14:25:39: 🔧 Bot features:
+2025-09-12T14:25:39:    - Complete user registration
+2025-09-12T14:25:39:    - Full order creation flow
+2025-09-12T14:25:39:    - Progress tracking
+2025-09-12T14:25:39:    - Evidence upload (basic)
+2025-09-12T14:25:39:    - Report generation
+2025-09-12T14:25:39:    - Database integration
+2025-09-12T14:25:39:    - Session management
+2025-09-12T14:25:39:    - Technician notifications
+2025-09-12T14:25:48: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:25:48: 📱 Bot will handle all features properly
+2025-09-12T14:25:48: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:25:48: ✅ Complete bot started successfully!
+2025-09-12T14:25:48: 📱 Send /start to your bot to test
+2025-09-12T14:25:48: 🔧 Bot features:
+2025-09-12T14:25:48:    - Complete user registration
+2025-09-12T14:25:48:    - Full order creation flow
+2025-09-12T14:25:48:    - Progress tracking
+2025-09-12T14:25:48:    - Evidence upload (basic)
+2025-09-12T14:25:48:    - Report generation
+2025-09-12T14:25:48:    - Database integration
+2025-09-12T14:25:48:    - Session management
+2025-09-12T14:25:48:    - Technician notifications
+2025-09-12T14:26:14: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:26:14: 📱 Bot will handle all features properly
+2025-09-12T14:26:14: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:26:14: ✅ Complete bot started successfully!
+2025-09-12T14:26:14: 📱 Send /start to your bot to test
+2025-09-12T14:26:14: 🔧 Bot features:
+2025-09-12T14:26:14:    - Complete user registration
+2025-09-12T14:26:14:    - Full order creation flow
+2025-09-12T14:26:14:    - Progress tracking
+2025-09-12T14:26:14:    - Evidence upload (basic)
+2025-09-12T14:26:14:    - Report generation
+2025-09-12T14:26:14:    - Database integration
+2025-09-12T14:26:14:    - Session management
+2025-09-12T14:26:14:    - Technician notifications
+2025-09-12T14:26:28: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:26:28: 📱 Bot will handle all features properly
+2025-09-12T14:26:28: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:26:28: ✅ Complete bot started successfully!
+2025-09-12T14:26:28: 📱 Send /start to your bot to test
+2025-09-12T14:26:28: 🔧 Bot features:
+2025-09-12T14:26:28:    - Complete user registration
+2025-09-12T14:26:28:    - Full order creation flow
+2025-09-12T14:26:28:    - Progress tracking
+2025-09-12T14:26:28:    - Evidence upload (basic)
+2025-09-12T14:26:28:    - Report generation
+2025-09-12T14:26:28:    - Database integration
+2025-09-12T14:26:28:    - Session management
+2025-09-12T14:26:28:    - Technician notifications
+2025-09-12T14:26:44: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:26:44: 📱 Bot will handle all features properly
+2025-09-12T14:26:44: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:26:44: ✅ Complete bot started successfully!
+2025-09-12T14:26:44: 📱 Send /start to your bot to test
+2025-09-12T14:26:44: 🔧 Bot features:
+2025-09-12T14:26:44:    - Complete user registration
+2025-09-12T14:26:44:    - Full order creation flow
+2025-09-12T14:26:44:    - Progress tracking
+2025-09-12T14:26:44:    - Evidence upload (basic)
+2025-09-12T14:26:44:    - Report generation
+2025-09-12T14:26:44:    - Database integration
+2025-09-12T14:26:44:    - Session management
+2025-09-12T14:26:44:    - Technician notifications
+2025-09-12T14:27:35: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:27:35: 📱 Bot will handle all features properly
+2025-09-12T14:27:35: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:27:35: ✅ Complete bot started successfully!
+2025-09-12T14:27:35: 📱 Send /start to your bot to test
+2025-09-12T14:27:35: 🔧 Bot features:
+2025-09-12T14:27:35:    - Complete user registration
+2025-09-12T14:27:35:    - Full order creation flow
+2025-09-12T14:27:35:    - Progress tracking
+2025-09-12T14:27:35:    - Evidence upload (basic)
+2025-09-12T14:27:35:    - Report generation
+2025-09-12T14:27:35:    - Database integration
+2025-09-12T14:27:35:    - Session management
+2025-09-12T14:27:35:    - Technician notifications
+2025-09-12T14:27:52: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:27:56: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:27:56: 📱 Bot will handle all features properly
+2025-09-12T14:27:56: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:27:56: ✅ Complete bot started successfully!
+2025-09-12T14:27:56: 📱 Send /start to your bot to test
+2025-09-12T14:27:56: 🔧 Bot features:
+2025-09-12T14:27:56:    - Complete user registration
+2025-09-12T14:27:56:    - Full order creation flow
+2025-09-12T14:27:56:    - Progress tracking
+2025-09-12T14:27:56:    - Evidence upload (basic)
+2025-09-12T14:27:56:    - Report generation
+2025-09-12T14:27:56:    - Database integration
+2025-09-12T14:27:56:    - Session management
+2025-09-12T14:27:56:    - Technician notifications
+2025-09-12T14:28:04: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:28:04: 📱 Bot will handle all features properly
+2025-09-12T14:28:04: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:28:04: ✅ Complete bot started successfully!
+2025-09-12T14:28:04: 📱 Send /start to your bot to test
+2025-09-12T14:28:04: 🔧 Bot features:
+2025-09-12T14:28:04:    - Complete user registration
+2025-09-12T14:28:04:    - Full order creation flow
+2025-09-12T14:28:04:    - Progress tracking
+2025-09-12T14:28:04:    - Evidence upload (basic)
+2025-09-12T14:28:04:    - Report generation
+2025-09-12T14:28:04:    - Database integration
+2025-09-12T14:28:04:    - Session management
+2025-09-12T14:28:04:    - Technician notifications
+2025-09-12T14:28:33: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:28:33: 📱 Bot will handle all features properly
+2025-09-12T14:28:33: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:28:33: ✅ Complete bot started successfully!
+2025-09-12T14:28:33: 📱 Send /start to your bot to test
+2025-09-12T14:28:33: 🔧 Bot features:
+2025-09-12T14:28:33:    - Complete user registration
+2025-09-12T14:28:33:    - Full order creation flow
+2025-09-12T14:28:33:    - Progress tracking
+2025-09-12T14:28:33:    - Evidence upload (basic)
+2025-09-12T14:28:33:    - Report generation
+2025-09-12T14:28:33:    - Database integration
+2025-09-12T14:28:33:    - Session management
+2025-09-12T14:28:33:    - Technician notifications
+2025-09-12T14:28:47: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:28:47: 📱 Bot will handle all features properly
+2025-09-12T14:28:47: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:28:47: ✅ Complete bot started successfully!
+2025-09-12T14:28:47: 📱 Send /start to your bot to test
+2025-09-12T14:28:47: 🔧 Bot features:
+2025-09-12T14:28:47:    - Complete user registration
+2025-09-12T14:28:47:    - Full order creation flow
+2025-09-12T14:28:47:    - Progress tracking
+2025-09-12T14:28:47:    - Evidence upload (basic)
+2025-09-12T14:28:47:    - Report generation
+2025-09-12T14:28:47:    - Database integration
+2025-09-12T14:28:47:    - Session management
+2025-09-12T14:28:47:    - Technician notifications
+2025-09-12T14:29:02: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:29:02: 📱 Bot will handle all features properly
+2025-09-12T14:29:02: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:29:02: ✅ Complete bot started successfully!
+2025-09-12T14:29:02: 📱 Send /start to your bot to test
+2025-09-12T14:29:02: 🔧 Bot features:
+2025-09-12T14:29:02:    - Complete user registration
+2025-09-12T14:29:02:    - Full order creation flow
+2025-09-12T14:29:02:    - Progress tracking
+2025-09-12T14:29:02:    - Evidence upload (basic)
+2025-09-12T14:29:02:    - Report generation
+2025-09-12T14:29:02:    - Database integration
+2025-09-12T14:29:02:    - Session management
+2025-09-12T14:29:02:    - Technician notifications
+2025-09-12T14:29:21: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:29:21: 📱 Bot will handle all features properly
+2025-09-12T14:29:21: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:29:21: ✅ Complete bot started successfully!
+2025-09-12T14:29:21: 📱 Send /start to your bot to test
+2025-09-12T14:29:21: 🔧 Bot features:
+2025-09-12T14:29:21:    - Complete user registration
+2025-09-12T14:29:21:    - Full order creation flow
+2025-09-12T14:29:21:    - Progress tracking
+2025-09-12T14:29:21:    - Evidence upload (basic)
+2025-09-12T14:29:21:    - Report generation
+2025-09-12T14:29:21:    - Database integration
+2025-09-12T14:29:21:    - Session management
+2025-09-12T14:29:21:    - Technician notifications
+2025-09-12T14:29:28: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:29:28: 📱 Bot will handle all features properly
+2025-09-12T14:29:28: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:29:28: ✅ Complete bot started successfully!
+2025-09-12T14:29:28: 📱 Send /start to your bot to test
+2025-09-12T14:29:28: 🔧 Bot features:
+2025-09-12T14:29:28:    - Complete user registration
+2025-09-12T14:29:28:    - Full order creation flow
+2025-09-12T14:29:28:    - Progress tracking
+2025-09-12T14:29:28:    - Evidence upload (basic)
+2025-09-12T14:29:28:    - Report generation
+2025-09-12T14:29:28:    - Database integration
+2025-09-12T14:29:28:    - Session management
+2025-09-12T14:29:28:    - Technician notifications
+2025-09-12T14:29:38: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:29:38: 📱 Bot will handle all features properly
+2025-09-12T14:29:38: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:29:38: ✅ Complete bot started successfully!
+2025-09-12T14:29:38: 📱 Send /start to your bot to test
+2025-09-12T14:29:38: 🔧 Bot features:
+2025-09-12T14:29:38:    - Complete user registration
+2025-09-12T14:29:38:    - Full order creation flow
+2025-09-12T14:29:38:    - Progress tracking
+2025-09-12T14:29:38:    - Evidence upload (basic)
+2025-09-12T14:29:38:    - Report generation
+2025-09-12T14:29:38:    - Database integration
+2025-09-12T14:29:38:    - Session management
+2025-09-12T14:29:38:    - Technician notifications
+2025-09-12T14:29:42: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:29:42: 📱 Bot will handle all features properly
+2025-09-12T14:29:42: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:29:42: ✅ Complete bot started successfully!
+2025-09-12T14:29:42: 📱 Send /start to your bot to test
+2025-09-12T14:29:42: 🔧 Bot features:
+2025-09-12T14:29:42:    - Complete user registration
+2025-09-12T14:29:42:    - Full order creation flow
+2025-09-12T14:29:42:    - Progress tracking
+2025-09-12T14:29:42:    - Evidence upload (basic)
+2025-09-12T14:29:42:    - Report generation
+2025-09-12T14:29:42:    - Database integration
+2025-09-12T14:29:42:    - Session management
+2025-09-12T14:29:42:    - Technician notifications
+2025-09-12T14:29:49: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:29:49: 📱 Bot will handle all features properly
+2025-09-12T14:29:49: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:29:49: ✅ Complete bot started successfully!
+2025-09-12T14:29:49: 📱 Send /start to your bot to test
+2025-09-12T14:29:49: 🔧 Bot features:
+2025-09-12T14:29:49:    - Complete user registration
+2025-09-12T14:29:49:    - Full order creation flow
+2025-09-12T14:29:49:    - Progress tracking
+2025-09-12T14:29:49:    - Evidence upload (basic)
+2025-09-12T14:29:49:    - Report generation
+2025-09-12T14:29:49:    - Database integration
+2025-09-12T14:29:49:    - Session management
+2025-09-12T14:29:50:    - Technician notifications
+2025-09-12T14:29:55: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:29:55: 📱 Bot will handle all features properly
+2025-09-12T14:29:55: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:29:55: ✅ Complete bot started successfully!
+2025-09-12T14:29:55: 📱 Send /start to your bot to test
+2025-09-12T14:29:55: 🔧 Bot features:
+2025-09-12T14:29:55:    - Complete user registration
+2025-09-12T14:29:55:    - Full order creation flow
+2025-09-12T14:29:55:    - Progress tracking
+2025-09-12T14:29:55:    - Evidence upload (basic)
+2025-09-12T14:29:55:    - Report generation
+2025-09-12T14:29:55:    - Database integration
+2025-09-12T14:29:55:    - Session management
+2025-09-12T14:29:55:    - Technician notifications
+2025-09-12T14:30:25: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:30:25: 📱 Bot will handle all features properly
+2025-09-12T14:30:25: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:30:25: ✅ Complete bot started successfully!
+2025-09-12T14:30:25: 📱 Send /start to your bot to test
+2025-09-12T14:30:25: 🔧 Bot features:
+2025-09-12T14:30:25:    - Complete user registration
+2025-09-12T14:30:25:    - Full order creation flow
+2025-09-12T14:30:25:    - Progress tracking
+2025-09-12T14:30:25:    - Evidence upload (basic)
+2025-09-12T14:30:25:    - Report generation
+2025-09-12T14:30:25:    - Database integration
+2025-09-12T14:30:25:    - Session management
+2025-09-12T14:30:25:    - Technician notifications
+2025-09-12T14:30:34: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:30:38: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:30:38: 📱 Bot will handle all features properly
+2025-09-12T14:30:38: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:30:38: ✅ Complete bot started successfully!
+2025-09-12T14:30:38: 📱 Send /start to your bot to test
+2025-09-12T14:30:38: 🔧 Bot features:
+2025-09-12T14:30:38:    - Complete user registration
+2025-09-12T14:30:38:    - Full order creation flow
+2025-09-12T14:30:38:    - Progress tracking
+2025-09-12T14:30:38:    - Evidence upload (basic)
+2025-09-12T14:30:38:    - Report generation
+2025-09-12T14:30:38:    - Database integration
+2025-09-12T14:30:38:    - Session management
+2025-09-12T14:30:38:    - Technician notifications
+2025-09-12T14:30:49: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:30:49: 📱 Bot will handle all features properly
+2025-09-12T14:30:49: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:30:49: ✅ Complete bot started successfully!
+2025-09-12T14:30:49: 📱 Send /start to your bot to test
+2025-09-12T14:30:49: 🔧 Bot features:
+2025-09-12T14:30:49:    - Complete user registration
+2025-09-12T14:30:49:    - Full order creation flow
+2025-09-12T14:30:49:    - Progress tracking
+2025-09-12T14:30:49:    - Evidence upload (basic)
+2025-09-12T14:30:49:    - Report generation
+2025-09-12T14:30:49:    - Database integration
+2025-09-12T14:30:49:    - Session management
+2025-09-12T14:30:49:    - Technician notifications
+2025-09-12T14:30:54: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:30:54: 📱 Bot will handle all features properly
+2025-09-12T14:30:54: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:30:54: ✅ Complete bot started successfully!
+2025-09-12T14:30:54: 📱 Send /start to your bot to test
+2025-09-12T14:30:54: 🔧 Bot features:
+2025-09-12T14:30:54:    - Complete user registration
+2025-09-12T14:30:54:    - Full order creation flow
+2025-09-12T14:30:54:    - Progress tracking
+2025-09-12T14:30:54:    - Evidence upload (basic)
+2025-09-12T14:30:54:    - Report generation
+2025-09-12T14:30:54:    - Database integration
+2025-09-12T14:30:54:    - Session management
+2025-09-12T14:30:54:    - Technician notifications
+2025-09-12T14:31:03: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:31:03: 📱 Bot will handle all features properly
+2025-09-12T14:31:03: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:31:03: ✅ Complete bot started successfully!
+2025-09-12T14:31:03: 📱 Send /start to your bot to test
+2025-09-12T14:31:03: 🔧 Bot features:
+2025-09-12T14:31:03:    - Complete user registration
+2025-09-12T14:31:03:    - Full order creation flow
+2025-09-12T14:31:03:    - Progress tracking
+2025-09-12T14:31:03:    - Evidence upload (basic)
+2025-09-12T14:31:03:    - Report generation
+2025-09-12T14:31:03:    - Database integration
+2025-09-12T14:31:03:    - Session management
+2025-09-12T14:31:03:    - Technician notifications
+2025-09-12T14:31:07: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:31:07: 📱 Bot will handle all features properly
+2025-09-12T14:31:07: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:31:07: ✅ Complete bot started successfully!
+2025-09-12T14:31:07: 📱 Send /start to your bot to test
+2025-09-12T14:31:07: 🔧 Bot features:
+2025-09-12T14:31:07:    - Complete user registration
+2025-09-12T14:31:07:    - Full order creation flow
+2025-09-12T14:31:07:    - Progress tracking
+2025-09-12T14:31:07:    - Evidence upload (basic)
+2025-09-12T14:31:07:    - Report generation
+2025-09-12T14:31:07:    - Database integration
+2025-09-12T14:31:07:    - Session management
+2025-09-12T14:31:07:    - Technician notifications
+2025-09-12T14:31:12: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:31:12: 📱 Bot will handle all features properly
+2025-09-12T14:31:12: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:31:12: ✅ Complete bot started successfully!
+2025-09-12T14:31:12: 📱 Send /start to your bot to test
+2025-09-12T14:31:12: 🔧 Bot features:
+2025-09-12T14:31:12:    - Complete user registration
+2025-09-12T14:31:12:    - Full order creation flow
+2025-09-12T14:31:12:    - Progress tracking
+2025-09-12T14:31:12:    - Evidence upload (basic)
+2025-09-12T14:31:12:    - Report generation
+2025-09-12T14:31:12:    - Database integration
+2025-09-12T14:31:12:    - Session management
+2025-09-12T14:31:12:    - Technician notifications
+2025-09-12T14:31:18: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:31:19: 📱 Bot will handle all features properly
+2025-09-12T14:31:19: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:31:19: ✅ Complete bot started successfully!
+2025-09-12T14:31:19: 📱 Send /start to your bot to test
+2025-09-12T14:31:19: 🔧 Bot features:
+2025-09-12T14:31:19:    - Complete user registration
+2025-09-12T14:31:19:    - Full order creation flow
+2025-09-12T14:31:19:    - Progress tracking
+2025-09-12T14:31:19:    - Evidence upload (basic)
+2025-09-12T14:31:19:    - Report generation
+2025-09-12T14:31:19:    - Database integration
+2025-09-12T14:31:19:    - Session management
+2025-09-12T14:31:19:    - Technician notifications
+2025-09-12T14:31:24: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:31:24: 📱 Bot will handle all features properly
+2025-09-12T14:31:24: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:31:24: ✅ Complete bot started successfully!
+2025-09-12T14:31:24: 📱 Send /start to your bot to test
+2025-09-12T14:31:24: 🔧 Bot features:
+2025-09-12T14:31:24:    - Complete user registration
+2025-09-12T14:31:24:    - Full order creation flow
+2025-09-12T14:31:24:    - Progress tracking
+2025-09-12T14:31:24:    - Evidence upload (basic)
+2025-09-12T14:31:24:    - Report generation
+2025-09-12T14:31:24:    - Database integration
+2025-09-12T14:31:24:    - Session management
+2025-09-12T14:31:24:    - Technician notifications
+2025-09-12T14:31:36: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:31:36: 📱 Bot will handle all features properly
+2025-09-12T14:31:36: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:31:36: ✅ Complete bot started successfully!
+2025-09-12T14:31:36: 📱 Send /start to your bot to test
+2025-09-12T14:31:36: 🔧 Bot features:
+2025-09-12T14:31:36:    - Complete user registration
+2025-09-12T14:31:36:    - Full order creation flow
+2025-09-12T14:31:36:    - Progress tracking
+2025-09-12T14:31:36:    - Evidence upload (basic)
+2025-09-12T14:31:36:    - Report generation
+2025-09-12T14:31:36:    - Database integration
+2025-09-12T14:31:36:    - Session management
+2025-09-12T14:31:36:    - Technician notifications
+2025-09-12T14:32:06: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:32:06: 📱 Bot will handle all features properly
+2025-09-12T14:32:06: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:32:06: ✅ Complete bot started successfully!
+2025-09-12T14:32:06: 📱 Send /start to your bot to test
+2025-09-12T14:32:06: 🔧 Bot features:
+2025-09-12T14:32:06:    - Complete user registration
+2025-09-12T14:32:06:    - Full order creation flow
+2025-09-12T14:32:06:    - Progress tracking
+2025-09-12T14:32:06:    - Evidence upload (basic)
+2025-09-12T14:32:06:    - Report generation
+2025-09-12T14:32:06:    - Database integration
+2025-09-12T14:32:06:    - Session management
+2025-09-12T14:32:06:    - Technician notifications
+2025-09-12T14:32:18: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:32:18: 📱 Bot will handle all features properly
+2025-09-12T14:32:18: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:32:18: ✅ Complete bot started successfully!
+2025-09-12T14:32:18: 📱 Send /start to your bot to test
+2025-09-12T14:32:18: 🔧 Bot features:
+2025-09-12T14:32:18:    - Complete user registration
+2025-09-12T14:32:18:    - Full order creation flow
+2025-09-12T14:32:18:    - Progress tracking
+2025-09-12T14:32:18:    - Evidence upload (basic)
+2025-09-12T14:32:18:    - Report generation
+2025-09-12T14:32:18:    - Database integration
+2025-09-12T14:32:18:    - Session management
+2025-09-12T14:32:18:    - Technician notifications
+2025-09-12T14:32:28: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:32:28: 📱 Bot will handle all features properly
+2025-09-12T14:32:28: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:32:28: ✅ Complete bot started successfully!
+2025-09-12T14:32:28: 📱 Send /start to your bot to test
+2025-09-12T14:32:28: 🔧 Bot features:
+2025-09-12T14:32:28:    - Complete user registration
+2025-09-12T14:32:28:    - Full order creation flow
+2025-09-12T14:32:28:    - Progress tracking
+2025-09-12T14:32:28:    - Evidence upload (basic)
+2025-09-12T14:32:28:    - Report generation
+2025-09-12T14:32:28:    - Database integration
+2025-09-12T14:32:28:    - Session management
+2025-09-12T14:32:28:    - Technician notifications
+2025-09-12T14:32:31: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:32:31: 📱 Bot will handle all features properly
+2025-09-12T14:32:31: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:32:31: ✅ Complete bot started successfully!
+2025-09-12T14:32:31: 📱 Send /start to your bot to test
+2025-09-12T14:32:31: 🔧 Bot features:
+2025-09-12T14:32:31:    - Complete user registration
+2025-09-12T14:32:31:    - Full order creation flow
+2025-09-12T14:32:31:    - Progress tracking
+2025-09-12T14:32:31:    - Evidence upload (basic)
+2025-09-12T14:32:31:    - Report generation
+2025-09-12T14:32:31:    - Database integration
+2025-09-12T14:32:31:    - Session management
+2025-09-12T14:32:31:    - Technician notifications
+2025-09-12T14:32:35: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:32:35: 📱 Bot will handle all features properly
+2025-09-12T14:32:35: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:32:35: ✅ Complete bot started successfully!
+2025-09-12T14:32:35: 📱 Send /start to your bot to test
+2025-09-12T14:32:35: 🔧 Bot features:
+2025-09-12T14:32:35:    - Complete user registration
+2025-09-12T14:32:35:    - Full order creation flow
+2025-09-12T14:32:35:    - Progress tracking
+2025-09-12T14:32:35:    - Evidence upload (basic)
+2025-09-12T14:32:35:    - Report generation
+2025-09-12T14:32:35:    - Database integration
+2025-09-12T14:32:35:    - Session management
+2025-09-12T14:32:35:    - Technician notifications
+2025-09-12T14:32:45: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:32:45: 📱 Bot will handle all features properly
+2025-09-12T14:32:45: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:32:45: ✅ Complete bot started successfully!
+2025-09-12T14:32:45: 📱 Send /start to your bot to test
+2025-09-12T14:32:45: 🔧 Bot features:
+2025-09-12T14:32:45:    - Complete user registration
+2025-09-12T14:32:45:    - Full order creation flow
+2025-09-12T14:32:45:    - Progress tracking
+2025-09-12T14:32:45:    - Evidence upload (basic)
+2025-09-12T14:32:45:    - Report generation
+2025-09-12T14:32:45:    - Database integration
+2025-09-12T14:32:45:    - Session management
+2025-09-12T14:32:45:    - Technician notifications
+2025-09-12T14:33:09: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:33:09: 📱 Bot will handle all features properly
+2025-09-12T14:33:09: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:33:09: ✅ Complete bot started successfully!
+2025-09-12T14:33:09: 📱 Send /start to your bot to test
+2025-09-12T14:33:09: 🔧 Bot features:
+2025-09-12T14:33:09:    - Complete user registration
+2025-09-12T14:33:09:    - Full order creation flow
+2025-09-12T14:33:09:    - Progress tracking
+2025-09-12T14:33:09:    - Evidence upload (basic)
+2025-09-12T14:33:09:    - Report generation
+2025-09-12T14:33:09:    - Database integration
+2025-09-12T14:33:09:    - Session management
+2025-09-12T14:33:09:    - Technician notifications
+2025-09-12T14:33:16: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:33:16: 📱 Bot will handle all features properly
+2025-09-12T14:33:16: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:33:16: ✅ Complete bot started successfully!
+2025-09-12T14:33:16: 📱 Send /start to your bot to test
+2025-09-12T14:33:16: 🔧 Bot features:
+2025-09-12T14:33:16:    - Complete user registration
+2025-09-12T14:33:16:    - Full order creation flow
+2025-09-12T14:33:16:    - Progress tracking
+2025-09-12T14:33:16:    - Evidence upload (basic)
+2025-09-12T14:33:16:    - Report generation
+2025-09-12T14:33:16:    - Database integration
+2025-09-12T14:33:16:    - Session management
+2025-09-12T14:33:16:    - Technician notifications
+2025-09-12T14:33:20: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:33:20: 📱 Bot will handle all features properly
+2025-09-12T14:33:20: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:33:20: ✅ Complete bot started successfully!
+2025-09-12T14:33:20: 📱 Send /start to your bot to test
+2025-09-12T14:33:20: 🔧 Bot features:
+2025-09-12T14:33:20:    - Complete user registration
+2025-09-12T14:33:20:    - Full order creation flow
+2025-09-12T14:33:20:    - Progress tracking
+2025-09-12T14:33:20:    - Evidence upload (basic)
+2025-09-12T14:33:20:    - Report generation
+2025-09-12T14:33:20:    - Database integration
+2025-09-12T14:33:20:    - Session management
+2025-09-12T14:33:20:    - Technician notifications
+2025-09-12T14:33:23: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:33:23: 📱 Bot will handle all features properly
+2025-09-12T14:33:23: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:33:23: ✅ Complete bot started successfully!
+2025-09-12T14:33:23: 📱 Send /start to your bot to test
+2025-09-12T14:33:23: 🔧 Bot features:
+2025-09-12T14:33:23:    - Complete user registration
+2025-09-12T14:33:23:    - Full order creation flow
+2025-09-12T14:33:23:    - Progress tracking
+2025-09-12T14:33:23:    - Evidence upload (basic)
+2025-09-12T14:33:23:    - Report generation
+2025-09-12T14:33:23:    - Database integration
+2025-09-12T14:33:23:    - Session management
+2025-09-12T14:33:23:    - Technician notifications
+2025-09-12T14:33:26: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:33:26: 📱 Bot will handle all features properly
+2025-09-12T14:33:26: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:33:26: ✅ Complete bot started successfully!
+2025-09-12T14:33:26: 📱 Send /start to your bot to test
+2025-09-12T14:33:26: 🔧 Bot features:
+2025-09-12T14:33:26:    - Complete user registration
+2025-09-12T14:33:26:    - Full order creation flow
+2025-09-12T14:33:26:    - Progress tracking
+2025-09-12T14:33:26:    - Evidence upload (basic)
+2025-09-12T14:33:26:    - Report generation
+2025-09-12T14:33:26:    - Database integration
+2025-09-12T14:33:26:    - Session management
+2025-09-12T14:33:26:    - Technician notifications
+2025-09-12T14:33:32: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:33:32: 📱 Bot will handle all features properly
+2025-09-12T14:33:32: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:33:32: ✅ Complete bot started successfully!
+2025-09-12T14:33:32: 📱 Send /start to your bot to test
+2025-09-12T14:33:32: 🔧 Bot features:
+2025-09-12T14:33:32:    - Complete user registration
+2025-09-12T14:33:32:    - Full order creation flow
+2025-09-12T14:33:32:    - Progress tracking
+2025-09-12T14:33:32:    - Evidence upload (basic)
+2025-09-12T14:33:32:    - Report generation
+2025-09-12T14:33:32:    - Database integration
+2025-09-12T14:33:32:    - Session management
+2025-09-12T14:33:32:    - Technician notifications
+2025-09-12T14:33:34: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:33:34: 📱 Bot will handle all features properly
+2025-09-12T14:33:34: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:33:34: ✅ Complete bot started successfully!
+2025-09-12T14:33:34: 📱 Send /start to your bot to test
+2025-09-12T14:33:34: 🔧 Bot features:
+2025-09-12T14:33:34:    - Complete user registration
+2025-09-12T14:33:34:    - Full order creation flow
+2025-09-12T14:33:34:    - Progress tracking
+2025-09-12T14:33:34:    - Evidence upload (basic)
+2025-09-12T14:33:34:    - Report generation
+2025-09-12T14:33:34:    - Database integration
+2025-09-12T14:33:34:    - Session management
+2025-09-12T14:33:34:    - Technician notifications
+2025-09-12T14:33:40: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:33:40: 📱 Bot will handle all features properly
+2025-09-12T14:33:40: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:33:40: ✅ Complete bot started successfully!
+2025-09-12T14:33:40: 📱 Send /start to your bot to test
+2025-09-12T14:33:40: 🔧 Bot features:
+2025-09-12T14:33:40:    - Complete user registration
+2025-09-12T14:33:40:    - Full order creation flow
+2025-09-12T14:33:40:    - Progress tracking
+2025-09-12T14:33:40:    - Evidence upload (basic)
+2025-09-12T14:33:40:    - Report generation
+2025-09-12T14:33:40:    - Database integration
+2025-09-12T14:33:40:    - Session management
+2025-09-12T14:33:40:    - Technician notifications
+2025-09-12T14:33:45: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:33:45: 📱 Bot will handle all features properly
+2025-09-12T14:33:45: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:33:45: ✅ Complete bot started successfully!
+2025-09-12T14:33:45: 📱 Send /start to your bot to test
+2025-09-12T14:33:45: 🔧 Bot features:
+2025-09-12T14:33:45:    - Complete user registration
+2025-09-12T14:33:45:    - Full order creation flow
+2025-09-12T14:33:45:    - Progress tracking
+2025-09-12T14:33:45:    - Evidence upload (basic)
+2025-09-12T14:33:45:    - Report generation
+2025-09-12T14:33:45:    - Database integration
+2025-09-12T14:33:45:    - Session management
+2025-09-12T14:33:45:    - Technician notifications
+2025-09-12T14:33:50: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:33:50: 📱 Bot will handle all features properly
+2025-09-12T14:33:50: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:33:50: ✅ Complete bot started successfully!
+2025-09-12T14:33:50: 📱 Send /start to your bot to test
+2025-09-12T14:33:50: 🔧 Bot features:
+2025-09-12T14:33:50:    - Complete user registration
+2025-09-12T14:33:50:    - Full order creation flow
+2025-09-12T14:33:50:    - Progress tracking
+2025-09-12T14:33:50:    - Evidence upload (basic)
+2025-09-12T14:33:50:    - Report generation
+2025-09-12T14:33:50:    - Database integration
+2025-09-12T14:33:50:    - Session management
+2025-09-12T14:33:50:    - Technician notifications
+2025-09-12T14:34:00: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:34:00: 📱 Bot will handle all features properly
+2025-09-12T14:34:00: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:34:00: ✅ Complete bot started successfully!
+2025-09-12T14:34:00: 📱 Send /start to your bot to test
+2025-09-12T14:34:00: 🔧 Bot features:
+2025-09-12T14:34:00:    - Complete user registration
+2025-09-12T14:34:00:    - Full order creation flow
+2025-09-12T14:34:00:    - Progress tracking
+2025-09-12T14:34:00:    - Evidence upload (basic)
+2025-09-12T14:34:00:    - Report generation
+2025-09-12T14:34:00:    - Database integration
+2025-09-12T14:34:00:    - Session management
+2025-09-12T14:34:00:    - Technician notifications
+2025-09-12T14:35:11: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:35:11: 📱 Bot will handle all features properly
+2025-09-12T14:35:11: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:35:11: ✅ Complete bot started successfully!
+2025-09-12T14:35:11: 📱 Send /start to your bot to test
+2025-09-12T14:35:11: 🔧 Bot features:
+2025-09-12T14:35:11:    - Complete user registration
+2025-09-12T14:35:11:    - Full order creation flow
+2025-09-12T14:35:11:    - Progress tracking
+2025-09-12T14:35:11:    - Evidence upload (basic)
+2025-09-12T14:35:11:    - Report generation
+2025-09-12T14:35:11:    - Database integration
+2025-09-12T14:35:11:    - Session management
+2025-09-12T14:35:11:    - Technician notifications
+2025-09-12T14:35:15: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:35:15: 📱 Bot will handle all features properly
+2025-09-12T14:35:15: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:35:15: ✅ Complete bot started successfully!
+2025-09-12T14:35:15: 📱 Send /start to your bot to test
+2025-09-12T14:35:15: 🔧 Bot features:
+2025-09-12T14:35:15:    - Complete user registration
+2025-09-12T14:35:15:    - Full order creation flow
+2025-09-12T14:35:15:    - Progress tracking
+2025-09-12T14:35:15:    - Evidence upload (basic)
+2025-09-12T14:35:15:    - Report generation
+2025-09-12T14:35:15:    - Database integration
+2025-09-12T14:35:15:    - Session management
+2025-09-12T14:35:15:    - Technician notifications
+2025-09-12T14:35:22: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:35:22: 📱 Bot will handle all features properly
+2025-09-12T14:35:22: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:35:22: ✅ Complete bot started successfully!
+2025-09-12T14:35:22: 📱 Send /start to your bot to test
+2025-09-12T14:35:22: 🔧 Bot features:
+2025-09-12T14:35:22:    - Complete user registration
+2025-09-12T14:35:22:    - Full order creation flow
+2025-09-12T14:35:22:    - Progress tracking
+2025-09-12T14:35:22:    - Evidence upload (basic)
+2025-09-12T14:35:22:    - Report generation
+2025-09-12T14:35:22:    - Database integration
+2025-09-12T14:35:22:    - Session management
+2025-09-12T14:35:22:    - Technician notifications
+2025-09-12T14:35:26: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:35:26: 📱 Bot will handle all features properly
+2025-09-12T14:35:26: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:35:26: ✅ Complete bot started successfully!
+2025-09-12T14:35:26: 📱 Send /start to your bot to test
+2025-09-12T14:35:26: 🔧 Bot features:
+2025-09-12T14:35:26:    - Complete user registration
+2025-09-12T14:35:26:    - Full order creation flow
+2025-09-12T14:35:26:    - Progress tracking
+2025-09-12T14:35:26:    - Evidence upload (basic)
+2025-09-12T14:35:26:    - Report generation
+2025-09-12T14:35:26:    - Database integration
+2025-09-12T14:35:26:    - Session management
+2025-09-12T14:35:26:    - Technician notifications
+2025-09-12T14:35:33: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:35:37: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:35:37: 📱 Bot will handle all features properly
+2025-09-12T14:35:37: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:35:37: ✅ Complete bot started successfully!
+2025-09-12T14:35:37: 📱 Send /start to your bot to test
+2025-09-12T14:35:37: 🔧 Bot features:
+2025-09-12T14:35:37:    - Complete user registration
+2025-09-12T14:35:37:    - Full order creation flow
+2025-09-12T14:35:37:    - Progress tracking
+2025-09-12T14:35:37:    - Evidence upload (basic)
+2025-09-12T14:35:37:    - Report generation
+2025-09-12T14:35:37:    - Database integration
+2025-09-12T14:35:37:    - Session management
+2025-09-12T14:35:37:    - Technician notifications
+2025-09-12T14:35:44: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:35:44: 📱 Bot will handle all features properly
+2025-09-12T14:35:44: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:35:44: ✅ Complete bot started successfully!
+2025-09-12T14:35:44: 📱 Send /start to your bot to test
+2025-09-12T14:35:44: 🔧 Bot features:
+2025-09-12T14:35:44:    - Complete user registration
+2025-09-12T14:35:44:    - Full order creation flow
+2025-09-12T14:35:44:    - Progress tracking
+2025-09-12T14:35:44:    - Evidence upload (basic)
+2025-09-12T14:35:44:    - Report generation
+2025-09-12T14:35:44:    - Database integration
+2025-09-12T14:35:44:    - Session management
+2025-09-12T14:35:44:    - Technician notifications
+2025-09-12T14:36:07: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:36:07: 📱 Bot will handle all features properly
+2025-09-12T14:36:07: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:36:07: ✅ Complete bot started successfully!
+2025-09-12T14:36:07: 📱 Send /start to your bot to test
+2025-09-12T14:36:07: 🔧 Bot features:
+2025-09-12T14:36:07:    - Complete user registration
+2025-09-12T14:36:07:    - Full order creation flow
+2025-09-12T14:36:07:    - Progress tracking
+2025-09-12T14:36:07:    - Evidence upload (basic)
+2025-09-12T14:36:07:    - Report generation
+2025-09-12T14:36:07:    - Database integration
+2025-09-12T14:36:07:    - Session management
+2025-09-12T14:36:07:    - Technician notifications
+2025-09-12T14:36:11: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:36:11: 📱 Bot will handle all features properly
+2025-09-12T14:36:11: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:36:11: ✅ Complete bot started successfully!
+2025-09-12T14:36:11: 📱 Send /start to your bot to test
+2025-09-12T14:36:11: 🔧 Bot features:
+2025-09-12T14:36:11:    - Complete user registration
+2025-09-12T14:36:11:    - Full order creation flow
+2025-09-12T14:36:11:    - Progress tracking
+2025-09-12T14:36:11:    - Evidence upload (basic)
+2025-09-12T14:36:11:    - Report generation
+2025-09-12T14:36:11:    - Database integration
+2025-09-12T14:36:11:    - Session management
+2025-09-12T14:36:11:    - Technician notifications
+2025-09-12T14:36:14: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:36:14: 📱 Bot will handle all features properly
+2025-09-12T14:36:14: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:36:14: ✅ Complete bot started successfully!
+2025-09-12T14:36:14: 📱 Send /start to your bot to test
+2025-09-12T14:36:14: 🔧 Bot features:
+2025-09-12T14:36:14:    - Complete user registration
+2025-09-12T14:36:14:    - Full order creation flow
+2025-09-12T14:36:14:    - Progress tracking
+2025-09-12T14:36:14:    - Evidence upload (basic)
+2025-09-12T14:36:14:    - Report generation
+2025-09-12T14:36:14:    - Database integration
+2025-09-12T14:36:14:    - Session management
+2025-09-12T14:36:14:    - Technician notifications
+2025-09-12T14:36:17: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:36:17: 📱 Bot will handle all features properly
+2025-09-12T14:36:17: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:36:17: ✅ Complete bot started successfully!
+2025-09-12T14:36:17: 📱 Send /start to your bot to test
+2025-09-12T14:36:17: 🔧 Bot features:
+2025-09-12T14:36:17:    - Complete user registration
+2025-09-12T14:36:17:    - Full order creation flow
+2025-09-12T14:36:17:    - Progress tracking
+2025-09-12T14:36:17:    - Evidence upload (basic)
+2025-09-12T14:36:17:    - Report generation
+2025-09-12T14:36:17:    - Database integration
+2025-09-12T14:36:17:    - Session management
+2025-09-12T14:36:17:    - Technician notifications
+2025-09-12T14:36:22: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:36:22: 📱 Bot will handle all features properly
+2025-09-12T14:36:22: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:36:22: ✅ Complete bot started successfully!
+2025-09-12T14:36:22: 📱 Send /start to your bot to test
+2025-09-12T14:36:22: 🔧 Bot features:
+2025-09-12T14:36:22:    - Complete user registration
+2025-09-12T14:36:22:    - Full order creation flow
+2025-09-12T14:36:22:    - Progress tracking
+2025-09-12T14:36:22:    - Evidence upload (basic)
+2025-09-12T14:36:22:    - Report generation
+2025-09-12T14:36:22:    - Database integration
+2025-09-12T14:36:22:    - Session management
+2025-09-12T14:36:22:    - Technician notifications
+2025-09-12T14:36:29: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:36:29: 📱 Bot will handle all features properly
+2025-09-12T14:36:29: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:36:29: ✅ Complete bot started successfully!
+2025-09-12T14:36:29: 📱 Send /start to your bot to test
+2025-09-12T14:36:29: 🔧 Bot features:
+2025-09-12T14:36:29:    - Complete user registration
+2025-09-12T14:36:29:    - Full order creation flow
+2025-09-12T14:36:29:    - Progress tracking
+2025-09-12T14:36:29:    - Evidence upload (basic)
+2025-09-12T14:36:29:    - Report generation
+2025-09-12T14:36:29:    - Database integration
+2025-09-12T14:36:29:    - Session management
+2025-09-12T14:36:29:    - Technician notifications
+2025-09-12T14:36:31: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:36:31: 📱 Bot will handle all features properly
+2025-09-12T14:36:31: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:36:31: ✅ Complete bot started successfully!
+2025-09-12T14:36:31: 📱 Send /start to your bot to test
+2025-09-12T14:36:31: 🔧 Bot features:
+2025-09-12T14:36:31:    - Complete user registration
+2025-09-12T14:36:31:    - Full order creation flow
+2025-09-12T14:36:31:    - Progress tracking
+2025-09-12T14:36:31:    - Evidence upload (basic)
+2025-09-12T14:36:31:    - Report generation
+2025-09-12T14:36:31:    - Database integration
+2025-09-12T14:36:31:    - Session management
+2025-09-12T14:36:31:    - Technician notifications
+2025-09-12T14:36:37: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:36:37: 📱 Bot will handle all features properly
+2025-09-12T14:36:37: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:36:37: ✅ Complete bot started successfully!
+2025-09-12T14:36:37: 📱 Send /start to your bot to test
+2025-09-12T14:36:37: 🔧 Bot features:
+2025-09-12T14:36:37:    - Complete user registration
+2025-09-12T14:36:37:    - Full order creation flow
+2025-09-12T14:36:37:    - Progress tracking
+2025-09-12T14:36:37:    - Evidence upload (basic)
+2025-09-12T14:36:37:    - Report generation
+2025-09-12T14:36:37:    - Database integration
+2025-09-12T14:36:37:    - Session management
+2025-09-12T14:36:37:    - Technician notifications
+2025-09-12T14:36:39: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:36:39: 📱 Bot will handle all features properly
+2025-09-12T14:36:39: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:36:39: ✅ Complete bot started successfully!
+2025-09-12T14:36:39: 📱 Send /start to your bot to test
+2025-09-12T14:36:39: 🔧 Bot features:
+2025-09-12T14:36:39:    - Complete user registration
+2025-09-12T14:36:39:    - Full order creation flow
+2025-09-12T14:36:39:    - Progress tracking
+2025-09-12T14:36:39:    - Evidence upload (basic)
+2025-09-12T14:36:39:    - Report generation
+2025-09-12T14:36:39:    - Database integration
+2025-09-12T14:36:39:    - Session management
+2025-09-12T14:36:39:    - Technician notifications
+2025-09-12T14:36:54: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:36:54: 📱 Bot will handle all features properly
+2025-09-12T14:36:54: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:36:54: ✅ Complete bot started successfully!
+2025-09-12T14:36:54: 📱 Send /start to your bot to test
+2025-09-12T14:36:54: 🔧 Bot features:
+2025-09-12T14:36:54:    - Complete user registration
+2025-09-12T14:36:54:    - Full order creation flow
+2025-09-12T14:36:54:    - Progress tracking
+2025-09-12T14:36:54:    - Evidence upload (basic)
+2025-09-12T14:36:54:    - Report generation
+2025-09-12T14:36:54:    - Database integration
+2025-09-12T14:36:54:    - Session management
+2025-09-12T14:36:54:    - Technician notifications
+2025-09-12T14:37:01: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:37:01: 📱 Bot will handle all features properly
+2025-09-12T14:37:01: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:37:01: ✅ Complete bot started successfully!
+2025-09-12T14:37:01: 📱 Send /start to your bot to test
+2025-09-12T14:37:01: 🔧 Bot features:
+2025-09-12T14:37:01:    - Complete user registration
+2025-09-12T14:37:01:    - Full order creation flow
+2025-09-12T14:37:01:    - Progress tracking
+2025-09-12T14:37:01:    - Evidence upload (basic)
+2025-09-12T14:37:01:    - Report generation
+2025-09-12T14:37:01:    - Database integration
+2025-09-12T14:37:01:    - Session management
+2025-09-12T14:37:01:    - Technician notifications
+2025-09-12T14:37:04: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:37:04: 📱 Bot will handle all features properly
+2025-09-12T14:37:04: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:37:04: ✅ Complete bot started successfully!
+2025-09-12T14:37:04: 📱 Send /start to your bot to test
+2025-09-12T14:37:04: 🔧 Bot features:
+2025-09-12T14:37:04:    - Complete user registration
+2025-09-12T14:37:04:    - Full order creation flow
+2025-09-12T14:37:04:    - Progress tracking
+2025-09-12T14:37:04:    - Evidence upload (basic)
+2025-09-12T14:37:04:    - Report generation
+2025-09-12T14:37:04:    - Database integration
+2025-09-12T14:37:04:    - Session management
+2025-09-12T14:37:04:    - Technician notifications
+2025-09-12T14:37:12: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:37:12: 📱 Bot will handle all features properly
+2025-09-12T14:37:12: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:37:12: ✅ Complete bot started successfully!
+2025-09-12T14:37:12: 📱 Send /start to your bot to test
+2025-09-12T14:37:12: 🔧 Bot features:
+2025-09-12T14:37:12:    - Complete user registration
+2025-09-12T14:37:12:    - Full order creation flow
+2025-09-12T14:37:12:    - Progress tracking
+2025-09-12T14:37:12:    - Evidence upload (basic)
+2025-09-12T14:37:12:    - Report generation
+2025-09-12T14:37:12:    - Database integration
+2025-09-12T14:37:12:    - Session management
+2025-09-12T14:37:12:    - Technician notifications
+2025-09-12T14:37:21: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:37:21: 📱 Bot will handle all features properly
+2025-09-12T14:37:21: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:37:21: ✅ Complete bot started successfully!
+2025-09-12T14:37:21: 📱 Send /start to your bot to test
+2025-09-12T14:37:21: 🔧 Bot features:
+2025-09-12T14:37:21:    - Complete user registration
+2025-09-12T14:37:21:    - Full order creation flow
+2025-09-12T14:37:21:    - Progress tracking
+2025-09-12T14:37:21:    - Evidence upload (basic)
+2025-09-12T14:37:21:    - Report generation
+2025-09-12T14:37:21:    - Database integration
+2025-09-12T14:37:21:    - Session management
+2025-09-12T14:37:21:    - Technician notifications
+2025-09-12T14:37:25: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:37:25: 📱 Bot will handle all features properly
+2025-09-12T14:37:25: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:37:25: ✅ Complete bot started successfully!
+2025-09-12T14:37:25: 📱 Send /start to your bot to test
+2025-09-12T14:37:25: 🔧 Bot features:
+2025-09-12T14:37:25:    - Complete user registration
+2025-09-12T14:37:25:    - Full order creation flow
+2025-09-12T14:37:25:    - Progress tracking
+2025-09-12T14:37:25:    - Evidence upload (basic)
+2025-09-12T14:37:25:    - Report generation
+2025-09-12T14:37:25:    - Database integration
+2025-09-12T14:37:25:    - Session management
+2025-09-12T14:37:25:    - Technician notifications
+2025-09-12T14:37:31: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:37:31: 📱 Bot will handle all features properly
+2025-09-12T14:37:31: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:37:31: ✅ Complete bot started successfully!
+2025-09-12T14:37:31: 📱 Send /start to your bot to test
+2025-09-12T14:37:31: 🔧 Bot features:
+2025-09-12T14:37:31:    - Complete user registration
+2025-09-12T14:37:31:    - Full order creation flow
+2025-09-12T14:37:31:    - Progress tracking
+2025-09-12T14:37:31:    - Evidence upload (basic)
+2025-09-12T14:37:31:    - Report generation
+2025-09-12T14:37:31:    - Database integration
+2025-09-12T14:37:31:    - Session management
+2025-09-12T14:37:31:    - Technician notifications
+2025-09-12T14:37:35: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:37:35: 📱 Bot will handle all features properly
+2025-09-12T14:37:35: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:37:35: ✅ Complete bot started successfully!
+2025-09-12T14:37:35: 📱 Send /start to your bot to test
+2025-09-12T14:37:35: 🔧 Bot features:
+2025-09-12T14:37:35:    - Complete user registration
+2025-09-12T14:37:35:    - Full order creation flow
+2025-09-12T14:37:35:    - Progress tracking
+2025-09-12T14:37:35:    - Evidence upload (basic)
+2025-09-12T14:37:35:    - Report generation
+2025-09-12T14:37:35:    - Database integration
+2025-09-12T14:37:35:    - Session management
+2025-09-12T14:37:35:    - Technician notifications
+2025-09-12T14:37:40: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:37:40: 📱 Bot will handle all features properly
+2025-09-12T14:37:40: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:37:40: ✅ Complete bot started successfully!
+2025-09-12T14:37:40: 📱 Send /start to your bot to test
+2025-09-12T14:37:40: 🔧 Bot features:
+2025-09-12T14:37:40:    - Complete user registration
+2025-09-12T14:37:40:    - Full order creation flow
+2025-09-12T14:37:40:    - Progress tracking
+2025-09-12T14:37:40:    - Evidence upload (basic)
+2025-09-12T14:37:40:    - Report generation
+2025-09-12T14:37:40:    - Database integration
+2025-09-12T14:37:40:    - Session management
+2025-09-12T14:37:40:    - Technician notifications
+2025-09-12T14:37:47: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:37:47: 📱 Bot will handle all features properly
+2025-09-12T14:37:47: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:37:47: ✅ Complete bot started successfully!
+2025-09-12T14:37:47: 📱 Send /start to your bot to test
+2025-09-12T14:37:47: 🔧 Bot features:
+2025-09-12T14:37:47:    - Complete user registration
+2025-09-12T14:37:47:    - Full order creation flow
+2025-09-12T14:37:47:    - Progress tracking
+2025-09-12T14:37:47:    - Evidence upload (basic)
+2025-09-12T14:37:47:    - Report generation
+2025-09-12T14:37:47:    - Database integration
+2025-09-12T14:37:47:    - Session management
+2025-09-12T14:37:47:    - Technician notifications
+2025-09-12T14:37:49: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:37:49: 📱 Bot will handle all features properly
+2025-09-12T14:37:49: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:37:49: ✅ Complete bot started successfully!
+2025-09-12T14:37:49: 📱 Send /start to your bot to test
+2025-09-12T14:37:49: 🔧 Bot features:
+2025-09-12T14:37:49:    - Complete user registration
+2025-09-12T14:37:49:    - Full order creation flow
+2025-09-12T14:37:49:    - Progress tracking
+2025-09-12T14:37:49:    - Evidence upload (basic)
+2025-09-12T14:37:49:    - Report generation
+2025-09-12T14:37:49:    - Database integration
+2025-09-12T14:37:49:    - Session management
+2025-09-12T14:37:49:    - Technician notifications
+2025-09-12T14:37:55: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:37:55: 📱 Bot will handle all features properly
+2025-09-12T14:37:55: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:37:55: ✅ Complete bot started successfully!
+2025-09-12T14:37:55: 📱 Send /start to your bot to test
+2025-09-12T14:37:55: 🔧 Bot features:
+2025-09-12T14:37:55:    - Complete user registration
+2025-09-12T14:37:55:    - Full order creation flow
+2025-09-12T14:37:55:    - Progress tracking
+2025-09-12T14:37:55:    - Evidence upload (basic)
+2025-09-12T14:37:55:    - Report generation
+2025-09-12T14:37:55:    - Database integration
+2025-09-12T14:37:55:    - Session management
+2025-09-12T14:37:55:    - Technician notifications
+2025-09-12T14:37:59: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:37:59: 📱 Bot will handle all features properly
+2025-09-12T14:37:59: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:37:59: ✅ Complete bot started successfully!
+2025-09-12T14:37:59: 📱 Send /start to your bot to test
+2025-09-12T14:37:59: 🔧 Bot features:
+2025-09-12T14:37:59:    - Complete user registration
+2025-09-12T14:37:59:    - Full order creation flow
+2025-09-12T14:37:59:    - Progress tracking
+2025-09-12T14:37:59:    - Evidence upload (basic)
+2025-09-12T14:37:59:    - Report generation
+2025-09-12T14:37:59:    - Database integration
+2025-09-12T14:37:59:    - Session management
+2025-09-12T14:37:59:    - Technician notifications
+2025-09-12T14:38:04: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:38:04: 📱 Bot will handle all features properly
+2025-09-12T14:38:04: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:38:04: ✅ Complete bot started successfully!
+2025-09-12T14:38:04: 📱 Send /start to your bot to test
+2025-09-12T14:38:04: 🔧 Bot features:
+2025-09-12T14:38:04:    - Complete user registration
+2025-09-12T14:38:04:    - Full order creation flow
+2025-09-12T14:38:04:    - Progress tracking
+2025-09-12T14:38:04:    - Evidence upload (basic)
+2025-09-12T14:38:04:    - Report generation
+2025-09-12T14:38:04:    - Database integration
+2025-09-12T14:38:04:    - Session management
+2025-09-12T14:38:04:    - Technician notifications
+2025-09-12T14:38:09: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:38:09: 📱 Bot will handle all features properly
+2025-09-12T14:38:09: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:38:09: ✅ Complete bot started successfully!
+2025-09-12T14:38:09: 📱 Send /start to your bot to test
+2025-09-12T14:38:09: 🔧 Bot features:
+2025-09-12T14:38:09:    - Complete user registration
+2025-09-12T14:38:09:    - Full order creation flow
+2025-09-12T14:38:09:    - Progress tracking
+2025-09-12T14:38:09:    - Evidence upload (basic)
+2025-09-12T14:38:09:    - Report generation
+2025-09-12T14:38:09:    - Database integration
+2025-09-12T14:38:09:    - Session management
+2025-09-12T14:38:09:    - Technician notifications
+2025-09-12T14:38:12: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:38:12: 📱 Bot will handle all features properly
+2025-09-12T14:38:12: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:38:12: ✅ Complete bot started successfully!
+2025-09-12T14:38:12: 📱 Send /start to your bot to test
+2025-09-12T14:38:12: 🔧 Bot features:
+2025-09-12T14:38:12:    - Complete user registration
+2025-09-12T14:38:12:    - Full order creation flow
+2025-09-12T14:38:12:    - Progress tracking
+2025-09-12T14:38:12:    - Evidence upload (basic)
+2025-09-12T14:38:12:    - Report generation
+2025-09-12T14:38:12:    - Database integration
+2025-09-12T14:38:12:    - Session management
+2025-09-12T14:38:12:    - Technician notifications
+2025-09-12T14:38:17: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:38:17: 📱 Bot will handle all features properly
+2025-09-12T14:38:17: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:38:17: ✅ Complete bot started successfully!
+2025-09-12T14:38:17: 📱 Send /start to your bot to test
+2025-09-12T14:38:17: 🔧 Bot features:
+2025-09-12T14:38:17:    - Complete user registration
+2025-09-12T14:38:17:    - Full order creation flow
+2025-09-12T14:38:17:    - Progress tracking
+2025-09-12T14:38:17:    - Evidence upload (basic)
+2025-09-12T14:38:17:    - Report generation
+2025-09-12T14:38:17:    - Database integration
+2025-09-12T14:38:17:    - Session management
+2025-09-12T14:38:17:    - Technician notifications
+2025-09-12T14:38:21: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:38:21: 📱 Bot will handle all features properly
+2025-09-12T14:38:21: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:38:21: ✅ Complete bot started successfully!
+2025-09-12T14:38:21: 📱 Send /start to your bot to test
+2025-09-12T14:38:21: 🔧 Bot features:
+2025-09-12T14:38:21:    - Complete user registration
+2025-09-12T14:38:21:    - Full order creation flow
+2025-09-12T14:38:21:    - Progress tracking
+2025-09-12T14:38:21:    - Evidence upload (basic)
+2025-09-12T14:38:21:    - Report generation
+2025-09-12T14:38:21:    - Database integration
+2025-09-12T14:38:21:    - Session management
+2025-09-12T14:38:21:    - Technician notifications
+2025-09-12T14:38:29: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:38:29: 📱 Bot will handle all features properly
+2025-09-12T14:38:29: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:38:29: ✅ Complete bot started successfully!
+2025-09-12T14:38:29: 📱 Send /start to your bot to test
+2025-09-12T14:38:29: 🔧 Bot features:
+2025-09-12T14:38:29:    - Complete user registration
+2025-09-12T14:38:29:    - Full order creation flow
+2025-09-12T14:38:29:    - Progress tracking
+2025-09-12T14:38:29:    - Evidence upload (basic)
+2025-09-12T14:38:29:    - Report generation
+2025-09-12T14:38:29:    - Database integration
+2025-09-12T14:38:29:    - Session management
+2025-09-12T14:38:29:    - Technician notifications
+2025-09-12T14:38:33: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:38:33: 📱 Bot will handle all features properly
+2025-09-12T14:38:33: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:38:33: ✅ Complete bot started successfully!
+2025-09-12T14:38:33: 📱 Send /start to your bot to test
+2025-09-12T14:38:33: 🔧 Bot features:
+2025-09-12T14:38:33:    - Complete user registration
+2025-09-12T14:38:33:    - Full order creation flow
+2025-09-12T14:38:33:    - Progress tracking
+2025-09-12T14:38:33:    - Evidence upload (basic)
+2025-09-12T14:38:33:    - Report generation
+2025-09-12T14:38:33:    - Database integration
+2025-09-12T14:38:33:    - Session management
+2025-09-12T14:38:33:    - Technician notifications
+2025-09-12T14:38:35: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:38:35: 📱 Bot will handle all features properly
+2025-09-12T14:38:35: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:38:35: ✅ Complete bot started successfully!
+2025-09-12T14:38:35: 📱 Send /start to your bot to test
+2025-09-12T14:38:35: 🔧 Bot features:
+2025-09-12T14:38:35:    - Complete user registration
+2025-09-12T14:38:35:    - Full order creation flow
+2025-09-12T14:38:35:    - Progress tracking
+2025-09-12T14:38:35:    - Evidence upload (basic)
+2025-09-12T14:38:35:    - Report generation
+2025-09-12T14:38:35:    - Database integration
+2025-09-12T14:38:35:    - Session management
+2025-09-12T14:38:35:    - Technician notifications
+2025-09-12T14:39:02: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:39:02: 📱 Bot will handle all features properly
+2025-09-12T14:39:02: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:39:02: ✅ Complete bot started successfully!
+2025-09-12T14:39:02: 📱 Send /start to your bot to test
+2025-09-12T14:39:02: 🔧 Bot features:
+2025-09-12T14:39:02:    - Complete user registration
+2025-09-12T14:39:02:    - Full order creation flow
+2025-09-12T14:39:02:    - Progress tracking
+2025-09-12T14:39:02:    - Evidence upload (basic)
+2025-09-12T14:39:02:    - Report generation
+2025-09-12T14:39:02:    - Database integration
+2025-09-12T14:39:02:    - Session management
+2025-09-12T14:39:02:    - Technician notifications
+2025-09-12T14:39:14: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:39:14: 📱 Bot will handle all features properly
+2025-09-12T14:39:14: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:39:14: ✅ Complete bot started successfully!
+2025-09-12T14:39:14: 📱 Send /start to your bot to test
+2025-09-12T14:39:14: 🔧 Bot features:
+2025-09-12T14:39:14:    - Complete user registration
+2025-09-12T14:39:14:    - Full order creation flow
+2025-09-12T14:39:14:    - Progress tracking
+2025-09-12T14:39:14:    - Evidence upload (basic)
+2025-09-12T14:39:14:    - Report generation
+2025-09-12T14:39:14:    - Database integration
+2025-09-12T14:39:14:    - Session management
+2025-09-12T14:39:14:    - Technician notifications
+2025-09-12T14:39:18: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:39:18: 📱 Bot will handle all features properly
+2025-09-12T14:39:18: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:39:18: ✅ Complete bot started successfully!
+2025-09-12T14:39:18: 📱 Send /start to your bot to test
+2025-09-12T14:39:18: 🔧 Bot features:
+2025-09-12T14:39:18:    - Complete user registration
+2025-09-12T14:39:18:    - Full order creation flow
+2025-09-12T14:39:18:    - Progress tracking
+2025-09-12T14:39:18:    - Evidence upload (basic)
+2025-09-12T14:39:18:    - Report generation
+2025-09-12T14:39:18:    - Database integration
+2025-09-12T14:39:18:    - Session management
+2025-09-12T14:39:18:    - Technician notifications
+2025-09-12T14:39:24: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:39:24: 📱 Bot will handle all features properly
+2025-09-12T14:39:24: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:39:24: ✅ Complete bot started successfully!
+2025-09-12T14:39:24: 📱 Send /start to your bot to test
+2025-09-12T14:39:24: 🔧 Bot features:
+2025-09-12T14:39:24:    - Complete user registration
+2025-09-12T14:39:24:    - Full order creation flow
+2025-09-12T14:39:24:    - Progress tracking
+2025-09-12T14:39:24:    - Evidence upload (basic)
+2025-09-12T14:39:24:    - Report generation
+2025-09-12T14:39:24:    - Database integration
+2025-09-12T14:39:24:    - Session management
+2025-09-12T14:39:24:    - Technician notifications
+2025-09-12T14:39:27: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:39:27: 📱 Bot will handle all features properly
+2025-09-12T14:39:27: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:39:27: ✅ Complete bot started successfully!
+2025-09-12T14:39:27: 📱 Send /start to your bot to test
+2025-09-12T14:39:27: 🔧 Bot features:
+2025-09-12T14:39:27:    - Complete user registration
+2025-09-12T14:39:27:    - Full order creation flow
+2025-09-12T14:39:27:    - Progress tracking
+2025-09-12T14:39:27:    - Evidence upload (basic)
+2025-09-12T14:39:27:    - Report generation
+2025-09-12T14:39:27:    - Database integration
+2025-09-12T14:39:27:    - Session management
+2025-09-12T14:39:27:    - Technician notifications
+2025-09-12T14:39:40: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:39:43: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:39:43: 📱 Bot will handle all features properly
+2025-09-12T14:39:43: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:39:43: ✅ Complete bot started successfully!
+2025-09-12T14:39:43: 📱 Send /start to your bot to test
+2025-09-12T14:39:43: 🔧 Bot features:
+2025-09-12T14:39:43:    - Complete user registration
+2025-09-12T14:39:43:    - Full order creation flow
+2025-09-12T14:39:43:    - Progress tracking
+2025-09-12T14:39:43:    - Evidence upload (basic)
+2025-09-12T14:39:43:    - Report generation
+2025-09-12T14:39:43:    - Database integration
+2025-09-12T14:39:43:    - Session management
+2025-09-12T14:39:43:    - Technician notifications
+2025-09-12T14:39:52: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:39:52: 📱 Bot will handle all features properly
+2025-09-12T14:39:52: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:39:52: ✅ Complete bot started successfully!
+2025-09-12T14:39:52: 📱 Send /start to your bot to test
+2025-09-12T14:39:52: 🔧 Bot features:
+2025-09-12T14:39:52:    - Complete user registration
+2025-09-12T14:39:52:    - Full order creation flow
+2025-09-12T14:39:52:    - Progress tracking
+2025-09-12T14:39:52:    - Evidence upload (basic)
+2025-09-12T14:39:52:    - Report generation
+2025-09-12T14:39:52:    - Database integration
+2025-09-12T14:39:52:    - Session management
+2025-09-12T14:39:52:    - Technician notifications
+2025-09-12T14:39:56: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:39:56: 📱 Bot will handle all features properly
+2025-09-12T14:39:56: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:39:56: ✅ Complete bot started successfully!
+2025-09-12T14:39:56: 📱 Send /start to your bot to test
+2025-09-12T14:39:56: 🔧 Bot features:
+2025-09-12T14:39:56:    - Complete user registration
+2025-09-12T14:39:56:    - Full order creation flow
+2025-09-12T14:39:56:    - Progress tracking
+2025-09-12T14:39:56:    - Evidence upload (basic)
+2025-09-12T14:39:56:    - Report generation
+2025-09-12T14:39:56:    - Database integration
+2025-09-12T14:39:56:    - Session management
+2025-09-12T14:39:56:    - Technician notifications
+2025-09-12T14:40:00: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:40:00: 📱 Bot will handle all features properly
+2025-09-12T14:40:00: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:40:00: ✅ Complete bot started successfully!
+2025-09-12T14:40:00: 📱 Send /start to your bot to test
+2025-09-12T14:40:00: 🔧 Bot features:
+2025-09-12T14:40:00:    - Complete user registration
+2025-09-12T14:40:00:    - Full order creation flow
+2025-09-12T14:40:00:    - Progress tracking
+2025-09-12T14:40:00:    - Evidence upload (basic)
+2025-09-12T14:40:00:    - Report generation
+2025-09-12T14:40:00:    - Database integration
+2025-09-12T14:40:00:    - Session management
+2025-09-12T14:40:00:    - Technician notifications
+2025-09-12T14:40:06: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:40:06: 📱 Bot will handle all features properly
+2025-09-12T14:40:06: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:40:06: ✅ Complete bot started successfully!
+2025-09-12T14:40:06: 📱 Send /start to your bot to test
+2025-09-12T14:40:06: 🔧 Bot features:
+2025-09-12T14:40:06:    - Complete user registration
+2025-09-12T14:40:06:    - Full order creation flow
+2025-09-12T14:40:06:    - Progress tracking
+2025-09-12T14:40:06:    - Evidence upload (basic)
+2025-09-12T14:40:06:    - Report generation
+2025-09-12T14:40:06:    - Database integration
+2025-09-12T14:40:06:    - Session management
+2025-09-12T14:40:06:    - Technician notifications
+2025-09-12T14:40:09: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:40:09: 📱 Bot will handle all features properly
+2025-09-12T14:40:09: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:40:09: ✅ Complete bot started successfully!
+2025-09-12T14:40:09: 📱 Send /start to your bot to test
+2025-09-12T14:40:09: 🔧 Bot features:
+2025-09-12T14:40:09:    - Complete user registration
+2025-09-12T14:40:09:    - Full order creation flow
+2025-09-12T14:40:09:    - Progress tracking
+2025-09-12T14:40:09:    - Evidence upload (basic)
+2025-09-12T14:40:09:    - Report generation
+2025-09-12T14:40:09:    - Database integration
+2025-09-12T14:40:09:    - Session management
+2025-09-12T14:40:09:    - Technician notifications
+2025-09-12T14:40:11: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:40:11: 📱 Bot will handle all features properly
+2025-09-12T14:40:11: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:40:11: ✅ Complete bot started successfully!
+2025-09-12T14:40:11: 📱 Send /start to your bot to test
+2025-09-12T14:40:11: 🔧 Bot features:
+2025-09-12T14:40:11:    - Complete user registration
+2025-09-12T14:40:11:    - Full order creation flow
+2025-09-12T14:40:11:    - Progress tracking
+2025-09-12T14:40:11:    - Evidence upload (basic)
+2025-09-12T14:40:11:    - Report generation
+2025-09-12T14:40:11:    - Database integration
+2025-09-12T14:40:11:    - Session management
+2025-09-12T14:40:11:    - Technician notifications
+2025-09-12T14:40:13: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:40:13: 📱 Bot will handle all features properly
+2025-09-12T14:40:13: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:40:13: ✅ Complete bot started successfully!
+2025-09-12T14:40:13: 📱 Send /start to your bot to test
+2025-09-12T14:40:13: 🔧 Bot features:
+2025-09-12T14:40:13:    - Complete user registration
+2025-09-12T14:40:13:    - Full order creation flow
+2025-09-12T14:40:13:    - Progress tracking
+2025-09-12T14:40:13:    - Evidence upload (basic)
+2025-09-12T14:40:13:    - Report generation
+2025-09-12T14:40:13:    - Database integration
+2025-09-12T14:40:13:    - Session management
+2025-09-12T14:40:13:    - Technician notifications
+2025-09-12T14:40:16: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:40:16: 📱 Bot will handle all features properly
+2025-09-12T14:40:16: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:40:16: ✅ Complete bot started successfully!
+2025-09-12T14:40:16: 📱 Send /start to your bot to test
+2025-09-12T14:40:16: 🔧 Bot features:
+2025-09-12T14:40:16:    - Complete user registration
+2025-09-12T14:40:16:    - Full order creation flow
+2025-09-12T14:40:16:    - Progress tracking
+2025-09-12T14:40:16:    - Evidence upload (basic)
+2025-09-12T14:40:16:    - Report generation
+2025-09-12T14:40:16:    - Database integration
+2025-09-12T14:40:16:    - Session management
+2025-09-12T14:40:16:    - Technician notifications
+2025-09-12T14:40:27: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:40:27: 📱 Bot will handle all features properly
+2025-09-12T14:40:27: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:40:27: ✅ Complete bot started successfully!
+2025-09-12T14:40:27: 📱 Send /start to your bot to test
+2025-09-12T14:40:27: 🔧 Bot features:
+2025-09-12T14:40:27:    - Complete user registration
+2025-09-12T14:40:27:    - Full order creation flow
+2025-09-12T14:40:27:    - Progress tracking
+2025-09-12T14:40:27:    - Evidence upload (basic)
+2025-09-12T14:40:27:    - Report generation
+2025-09-12T14:40:27:    - Database integration
+2025-09-12T14:40:27:    - Session management
+2025-09-12T14:40:27:    - Technician notifications
+2025-09-12T14:41:26: 📨 Received /start from Afiah (6924062588)
+2025-09-12T14:41:30: 📨 Received callback: my_orders from Afiah
+2025-09-12T14:41:54: 📨 Received /start from M (5173181010)
+2025-09-12T14:41:56: 📨 Received callback: create_order from M
+2025-09-12T14:42:12: 📨 Received callback: create_order from M
+2025-09-12T14:42:35: 📨 Received callback: assign_tech_3875fae9-b447-441f-a789-ef0db04d7cb8 from M
+2025-09-12T14:43:00: 📨 Received callback: update_progress from Afiah
+2025-09-12T14:43:25: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:43:25: 📱 Bot will handle all features properly
+2025-09-12T14:43:25: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:43:25: ✅ Complete bot started successfully!
+2025-09-12T14:43:25: 📱 Send /start to your bot to test
+2025-09-12T14:43:25: 🔧 Bot features:
+2025-09-12T14:43:25:    - Complete user registration
+2025-09-12T14:43:25:    - Full order creation flow
+2025-09-12T14:43:25:    - Progress tracking
+2025-09-12T14:43:25:    - Evidence upload (basic)
+2025-09-12T14:43:25:    - Report generation
+2025-09-12T14:43:25:    - Database integration
+2025-09-12T14:43:25:    - Session management
+2025-09-12T14:43:25:    - Technician notifications
+2025-09-12T14:44:02: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:44:02: 📱 Bot will handle all features properly
+2025-09-12T14:44:02: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:44:02: ✅ Complete bot started successfully!
+2025-09-12T14:44:02: 📱 Send /start to your bot to test
+2025-09-12T14:44:02: 🔧 Bot features:
+2025-09-12T14:44:02:    - Complete user registration
+2025-09-12T14:44:02:    - Full order creation flow
+2025-09-12T14:44:02:    - Progress tracking
+2025-09-12T14:44:02:    - Evidence upload (basic)
+2025-09-12T14:44:02:    - Report generation
+2025-09-12T14:44:02:    - Database integration
+2025-09-12T14:44:02:    - Session management
+2025-09-12T14:44:02:    - Technician notifications
+2025-09-12T14:44:10: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:44:10: 📱 Bot will handle all features properly
+2025-09-12T14:44:10: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:44:10: ✅ Complete bot started successfully!
+2025-09-12T14:44:10: 📱 Send /start to your bot to test
+2025-09-12T14:44:10: 🔧 Bot features:
+2025-09-12T14:44:10:    - Complete user registration
+2025-09-12T14:44:10:    - Full order creation flow
+2025-09-12T14:44:10:    - Progress tracking
+2025-09-12T14:44:10:    - Evidence upload (basic)
+2025-09-12T14:44:10:    - Report generation
+2025-09-12T14:44:10:    - Database integration
+2025-09-12T14:44:10:    - Session management
+2025-09-12T14:44:10:    - Technician notifications
+2025-09-12T14:44:14: 📨 Received callback: my_orders from Afiah
+2025-09-12T14:47:34: 📨 Received /start from M (5173181010)
+2025-09-12T14:47:40: 📨 Received callback: view_orders from M
+2025-09-12T14:48:20: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:48:20: 📱 Bot will handle all features properly
+2025-09-12T14:48:20: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:48:20: ✅ Complete bot started successfully!
+2025-09-12T14:48:20: 📱 Send /start to your bot to test
+2025-09-12T14:48:20: 🔧 Bot features:
+2025-09-12T14:48:20:    - Complete user registration
+2025-09-12T14:48:20:    - Full order creation flow
+2025-09-12T14:48:20:    - Progress tracking
+2025-09-12T14:48:20:    - Evidence upload (basic)
+2025-09-12T14:48:20:    - Report generation
+2025-09-12T14:48:20:    - Database integration
+2025-09-12T14:48:20:    - Session management
+2025-09-12T14:48:20:    - Technician notifications
+2025-09-12T14:48:27: 📨 Received callback: generate_report from M
+2025-09-12T14:48:33: 📨 Received callback: report_daily from M
+2025-09-12T14:48:41: 📨 Received callback: report_weekly from M
+2025-09-12T14:48:52: 📨 Received callback: update_status from M
+2025-09-12T14:48:58: 📨 Received callback: help from M
+2025-09-12T14:53:16: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:53:16: 📱 Bot will handle all features properly
+2025-09-12T14:53:16: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:53:16: ✅ Complete bot started successfully!
+2025-09-12T14:53:16: 📱 Send /start to your bot to test
+2025-09-12T14:53:16: 🔧 Bot features:
+2025-09-12T14:53:16:    - Complete user registration
+2025-09-12T14:53:16:    - Full order creation flow
+2025-09-12T14:53:16:    - Progress tracking
+2025-09-12T14:53:16:    - Evidence upload (basic)
+2025-09-12T14:53:16:    - Report generation
+2025-09-12T14:53:16:    - Database integration
+2025-09-12T14:53:16:    - Session management
+2025-09-12T14:53:16:    - Technician notifications
+2025-09-12T14:58:11: 🤖 Starting Complete Order Management Bot...
+2025-09-12T14:58:11: 📱 Bot will handle all features properly
+2025-09-12T14:58:11: ⚠️  Press Ctrl+C to stop
+2025-09-12T14:58:11: ✅ Complete bot started successfully!
+2025-09-12T14:58:11: 📱 Send /start to your bot to test
+2025-09-12T14:58:11: 🔧 Bot features:
+2025-09-12T14:58:11:    - Complete user registration
+2025-09-12T14:58:11:    - Full order creation flow
+2025-09-12T14:58:11:    - Progress tracking
+2025-09-12T14:58:11:    - Evidence upload (basic)
+2025-09-12T14:58:11:    - Report generation
+2025-09-12T14:58:11:    - Database integration
+2025-09-12T14:58:11:    - Session management
+2025-09-12T14:58:11:    - Technician notifications
+2025-09-12T15:03:06: 🤖 Starting Complete Order Management Bot...
+2025-09-12T15:03:06: 📱 Bot will handle all features properly
+2025-09-12T15:03:06: ⚠️  Press Ctrl+C to stop
+2025-09-12T15:03:06: ✅ Complete bot started successfully!
+2025-09-12T15:03:06: 📱 Send /start to your bot to test
+2025-09-12T15:03:06: 🔧 Bot features:
+2025-09-12T15:03:06:    - Complete user registration
+2025-09-12T15:03:06:    - Full order creation flow
+2025-09-12T15:03:06:    - Progress tracking
+2025-09-12T15:03:06:    - Evidence upload (basic)
+2025-09-12T15:03:06:    - Report generation
+2025-09-12T15:03:06:    - Database integration
+2025-09-12T15:03:06:    - Session management
+2025-09-12T15:03:06:    - Technician notifications
+2025-09-12T15:08:06: 🤖 Starting Complete Order Management Bot...
+2025-09-12T15:08:06: 📱 Bot will handle all features properly
+2025-09-12T15:08:06: ⚠️  Press Ctrl+C to stop
+2025-09-12T15:08:06: ✅ Complete bot started successfully!
+2025-09-12T15:08:06: 📱 Send /start to your bot to test
+2025-09-12T15:08:06: 🔧 Bot features:
+2025-09-12T15:08:06:    - Complete user registration
+2025-09-12T15:08:06:    - Full order creation flow
+2025-09-12T15:08:06:    - Progress tracking
+2025-09-12T15:08:06:    - Evidence upload (basic)
+2025-09-12T15:08:06:    - Report generation
+2025-09-12T15:08:06:    - Database integration
+2025-09-12T15:08:06:    - Session management
+2025-09-12T15:08:06:    - Technician notifications
+2025-09-12T15:13:00: 🤖 Starting Complete Order Management Bot...
+2025-09-12T15:13:00: 📱 Bot will handle all features properly
+2025-09-12T15:13:00: ⚠️  Press Ctrl+C to stop
+2025-09-12T15:13:00: ✅ Complete bot started successfully!
+2025-09-12T15:13:00: 📱 Send /start to your bot to test
+2025-09-12T15:13:00: 🔧 Bot features:
+2025-09-12T15:13:00:    - Complete user registration
+2025-09-12T15:13:00:    - Full order creation flow
+2025-09-12T15:13:00:    - Progress tracking
+2025-09-12T15:13:00:    - Evidence upload (basic)
+2025-09-12T15:13:00:    - Report generation
+2025-09-12T15:13:00:    - Database integration
+2025-09-12T15:13:00:    - Session management
+2025-09-12T15:13:00:    - Technician notifications
+2025-09-12T15:17:51: 🤖 Starting Complete Order Management Bot...
+2025-09-12T15:17:51: 📱 Bot will handle all features properly
+2025-09-12T15:17:51: ⚠️  Press Ctrl+C to stop
+2025-09-12T15:17:51: ✅ Complete bot started successfully!
+2025-09-12T15:17:51: 📱 Send /start to your bot to test
+2025-09-12T15:17:51: 🔧 Bot features:
+2025-09-12T15:17:51:    - Complete user registration
+2025-09-12T15:17:51:    - Full order creation flow
+2025-09-12T15:17:51:    - Progress tracking
+2025-09-12T15:17:51:    - Evidence upload (basic)
+2025-09-12T15:17:51:    - Report generation
+2025-09-12T15:17:51:    - Database integration
+2025-09-12T15:17:51:    - Session management
+2025-09-12T15:17:51:    - Technician notifications
+2025-09-12T15:22:46: 🤖 Starting Complete Order Management Bot...
+2025-09-12T15:22:46: 📱 Bot will handle all features properly
+2025-09-12T15:22:46: ⚠️  Press Ctrl+C to stop
+2025-09-12T15:22:46: ✅ Complete bot started successfully!
+2025-09-12T15:22:46: 📱 Send /start to your bot to test
+2025-09-12T15:22:46: 🔧 Bot features:
+2025-09-12T15:22:46:    - Complete user registration
+2025-09-12T15:22:46:    - Full order creation flow
+2025-09-12T15:22:46:    - Progress tracking
+2025-09-12T15:22:46:    - Evidence upload (basic)
+2025-09-12T15:22:46:    - Report generation
+2025-09-12T15:22:46:    - Database integration
+2025-09-12T15:22:46:    - Session management
+2025-09-12T15:22:46:    - Technician notifications
+2025-09-12T15:27:40: 🤖 Starting Complete Order Management Bot...
+2025-09-12T15:27:40: 📱 Bot will handle all features properly
+2025-09-12T15:27:40: ⚠️  Press Ctrl+C to stop
+2025-09-12T15:27:40: ✅ Complete bot started successfully!
+2025-09-12T15:27:40: 📱 Send /start to your bot to test
+2025-09-12T15:27:40: 🔧 Bot features:
+2025-09-12T15:27:40:    - Complete user registration
+2025-09-12T15:27:40:    - Full order creation flow
+2025-09-12T15:27:40:    - Progress tracking
+2025-09-12T15:27:40:    - Evidence upload (basic)
+2025-09-12T15:27:40:    - Report generation
+2025-09-12T15:27:40:    - Database integration
+2025-09-12T15:27:40:    - Session management
+2025-09-12T15:27:40:    - Technician notifications
+2025-09-12T15:32:35: 🤖 Starting Complete Order Management Bot...
+2025-09-12T15:32:35: 📱 Bot will handle all features properly
+2025-09-12T15:32:35: ⚠️  Press Ctrl+C to stop
+2025-09-12T15:32:35: ✅ Complete bot started successfully!
+2025-09-12T15:32:35: 📱 Send /start to your bot to test
+2025-09-12T15:32:35: 🔧 Bot features:
+2025-09-12T15:32:35:    - Complete user registration
+2025-09-12T15:32:35:    - Full order creation flow
+2025-09-12T15:32:35:    - Progress tracking
+2025-09-12T15:32:35:    - Evidence upload (basic)
+2025-09-12T15:32:35:    - Report generation
+2025-09-12T15:32:35:    - Database integration
+2025-09-12T15:32:35:    - Session management
+2025-09-12T15:32:35:    - Technician notifications
+2025-09-12T15:37:30: 🤖 Starting Complete Order Management Bot...
+2025-09-12T15:37:30: 📱 Bot will handle all features properly
+2025-09-12T15:37:30: ⚠️  Press Ctrl+C to stop
+2025-09-12T15:37:30: ✅ Complete bot started successfully!
+2025-09-12T15:37:30: 📱 Send /start to your bot to test
+2025-09-12T15:37:30: 🔧 Bot features:
+2025-09-12T15:37:30:    - Complete user registration
+2025-09-12T15:37:30:    - Full order creation flow
+2025-09-12T15:37:30:    - Progress tracking
+2025-09-12T15:37:30:    - Evidence upload (basic)
+2025-09-12T15:37:30:    - Report generation
+2025-09-12T15:37:30:    - Database integration
+2025-09-12T15:37:30:    - Session management
+2025-09-12T15:37:30:    - Technician notifications
+2025-09-12T15:42:26: 🤖 Starting Complete Order Management Bot...
+2025-09-12T15:42:26: 📱 Bot will handle all features properly
+2025-09-12T15:42:26: ⚠️  Press Ctrl+C to stop
+2025-09-12T15:42:26: ✅ Complete bot started successfully!
+2025-09-12T15:42:26: 📱 Send /start to your bot to test
+2025-09-12T15:42:26: 🔧 Bot features:
+2025-09-12T15:42:26:    - Complete user registration
+2025-09-12T15:42:26:    - Full order creation flow
+2025-09-12T15:42:26:    - Progress tracking
+2025-09-12T15:42:26:    - Evidence upload (basic)
+2025-09-12T15:42:26:    - Report generation
+2025-09-12T15:42:26:    - Database integration
+2025-09-12T15:42:26:    - Session management
+2025-09-12T15:42:26:    - Technician notifications
+2025-09-12T15:42:33: 🤖 Starting Complete Order Management Bot...
+2025-09-12T15:42:33: 📱 Bot will handle all features properly
+2025-09-12T15:42:33: ⚠️  Press Ctrl+C to stop
+2025-09-12T15:42:33: ✅ Complete bot started successfully!
+2025-09-12T15:42:33: 📱 Send /start to your bot to test
+2025-09-12T15:42:33: 🔧 Bot features:
+2025-09-12T15:42:33:    - Complete user registration
+2025-09-12T15:42:33:    - Full order creation flow
+2025-09-12T15:42:33:    - Progress tracking
+2025-09-12T15:42:33:    - Evidence upload (basic)
+2025-09-12T15:42:33:    - Report generation
+2025-09-12T15:42:33:    - Database integration
+2025-09-12T15:42:33:    - Session management
+2025-09-12T15:42:33:    - Technician notifications
+2025-09-12T15:45:44: 📨 Received /start from Afiah (6924062588)
+2025-09-12T15:47:21: 🤖 Starting Complete Order Management Bot...
+2025-09-12T15:47:21: 📱 Bot will handle all features properly
+2025-09-12T15:47:21: ⚠️  Press Ctrl+C to stop
+2025-09-12T15:47:21: ✅ Complete bot started successfully!
+2025-09-12T15:47:21: 📱 Send /start to your bot to test
+2025-09-12T15:47:21: 🔧 Bot features:
+2025-09-12T15:47:21:    - Complete user registration
+2025-09-12T15:47:21:    - Full order creation flow
+2025-09-12T15:47:21:    - Progress tracking
+2025-09-12T15:47:21:    - Evidence upload (basic)
+2025-09-12T15:47:21:    - Report generation
+2025-09-12T15:47:21:    - Database integration
+2025-09-12T15:47:21:    - Session management
+2025-09-12T15:47:21:    - Technician notifications
+2025-09-12T15:52:16: 🤖 Starting Complete Order Management Bot...
+2025-09-12T15:52:16: 📱 Bot will handle all features properly
+2025-09-12T15:52:16: ⚠️  Press Ctrl+C to stop
+2025-09-12T15:52:16: ✅ Complete bot started successfully!
+2025-09-12T15:52:16: 📱 Send /start to your bot to test
+2025-09-12T15:52:16: 🔧 Bot features:
+2025-09-12T15:52:16:    - Complete user registration
+2025-09-12T15:52:16:    - Full order creation flow
+2025-09-12T15:52:16:    - Progress tracking
+2025-09-12T15:52:16:    - Evidence upload (basic)
+2025-09-12T15:52:16:    - Report generation
+2025-09-12T15:52:16:    - Database integration
+2025-09-12T15:52:16:    - Session management
+2025-09-12T15:52:16:    - Technician notifications
+2025-09-12T15:57:11: 🤖 Starting Complete Order Management Bot...
+2025-09-12T15:57:11: 📱 Bot will handle all features properly
+2025-09-12T15:57:11: ⚠️  Press Ctrl+C to stop
+2025-09-12T15:57:11: ✅ Complete bot started successfully!
+2025-09-12T15:57:11: 📱 Send /start to your bot to test
+2025-09-12T15:57:11: 🔧 Bot features:
+2025-09-12T15:57:11:    - Complete user registration
+2025-09-12T15:57:11:    - Full order creation flow
+2025-09-12T15:57:11:    - Progress tracking
+2025-09-12T15:57:11:    - Evidence upload (basic)
+2025-09-12T15:57:11:    - Report generation
+2025-09-12T15:57:11:    - Database integration
+2025-09-12T15:57:11:    - Session management
+2025-09-12T15:57:11:    - Technician notifications
+2025-09-12T15:58:11: 🤖 Starting Complete Order Management Bot...
+2025-09-12T15:58:11: 📱 Bot will handle all features properly
+2025-09-12T15:58:11: ⚠️  Press Ctrl+C to stop
+2025-09-12T15:58:11: ✅ Complete bot started successfully!
+2025-09-12T15:58:11: 📱 Send /start to your bot to test
+2025-09-12T15:58:11: 🔧 Bot features:
+2025-09-12T15:58:11:    - Complete user registration
+2025-09-12T15:58:11:    - Full order creation flow
+2025-09-12T15:58:11:    - Progress tracking
+2025-09-12T15:58:11:    - Evidence upload (basic)
+2025-09-12T15:58:11:    - Report generation
+2025-09-12T15:58:11:    - Database integration
+2025-09-12T15:58:11:    - Session management
+2025-09-12T15:58:11:    - Technician notifications
+2025-09-15T08:26:09: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:26:09: 📱 Bot will handle all features properly
+2025-09-15T08:26:09: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:26:09: ✅ Complete bot started successfully!
+2025-09-15T08:26:09: 📱 Send /start to your bot to test
+2025-09-15T08:26:09: 🔧 Bot features:
+2025-09-15T08:26:09:    - Complete user registration
+2025-09-15T08:26:09:    - Full order creation flow
+2025-09-15T08:26:09:    - Progress tracking
+2025-09-15T08:26:09:    - Evidence upload (basic)
+2025-09-15T08:26:09:    - Report generation
+2025-09-15T08:26:09:    - Database integration
+2025-09-15T08:26:09:    - Session management
+2025-09-15T08:26:09:    - Technician notifications
+2025-09-15T08:26:10: 📨 Received /start from Afiah (6924062588)
+2025-09-15T08:26:20: 📨 Received callback: my_orders from Afiah
+2025-09-15T08:26:35: 📨 Received callback: update_progress from Afiah
+2025-09-15T08:26:41: 📨 Received callback: progress_order_2cf5f573-0f44-4c53-8c0f-40ccb8199bb1 from Afiah
+2025-09-15T08:26:43: 📨 Received callback: progress_survey_2cf5f573-0f44-4c53-8c0f-40ccb8199bb1 from Afiah
+2025-09-15T08:26:53: 📨 Received callback: survey_not_ready_2cf5f573-0f44-4c53-8c0f-40ccb8199bb1 from Afiah
+2025-09-15T08:26:58: 📨 Received callback: survey_ready_2cf5f573-0f44-4c53-8c0f-40ccb8199bb1 from Afiah
+2025-09-15T08:32:10: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:32:10: 📱 Bot will handle all features properly
+2025-09-15T08:32:10: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:32:10: ✅ Complete bot started successfully!
+2025-09-15T08:32:10: 📱 Send /start to your bot to test
+2025-09-15T08:32:10: 🔧 Bot features:
+2025-09-15T08:32:10:    - Complete user registration
+2025-09-15T08:32:10:    - Full order creation flow
+2025-09-15T08:32:10:    - Progress tracking
+2025-09-15T08:32:10:    - Evidence upload (basic)
+2025-09-15T08:32:10:    - Report generation
+2025-09-15T08:32:10:    - Database integration
+2025-09-15T08:32:10:    - Session management
+2025-09-15T08:32:10:    - Technician notifications
+2025-09-15T08:32:19: 📨 Received /start from Afiah (6924062588)
+2025-09-15T08:32:25: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:32:25: 📱 Bot will handle all features properly
+2025-09-15T08:32:25: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:32:25: ✅ Complete bot started successfully!
+2025-09-15T08:32:25: 📱 Send /start to your bot to test
+2025-09-15T08:32:25: 🔧 Bot features:
+2025-09-15T08:32:25:    - Complete user registration
+2025-09-15T08:32:25:    - Full order creation flow
+2025-09-15T08:32:25:    - Progress tracking
+2025-09-15T08:32:25:    - Evidence upload (basic)
+2025-09-15T08:32:25:    - Report generation
+2025-09-15T08:32:25:    - Database integration
+2025-09-15T08:32:25:    - Session management
+2025-09-15T08:32:25:    - Technician notifications
+2025-09-15T08:32:26: 📨 Received /start from Afiah (6924062588)
+2025-09-15T08:32:35: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:32:35: 📱 Bot will handle all features properly
+2025-09-15T08:32:35: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:32:35: ✅ Complete bot started successfully!
+2025-09-15T08:32:35: 📱 Send /start to your bot to test
+2025-09-15T08:32:35: 🔧 Bot features:
+2025-09-15T08:32:35:    - Complete user registration
+2025-09-15T08:32:35:    - Full order creation flow
+2025-09-15T08:32:35:    - Progress tracking
+2025-09-15T08:32:35:    - Evidence upload (basic)
+2025-09-15T08:32:35:    - Report generation
+2025-09-15T08:32:35:    - Database integration
+2025-09-15T08:32:35:    - Session management
+2025-09-15T08:32:35:    - Technician notifications
+2025-09-15T08:32:38: 📨 Received callback: update_progress from Afiah
+2025-09-15T08:32:42: 📨 Received callback: upload_evidence from Afiah
+2025-09-15T08:32:50: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:32:50: 📱 Bot will handle all features properly
+2025-09-15T08:32:50: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:32:50: ✅ Complete bot started successfully!
+2025-09-15T08:32:50: 📱 Send /start to your bot to test
+2025-09-15T08:32:50: 🔧 Bot features:
+2025-09-15T08:32:50:    - Complete user registration
+2025-09-15T08:32:50:    - Full order creation flow
+2025-09-15T08:32:50:    - Progress tracking
+2025-09-15T08:32:50:    - Evidence upload (basic)
+2025-09-15T08:32:50:    - Report generation
+2025-09-15T08:32:50:    - Database integration
+2025-09-15T08:32:50:    - Session management
+2025-09-15T08:32:50:    - Technician notifications
+2025-09-15T08:32:52: 📨 Received callback: evidence_order_2cf5f573-0f44-4c53-8c0f-40ccb8199bb1 from Afiah
+2025-09-15T08:33:02: 📨 Received callback: evidence_data_2cf5f573-0f44-4c53-8c0f-40ccb8199bb1 from Afiah
+2025-09-15T08:33:13: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:33:13: 📱 Bot will handle all features properly
+2025-09-15T08:33:13: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:33:13: ✅ Complete bot started successfully!
+2025-09-15T08:33:13: 📱 Send /start to your bot to test
+2025-09-15T08:33:13: 🔧 Bot features:
+2025-09-15T08:33:13:    - Complete user registration
+2025-09-15T08:33:13:    - Full order creation flow
+2025-09-15T08:33:13:    - Progress tracking
+2025-09-15T08:33:13:    - Evidence upload (basic)
+2025-09-15T08:33:13:    - Report generation
+2025-09-15T08:33:13:    - Database integration
+2025-09-15T08:33:13:    - Session management
+2025-09-15T08:33:13:    - Technician notifications
+2025-09-15T08:33:22: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:33:22: 📱 Bot will handle all features properly
+2025-09-15T08:33:22: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:33:22: ✅ Complete bot started successfully!
+2025-09-15T08:33:22: 📱 Send /start to your bot to test
+2025-09-15T08:33:22: 🔧 Bot features:
+2025-09-15T08:33:22:    - Complete user registration
+2025-09-15T08:33:22:    - Full order creation flow
+2025-09-15T08:33:22:    - Progress tracking
+2025-09-15T08:33:22:    - Evidence upload (basic)
+2025-09-15T08:33:22:    - Report generation
+2025-09-15T08:33:22:    - Database integration
+2025-09-15T08:33:22:    - Session management
+2025-09-15T08:33:22:    - Technician notifications
+2025-09-15T08:33:23: 📨 Received callback: evidence_photo_sn_2cf5f573-0f44-4c53-8c0f-40ccb8199bb1 from Afiah
+2025-09-15T08:33:29: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:33:29: 📱 Bot will handle all features properly
+2025-09-15T08:33:29: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:33:29: ✅ Complete bot started successfully!
+2025-09-15T08:33:29: 📱 Send /start to your bot to test
+2025-09-15T08:33:29: 🔧 Bot features:
+2025-09-15T08:33:29:    - Complete user registration
+2025-09-15T08:33:29:    - Full order creation flow
+2025-09-15T08:33:29:    - Progress tracking
+2025-09-15T08:33:29:    - Evidence upload (basic)
+2025-09-15T08:33:29:    - Report generation
+2025-09-15T08:33:29:    - Database integration
+2025-09-15T08:33:29:    - Session management
+2025-09-15T08:33:29:    - Technician notifications
+2025-09-15T08:33:30: 📨 Received callback: evidence_photo_sn_2cf5f573-0f44-4c53-8c0f-40ccb8199bb1 from Afiah
+2025-09-15T08:33:30: 📨 Received callback: evidence_photo_sn_2cf5f573-0f44-4c53-8c0f-40ccb8199bb1 from Afiah
+2025-09-15T08:33:36: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:33:36: 📱 Bot will handle all features properly
+2025-09-15T08:33:36: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:33:36: ✅ Complete bot started successfully!
+2025-09-15T08:33:36: 📱 Send /start to your bot to test
+2025-09-15T08:33:36: 🔧 Bot features:
+2025-09-15T08:33:36:    - Complete user registration
+2025-09-15T08:33:36:    - Full order creation flow
+2025-09-15T08:33:36:    - Progress tracking
+2025-09-15T08:33:36:    - Evidence upload (basic)
+2025-09-15T08:33:36:    - Report generation
+2025-09-15T08:33:36:    - Database integration
+2025-09-15T08:33:36:    - Session management
+2025-09-15T08:33:36:    - Technician notifications
+2025-09-15T08:34:42: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:34:42: 📱 Bot will handle all features properly
+2025-09-15T08:34:42: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:34:42: ✅ Complete bot started successfully!
+2025-09-15T08:34:42: 📱 Send /start to your bot to test
+2025-09-15T08:34:42: 🔧 Bot features:
+2025-09-15T08:34:42:    - Complete user registration
+2025-09-15T08:34:42:    - Full order creation flow
+2025-09-15T08:34:42:    - Progress tracking
+2025-09-15T08:34:42:    - Evidence upload (basic)
+2025-09-15T08:34:42:    - Report generation
+2025-09-15T08:34:42:    - Database integration
+2025-09-15T08:34:42:    - Session management
+2025-09-15T08:34:42:    - Technician notifications
+2025-09-15T08:34:56: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:34:56: 📱 Bot will handle all features properly
+2025-09-15T08:34:56: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:34:56: ✅ Complete bot started successfully!
+2025-09-15T08:34:56: 📱 Send /start to your bot to test
+2025-09-15T08:34:56: 🔧 Bot features:
+2025-09-15T08:34:56:    - Complete user registration
+2025-09-15T08:34:56:    - Full order creation flow
+2025-09-15T08:34:56:    - Progress tracking
+2025-09-15T08:34:56:    - Evidence upload (basic)
+2025-09-15T08:34:56:    - Report generation
+2025-09-15T08:34:56:    - Database integration
+2025-09-15T08:34:56:    - Session management
+2025-09-15T08:34:56:    - Technician notifications
+2025-09-15T08:35:37: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:35:37: 📱 Bot will handle all features properly
+2025-09-15T08:35:37: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:35:37: ✅ Complete bot started successfully!
+2025-09-15T08:35:37: 📱 Send /start to your bot to test
+2025-09-15T08:35:37: 🔧 Bot features:
+2025-09-15T08:35:37:    - Complete user registration
+2025-09-15T08:35:37:    - Full order creation flow
+2025-09-15T08:35:37:    - Progress tracking
+2025-09-15T08:35:37:    - Evidence upload (basic)
+2025-09-15T08:35:37:    - Report generation
+2025-09-15T08:35:37:    - Database integration
+2025-09-15T08:35:37:    - Session management
+2025-09-15T08:35:37:    - Technician notifications
+2025-09-15T08:35:39: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:35:39: 📱 Bot will handle all features properly
+2025-09-15T08:35:39: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:35:39: ✅ Complete bot started successfully!
+2025-09-15T08:35:39: 📱 Send /start to your bot to test
+2025-09-15T08:35:39: 🔧 Bot features:
+2025-09-15T08:35:39:    - Complete user registration
+2025-09-15T08:35:39:    - Full order creation flow
+2025-09-15T08:35:39:    - Progress tracking
+2025-09-15T08:35:39:    - Evidence upload (basic)
+2025-09-15T08:35:39:    - Report generation
+2025-09-15T08:35:39:    - Database integration
+2025-09-15T08:35:39:    - Session management
+2025-09-15T08:35:39:    - Technician notifications
+2025-09-15T08:37:14: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:37:14: 📱 Bot will handle all features properly
+2025-09-15T08:37:14: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:37:14: ✅ Complete bot started successfully!
+2025-09-15T08:37:14: 📱 Send /start to your bot to test
+2025-09-15T08:37:14: 🔧 Bot features:
+2025-09-15T08:37:14:    - Complete user registration
+2025-09-15T08:37:14:    - Full order creation flow
+2025-09-15T08:37:14:    - Progress tracking
+2025-09-15T08:37:14:    - Evidence upload (basic)
+2025-09-15T08:37:14:    - Report generation
+2025-09-15T08:37:14:    - Database integration
+2025-09-15T08:37:14:    - Session management
+2025-09-15T08:37:14:    - Technician notifications
+2025-09-15T08:37:37: 📨 Received /start from M (5173181010)
+2025-09-15T08:37:41: 📨 Received callback: create_order from M
+2025-09-15T08:38:07: 📨 Received callback: sto_TBE from M
+2025-09-15T08:38:12: 📨 Received callback: transaction_new install jt from M
+2025-09-15T08:38:14: 📨 Received callback: service_ip transit from M
+2025-09-15T08:38:18: 📨 Received callback: assign_tech_3875fae9-b447-441f-a789-ef0db04d7cb8 from M
+2025-09-15T08:38:53: 📨 Received /start from Afiah (6924062588)
+2025-09-15T08:38:56: 📨 Received callback: update_progress from Afiah
+2025-09-15T08:39:00: 📨 Received callback: progress_order_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T08:39:03: 📨 Received callback: progress_survey_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T08:39:05: 📨 Received callback: survey_not_ready_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T08:39:41: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:39:41: 📱 Bot will handle all features properly
+2025-09-15T08:39:41: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:39:41: ✅ Complete bot started successfully!
+2025-09-15T08:39:41: 📱 Send /start to your bot to test
+2025-09-15T08:39:41: 🔧 Bot features:
+2025-09-15T08:39:41:    - Complete user registration
+2025-09-15T08:39:41:    - Full order creation flow
+2025-09-15T08:39:41:    - Progress tracking
+2025-09-15T08:39:41:    - Evidence upload (basic)
+2025-09-15T08:39:41:    - Report generation
+2025-09-15T08:39:41:    - Database integration
+2025-09-15T08:39:41:    - Session management
+2025-09-15T08:39:41:    - Technician notifications
+2025-09-15T08:40:33: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:40:33: 📱 Bot will handle all features properly
+2025-09-15T08:40:33: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:40:33: ✅ Complete bot started successfully!
+2025-09-15T08:40:33: 📱 Send /start to your bot to test
+2025-09-15T08:40:33: 🔧 Bot features:
+2025-09-15T08:40:33:    - Complete user registration
+2025-09-15T08:40:33:    - Full order creation flow
+2025-09-15T08:40:33:    - Progress tracking
+2025-09-15T08:40:33:    - Evidence upload (basic)
+2025-09-15T08:40:33:    - Report generation
+2025-09-15T08:40:33:    - Database integration
+2025-09-15T08:40:33:    - Session management
+2025-09-15T08:40:33:    - Technician notifications
+2025-09-15T08:45:28: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:45:28: 📱 Bot will handle all features properly
+2025-09-15T08:45:28: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:45:28: ✅ Complete bot started successfully!
+2025-09-15T08:45:28: 📱 Send /start to your bot to test
+2025-09-15T08:45:28: 🔧 Bot features:
+2025-09-15T08:45:28:    - Complete user registration
+2025-09-15T08:45:28:    - Full order creation flow
+2025-09-15T08:45:28:    - Progress tracking
+2025-09-15T08:45:28:    - Evidence upload (basic)
+2025-09-15T08:45:28:    - Report generation
+2025-09-15T08:45:28:    - Database integration
+2025-09-15T08:45:28:    - Session management
+2025-09-15T08:45:28:    - Technician notifications
+2025-09-15T08:46:38: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:46:38: 📱 Bot will handle all features properly
+2025-09-15T08:46:38: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:46:38: ✅ Complete bot started successfully!
+2025-09-15T08:46:38: 📱 Send /start to your bot to test
+2025-09-15T08:46:38: 🔧 Bot features:
+2025-09-15T08:46:38:    - Complete user registration
+2025-09-15T08:46:38:    - Full order creation flow
+2025-09-15T08:46:38:    - Progress tracking
+2025-09-15T08:46:38:    - Evidence upload (basic)
+2025-09-15T08:46:38:    - Report generation
+2025-09-15T08:46:38:    - Database integration
+2025-09-15T08:46:38:    - Session management
+2025-09-15T08:46:38:    - Technician notifications
+2025-09-15T08:46:50: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:46:50: 📱 Bot will handle all features properly
+2025-09-15T08:46:50: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:46:50: ✅ Complete bot started successfully!
+2025-09-15T08:46:50: 📱 Send /start to your bot to test
+2025-09-15T08:46:50: 🔧 Bot features:
+2025-09-15T08:46:50:    - Complete user registration
+2025-09-15T08:46:50:    - Full order creation flow
+2025-09-15T08:46:50:    - Progress tracking
+2025-09-15T08:46:50:    - Evidence upload (basic)
+2025-09-15T08:46:50:    - Report generation
+2025-09-15T08:46:50:    - Database integration
+2025-09-15T08:46:50:    - Session management
+2025-09-15T08:46:50:    - Technician notifications
+2025-09-15T08:46:56: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:46:56: 📱 Bot will handle all features properly
+2025-09-15T08:46:56: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:46:56: ✅ Complete bot started successfully!
+2025-09-15T08:46:56: 📱 Send /start to your bot to test
+2025-09-15T08:46:56: 🔧 Bot features:
+2025-09-15T08:46:56:    - Complete user registration
+2025-09-15T08:46:56:    - Full order creation flow
+2025-09-15T08:46:56:    - Progress tracking
+2025-09-15T08:46:56:    - Evidence upload (basic)
+2025-09-15T08:46:56:    - Report generation
+2025-09-15T08:46:56:    - Database integration
+2025-09-15T08:46:56:    - Session management
+2025-09-15T08:46:56:    - Technician notifications
+2025-09-15T08:48:07: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:48:07: 📱 Bot will handle all features properly
+2025-09-15T08:48:07: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:48:07: ✅ Complete bot started successfully!
+2025-09-15T08:48:07: 📱 Send /start to your bot to test
+2025-09-15T08:48:07: 🔧 Bot features:
+2025-09-15T08:48:07:    - Complete user registration
+2025-09-15T08:48:07:    - Full order creation flow
+2025-09-15T08:48:07:    - Progress tracking
+2025-09-15T08:48:07:    - Evidence upload (basic)
+2025-09-15T08:48:07:    - Report generation
+2025-09-15T08:48:07:    - Database integration
+2025-09-15T08:48:07:    - Session management
+2025-09-15T08:48:07:    - Technician notifications
+2025-09-15T08:48:20: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:48:20: 📱 Bot will handle all features properly
+2025-09-15T08:48:20: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:48:20: ✅ Complete bot started successfully!
+2025-09-15T08:48:20: 📱 Send /start to your bot to test
+2025-09-15T08:48:20: 🔧 Bot features:
+2025-09-15T08:48:20:    - Complete user registration
+2025-09-15T08:48:20:    - Full order creation flow
+2025-09-15T08:48:20:    - Progress tracking
+2025-09-15T08:48:20:    - Evidence upload (basic)
+2025-09-15T08:48:20:    - Report generation
+2025-09-15T08:48:20:    - Database integration
+2025-09-15T08:48:20:    - Session management
+2025-09-15T08:48:20:    - Technician notifications
+2025-09-15T08:49:46: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:49:46: 📱 Bot will handle all features properly
+2025-09-15T08:49:46: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:49:46: ✅ Complete bot started successfully!
+2025-09-15T08:49:46: 📱 Send /start to your bot to test
+2025-09-15T08:49:46: 🔧 Bot features:
+2025-09-15T08:49:46:    - Complete user registration
+2025-09-15T08:49:46:    - Full order creation flow
+2025-09-15T08:49:46:    - Progress tracking
+2025-09-15T08:49:46:    - Evidence upload (basic)
+2025-09-15T08:49:46:    - Report generation
+2025-09-15T08:49:46:    - Database integration
+2025-09-15T08:49:46:    - Session management
+2025-09-15T08:49:46:    - Technician notifications
+2025-09-15T08:50:12: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:50:12: 📱 Bot will handle all features properly
+2025-09-15T08:50:12: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:50:12: ✅ Complete bot started successfully!
+2025-09-15T08:50:12: 📱 Send /start to your bot to test
+2025-09-15T08:50:12: 🔧 Bot features:
+2025-09-15T08:50:12:    - Complete user registration
+2025-09-15T08:50:12:    - Full order creation flow
+2025-09-15T08:50:12:    - Progress tracking
+2025-09-15T08:50:12:    - Evidence upload (basic)
+2025-09-15T08:50:12:    - Report generation
+2025-09-15T08:50:12:    - Database integration
+2025-09-15T08:50:12:    - Session management
+2025-09-15T08:50:12:    - Technician notifications
+2025-09-15T08:50:22: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:50:22: 📱 Bot will handle all features properly
+2025-09-15T08:50:22: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:50:22: ✅ Complete bot started successfully!
+2025-09-15T08:50:22: 📱 Send /start to your bot to test
+2025-09-15T08:50:22: 🔧 Bot features:
+2025-09-15T08:50:22:    - Complete user registration
+2025-09-15T08:50:22:    - Full order creation flow
+2025-09-15T08:50:22:    - Progress tracking
+2025-09-15T08:50:22:    - Evidence upload (basic)
+2025-09-15T08:50:22:    - Report generation
+2025-09-15T08:50:22:    - Database integration
+2025-09-15T08:50:22:    - Session management
+2025-09-15T08:50:22:    - Technician notifications
+2025-09-15T08:50:42: 📨 Received /start from Afiah (6924062588)
+2025-09-15T08:50:47: 📨 Received callback: my_orders from Afiah
+2025-09-15T08:51:00: 📨 Received callback: update_progress from Afiah
+2025-09-15T08:51:03: 📨 Received callback: progress_order_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T08:51:07: 📨 Received callback: progress_survey_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T08:51:13: 📨 Received callback: survey_not_ready_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T08:52:20: 📨 Received /start from Afiah (6924062588)
+2025-09-15T08:52:23: 📨 Received callback: my_orders from Afiah
+2025-09-15T08:52:30: 📨 Received callback: update_progress from Afiah
+2025-09-15T08:52:35: 📨 Received callback: progress_order_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T08:52:37: 📨 Received callback: progress_survey_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T08:52:40: 📨 Received callback: survey_not_ready_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T08:54:32: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:54:32: 📱 Bot will handle all features properly
+2025-09-15T08:54:32: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:54:32: ✅ Complete bot started successfully!
+2025-09-15T08:54:32: 📱 Send /start to your bot to test
+2025-09-15T08:54:32: 🔧 Bot features:
+2025-09-15T08:54:32:    - Complete user registration
+2025-09-15T08:54:32:    - Full order creation flow
+2025-09-15T08:54:32:    - Progress tracking
+2025-09-15T08:54:32:    - Evidence upload (basic)
+2025-09-15T08:54:32:    - Report generation
+2025-09-15T08:54:32:    - Database integration
+2025-09-15T08:54:32:    - Session management
+2025-09-15T08:54:32:    - Technician notifications
+2025-09-15T08:54:34: 📨 Received /start from Afiah (6924062588)
+2025-09-15T08:54:39: 📨 Received /start from Afiah (6924062588)
+2025-09-15T08:54:44: 📨 Received callback: update_progress from Afiah
+2025-09-15T08:54:47: 📨 Received callback: progress_order_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T08:54:51: 📨 Received callback: progress_survey_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T08:54:55: 📨 Received callback: survey_not_ready_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T08:55:17: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:55:17: 📱 Bot will handle all features properly
+2025-09-15T08:55:17: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:55:17: ✅ Complete bot started successfully!
+2025-09-15T08:55:17: 📱 Send /start to your bot to test
+2025-09-15T08:55:17: 🔧 Bot features:
+2025-09-15T08:55:17:    - Complete user registration
+2025-09-15T08:55:17:    - Full order creation flow
+2025-09-15T08:55:17:    - Progress tracking
+2025-09-15T08:55:17:    - Evidence upload (basic)
+2025-09-15T08:55:17:    - Report generation
+2025-09-15T08:55:17:    - Database integration
+2025-09-15T08:55:17:    - Session management
+2025-09-15T08:55:17:    - Technician notifications
+2025-09-15T08:55:20: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:55:20: 📱 Bot will handle all features properly
+2025-09-15T08:55:20: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:55:20: ✅ Complete bot started successfully!
+2025-09-15T08:55:20: 📱 Send /start to your bot to test
+2025-09-15T08:55:20: 🔧 Bot features:
+2025-09-15T08:55:20:    - Complete user registration
+2025-09-15T08:55:20:    - Full order creation flow
+2025-09-15T08:55:20:    - Progress tracking
+2025-09-15T08:55:20:    - Evidence upload (basic)
+2025-09-15T08:55:20:    - Report generation
+2025-09-15T08:55:20:    - Database integration
+2025-09-15T08:55:20:    - Session management
+2025-09-15T08:55:20:    - Technician notifications
+2025-09-15T08:55:25: 📨 Received /start from Afiah (6924062588)
+2025-09-15T08:55:47: 📨 Received callback: progress_survey_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T08:56:06: 🤖 Starting Complete Order Management Bot...
+2025-09-15T08:56:06: 📱 Bot will handle all features properly
+2025-09-15T08:56:06: ⚠️  Press Ctrl+C to stop
+2025-09-15T08:56:06: ✅ Complete bot started successfully!
+2025-09-15T08:56:06: 📱 Send /start to your bot to test
+2025-09-15T08:56:06: 🔧 Bot features:
+2025-09-15T08:56:06:    - Complete user registration
+2025-09-15T08:56:06:    - Full order creation flow
+2025-09-15T08:56:06:    - Progress tracking
+2025-09-15T08:56:06:    - Evidence upload (basic)
+2025-09-15T08:56:06:    - Report generation
+2025-09-15T08:56:06:    - Database integration
+2025-09-15T08:56:06:    - Session management
+2025-09-15T08:56:06:    - Technician notifications
+2025-09-15T09:00:12: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:00:12: 📱 Bot will handle all features properly
+2025-09-15T09:00:12: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:00:12: ✅ Complete bot started successfully!
+2025-09-15T09:00:12: 📱 Send /start to your bot to test
+2025-09-15T09:00:12: 🔧 Bot features:
+2025-09-15T09:00:12:    - Complete user registration
+2025-09-15T09:00:12:    - Full order creation flow
+2025-09-15T09:00:12:    - Progress tracking
+2025-09-15T09:00:12:    - Evidence upload (basic)
+2025-09-15T09:00:12:    - Report generation
+2025-09-15T09:00:12:    - Database integration
+2025-09-15T09:00:12:    - Session management
+2025-09-15T09:00:12:    - Technician notifications
+2025-09-15T09:01:52: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:01:52: 📱 Bot will handle all features properly
+2025-09-15T09:01:52: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:01:52: ✅ Complete bot started successfully!
+2025-09-15T09:01:52: 📱 Send /start to your bot to test
+2025-09-15T09:01:52: 🔧 Bot features:
+2025-09-15T09:01:52:    - Complete user registration
+2025-09-15T09:01:52:    - Full order creation flow
+2025-09-15T09:01:52:    - Progress tracking
+2025-09-15T09:01:52:    - Evidence upload (basic)
+2025-09-15T09:01:52:    - Report generation
+2025-09-15T09:01:52:    - Database integration
+2025-09-15T09:01:52:    - Session management
+2025-09-15T09:01:52:    - Technician notifications
+2025-09-15T09:02:04: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:02:04: 📱 Bot will handle all features properly
+2025-09-15T09:02:04: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:02:04: ✅ Complete bot started successfully!
+2025-09-15T09:02:04: 📱 Send /start to your bot to test
+2025-09-15T09:02:04: 🔧 Bot features:
+2025-09-15T09:02:04:    - Complete user registration
+2025-09-15T09:02:04:    - Full order creation flow
+2025-09-15T09:02:04:    - Progress tracking
+2025-09-15T09:02:04:    - Evidence upload (basic)
+2025-09-15T09:02:04:    - Report generation
+2025-09-15T09:02:04:    - Database integration
+2025-09-15T09:02:04:    - Session management
+2025-09-15T09:02:04:    - Technician notifications
+2025-09-15T09:02:09: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:02:09: 📱 Bot will handle all features properly
+2025-09-15T09:02:09: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:02:09: ✅ Complete bot started successfully!
+2025-09-15T09:02:09: 📱 Send /start to your bot to test
+2025-09-15T09:02:09: 🔧 Bot features:
+2025-09-15T09:02:09:    - Complete user registration
+2025-09-15T09:02:09:    - Full order creation flow
+2025-09-15T09:02:09:    - Progress tracking
+2025-09-15T09:02:09:    - Evidence upload (basic)
+2025-09-15T09:02:09:    - Report generation
+2025-09-15T09:02:09:    - Database integration
+2025-09-15T09:02:09:    - Session management
+2025-09-15T09:02:09:    - Technician notifications
+2025-09-15T09:03:24: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:03:24: 📱 Bot will handle all features properly
+2025-09-15T09:03:24: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:03:24: ✅ Complete bot started successfully!
+2025-09-15T09:03:24: 📱 Send /start to your bot to test
+2025-09-15T09:03:24: 🔧 Bot features:
+2025-09-15T09:03:24:    - Complete user registration
+2025-09-15T09:03:24:    - Full order creation flow
+2025-09-15T09:03:24:    - Progress tracking
+2025-09-15T09:03:24:    - Evidence upload (basic)
+2025-09-15T09:03:24:    - Report generation
+2025-09-15T09:03:24:    - Database integration
+2025-09-15T09:03:24:    - Session management
+2025-09-15T09:03:24:    - Technician notifications
+2025-09-15T09:03:37: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:03:37: 📱 Bot will handle all features properly
+2025-09-15T09:03:37: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:03:37: ✅ Complete bot started successfully!
+2025-09-15T09:03:37: 📱 Send /start to your bot to test
+2025-09-15T09:03:37: 🔧 Bot features:
+2025-09-15T09:03:37:    - Complete user registration
+2025-09-15T09:03:37:    - Full order creation flow
+2025-09-15T09:03:37:    - Progress tracking
+2025-09-15T09:03:37:    - Evidence upload (basic)
+2025-09-15T09:03:37:    - Report generation
+2025-09-15T09:03:37:    - Database integration
+2025-09-15T09:03:37:    - Session management
+2025-09-15T09:03:37:    - Technician notifications
+2025-09-15T09:04:01: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:04:01: 📱 Bot will handle all features properly
+2025-09-15T09:04:01: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:04:01: ✅ Complete bot started successfully!
+2025-09-15T09:04:01: 📱 Send /start to your bot to test
+2025-09-15T09:04:01: 🔧 Bot features:
+2025-09-15T09:04:01:    - Complete user registration
+2025-09-15T09:04:01:    - Full order creation flow
+2025-09-15T09:04:01:    - Progress tracking
+2025-09-15T09:04:01:    - Evidence upload (basic)
+2025-09-15T09:04:01:    - Report generation
+2025-09-15T09:04:01:    - Database integration
+2025-09-15T09:04:01:    - Session management
+2025-09-15T09:04:01:    - Technician notifications
+2025-09-15T09:04:14: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:04:14: 📱 Bot will handle all features properly
+2025-09-15T09:04:14: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:04:14: ✅ Complete bot started successfully!
+2025-09-15T09:04:14: 📱 Send /start to your bot to test
+2025-09-15T09:04:14: 🔧 Bot features:
+2025-09-15T09:04:14:    - Complete user registration
+2025-09-15T09:04:14:    - Full order creation flow
+2025-09-15T09:04:14:    - Progress tracking
+2025-09-15T09:04:14:    - Evidence upload (basic)
+2025-09-15T09:04:14:    - Report generation
+2025-09-15T09:04:14:    - Database integration
+2025-09-15T09:04:14:    - Session management
+2025-09-15T09:04:14:    - Technician notifications
+2025-09-15T09:04:22: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:04:23: 📱 Bot will handle all features properly
+2025-09-15T09:04:23: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:04:23: ✅ Complete bot started successfully!
+2025-09-15T09:04:23: 📱 Send /start to your bot to test
+2025-09-15T09:04:23: 🔧 Bot features:
+2025-09-15T09:04:23:    - Complete user registration
+2025-09-15T09:04:23:    - Full order creation flow
+2025-09-15T09:04:23:    - Progress tracking
+2025-09-15T09:04:23:    - Evidence upload (basic)
+2025-09-15T09:04:23:    - Report generation
+2025-09-15T09:04:23:    - Database integration
+2025-09-15T09:04:23:    - Session management
+2025-09-15T09:04:23:    - Technician notifications
+2025-09-15T09:04:43: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:04:43: 📱 Bot will handle all features properly
+2025-09-15T09:04:43: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:04:43: ✅ Complete bot started successfully!
+2025-09-15T09:04:43: 📱 Send /start to your bot to test
+2025-09-15T09:04:43: 🔧 Bot features:
+2025-09-15T09:04:43:    - Complete user registration
+2025-09-15T09:04:43:    - Full order creation flow
+2025-09-15T09:04:43:    - Progress tracking
+2025-09-15T09:04:43:    - Evidence upload (basic)
+2025-09-15T09:04:43:    - Report generation
+2025-09-15T09:04:43:    - Database integration
+2025-09-15T09:04:43:    - Session management
+2025-09-15T09:04:43:    - Technician notifications
+2025-09-15T09:05:10: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:05:10: 📱 Bot will handle all features properly
+2025-09-15T09:05:10: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:05:10: ✅ Complete bot started successfully!
+2025-09-15T09:05:10: 📱 Send /start to your bot to test
+2025-09-15T09:05:10: 🔧 Bot features:
+2025-09-15T09:05:10:    - Complete user registration
+2025-09-15T09:05:10:    - Full order creation flow
+2025-09-15T09:05:10:    - Progress tracking
+2025-09-15T09:05:10:    - Evidence upload (basic)
+2025-09-15T09:05:10:    - Report generation
+2025-09-15T09:05:10:    - Database integration
+2025-09-15T09:05:10:    - Session management
+2025-09-15T09:05:10:    - Technician notifications
+2025-09-15T09:05:48: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:05:48: 📱 Bot will handle all features properly
+2025-09-15T09:05:48: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:05:48: ✅ Complete bot started successfully!
+2025-09-15T09:05:48: 📱 Send /start to your bot to test
+2025-09-15T09:05:48: 🔧 Bot features:
+2025-09-15T09:05:48:    - Complete user registration
+2025-09-15T09:05:48:    - Full order creation flow
+2025-09-15T09:05:48:    - Progress tracking
+2025-09-15T09:05:48:    - Evidence upload (basic)
+2025-09-15T09:05:48:    - Report generation
+2025-09-15T09:05:48:    - Database integration
+2025-09-15T09:05:48:    - Session management
+2025-09-15T09:05:48:    - Technician notifications
+2025-09-15T09:06:28: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:06:28: 📱 Bot will handle all features properly
+2025-09-15T09:06:28: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:06:28: ✅ Complete bot started successfully!
+2025-09-15T09:06:28: 📱 Send /start to your bot to test
+2025-09-15T09:06:28: 🔧 Bot features:
+2025-09-15T09:06:28:    - Complete user registration
+2025-09-15T09:06:28:    - Full order creation flow
+2025-09-15T09:06:28:    - Progress tracking
+2025-09-15T09:06:28:    - Evidence upload (basic)
+2025-09-15T09:06:28:    - Report generation
+2025-09-15T09:06:28:    - Database integration
+2025-09-15T09:06:28:    - Session management
+2025-09-15T09:06:28:    - Technician notifications
+2025-09-15T09:06:32: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:06:32: 📱 Bot will handle all features properly
+2025-09-15T09:06:32: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:06:32: ✅ Complete bot started successfully!
+2025-09-15T09:06:32: 📱 Send /start to your bot to test
+2025-09-15T09:06:32: 🔧 Bot features:
+2025-09-15T09:06:32:    - Complete user registration
+2025-09-15T09:06:32:    - Full order creation flow
+2025-09-15T09:06:32:    - Progress tracking
+2025-09-15T09:06:32:    - Evidence upload (basic)
+2025-09-15T09:06:32:    - Report generation
+2025-09-15T09:06:32:    - Database integration
+2025-09-15T09:06:32:    - Session management
+2025-09-15T09:06:32:    - Technician notifications
+2025-09-15T09:06:39: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:06:39: 📱 Bot will handle all features properly
+2025-09-15T09:06:39: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:06:39: ✅ Complete bot started successfully!
+2025-09-15T09:06:39: 📱 Send /start to your bot to test
+2025-09-15T09:06:39: 🔧 Bot features:
+2025-09-15T09:06:39:    - Complete user registration
+2025-09-15T09:06:39:    - Full order creation flow
+2025-09-15T09:06:39:    - Progress tracking
+2025-09-15T09:06:39:    - Evidence upload (basic)
+2025-09-15T09:06:39:    - Report generation
+2025-09-15T09:06:39:    - Database integration
+2025-09-15T09:06:39:    - Session management
+2025-09-15T09:06:39:    - Technician notifications
+2025-09-15T09:07:23: 📨 Received /start from Afiah (6924062588)
+2025-09-15T09:07:29: 📨 Received callback: update_progress from Afiah
+2025-09-15T09:07:33: 📨 Received callback: progress_order_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T09:07:48: 📨 Received callback: progress_survey_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T09:07:52: 📨 Received callback: survey_not_ready_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T09:08:12: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:08:12: 📱 Bot will handle all features properly
+2025-09-15T09:08:12: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:08:12: ✅ Complete bot started successfully!
+2025-09-15T09:08:12: 📱 Send /start to your bot to test
+2025-09-15T09:08:12: 🔧 Bot features:
+2025-09-15T09:08:12:    - Complete user registration
+2025-09-15T09:08:12:    - Full order creation flow
+2025-09-15T09:08:12:    - Progress tracking
+2025-09-15T09:08:12:    - Evidence upload (basic)
+2025-09-15T09:08:12:    - Report generation
+2025-09-15T09:08:12:    - Database integration
+2025-09-15T09:08:12:    - Session management
+2025-09-15T09:08:12:    - Technician notifications
+2025-09-15T09:10:02: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:10:02: 📱 Bot will handle all features properly
+2025-09-15T09:10:02: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:10:02: ✅ Complete bot started successfully!
+2025-09-15T09:10:02: 📱 Send /start to your bot to test
+2025-09-15T09:10:02: 🔧 Bot features:
+2025-09-15T09:10:02:    - Complete user registration
+2025-09-15T09:10:02:    - Full order creation flow
+2025-09-15T09:10:02:    - Progress tracking
+2025-09-15T09:10:02:    - Evidence upload (basic)
+2025-09-15T09:10:02:    - Report generation
+2025-09-15T09:10:02:    - Database integration
+2025-09-15T09:10:02:    - Session management
+2025-09-15T09:10:02:    - Technician notifications
+2025-09-15T09:13:56: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:13:56: 📱 Bot will handle all features properly
+2025-09-15T09:13:56: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:13:56: ✅ Complete bot started successfully!
+2025-09-15T09:13:56: 📱 Send /start to your bot to test
+2025-09-15T09:13:56: 🔧 Bot features:
+2025-09-15T09:13:56:    - Complete user registration
+2025-09-15T09:13:56:    - Full order creation flow
+2025-09-15T09:13:56:    - Progress tracking
+2025-09-15T09:13:56:    - Evidence upload (basic)
+2025-09-15T09:13:56:    - Report generation
+2025-09-15T09:13:56:    - Database integration
+2025-09-15T09:13:56:    - Session management
+2025-09-15T09:13:56:    - Technician notifications
+2025-09-15T09:14:03: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:14:03: 📱 Bot will handle all features properly
+2025-09-15T09:14:03: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:14:03: ✅ Complete bot started successfully!
+2025-09-15T09:14:03: 📱 Send /start to your bot to test
+2025-09-15T09:14:03: 🔧 Bot features:
+2025-09-15T09:14:03:    - Complete user registration
+2025-09-15T09:14:03:    - Full order creation flow
+2025-09-15T09:14:03:    - Progress tracking
+2025-09-15T09:14:03:    - Evidence upload (basic)
+2025-09-15T09:14:03:    - Report generation
+2025-09-15T09:14:03:    - Database integration
+2025-09-15T09:14:03:    - Session management
+2025-09-15T09:14:03:    - Technician notifications
+2025-09-15T09:15:04: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:15:04: 📱 Bot will handle all features properly
+2025-09-15T09:15:04: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:15:04: ✅ Complete bot started successfully!
+2025-09-15T09:15:04: 📱 Send /start to your bot to test
+2025-09-15T09:15:04: 🔧 Bot features:
+2025-09-15T09:15:04:    - Complete user registration
+2025-09-15T09:15:04:    - Full order creation flow
+2025-09-15T09:15:04:    - Progress tracking
+2025-09-15T09:15:04:    - Evidence upload (basic)
+2025-09-15T09:15:04:    - Report generation
+2025-09-15T09:15:04:    - Database integration
+2025-09-15T09:15:04:    - Session management
+2025-09-15T09:15:04:    - Technician notifications
+2025-09-15T09:15:13: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:15:13: 📱 Bot will handle all features properly
+2025-09-15T09:15:13: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:15:13: ✅ Complete bot started successfully!
+2025-09-15T09:15:13: 📱 Send /start to your bot to test
+2025-09-15T09:15:13: 🔧 Bot features:
+2025-09-15T09:15:13:    - Complete user registration
+2025-09-15T09:15:13:    - Full order creation flow
+2025-09-15T09:15:13:    - Progress tracking
+2025-09-15T09:15:13:    - Evidence upload (basic)
+2025-09-15T09:15:13:    - Report generation
+2025-09-15T09:15:13:    - Database integration
+2025-09-15T09:15:13:    - Session management
+2025-09-15T09:15:13:    - Technician notifications
+2025-09-15T09:15:52: 📨 Received /start from Afiah (6924062588)
+2025-09-15T09:16:03: 📨 Received callback: update_progress from Afiah
+2025-09-15T09:16:06: 📨 Received callback: progress_order_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T09:16:09: 📨 Received callback: progress_survey_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T09:16:14: 📨 Received callback: survey_not_ready_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T09:18:24: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:18:24: 📱 Bot will handle all features properly
+2025-09-15T09:18:24: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:18:24: ✅ Complete bot started successfully!
+2025-09-15T09:18:24: 📱 Send /start to your bot to test
+2025-09-15T09:18:24: 🔧 Bot features:
+2025-09-15T09:18:24:    - Complete user registration
+2025-09-15T09:18:24:    - Full order creation flow
+2025-09-15T09:18:24:    - Progress tracking
+2025-09-15T09:18:24:    - Evidence upload (basic)
+2025-09-15T09:18:24:    - Report generation
+2025-09-15T09:18:24:    - Database integration
+2025-09-15T09:18:24:    - Session management
+2025-09-15T09:18:24:    - Technician notifications
+2025-09-15T09:19:26: 📨 Received /start from Afiah (6924062588)
+2025-09-15T09:19:46: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:19:46: 📱 Bot will handle all features properly
+2025-09-15T09:19:46: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:19:46: ✅ Complete bot started successfully!
+2025-09-15T09:19:46: 📱 Send /start to your bot to test
+2025-09-15T09:19:46: 🔧 Bot features:
+2025-09-15T09:19:46:    - Complete user registration
+2025-09-15T09:19:46:    - Full order creation flow
+2025-09-15T09:19:46:    - Progress tracking
+2025-09-15T09:19:46:    - Evidence upload (basic)
+2025-09-15T09:19:46:    - Report generation
+2025-09-15T09:19:46:    - Database integration
+2025-09-15T09:19:46:    - Session management
+2025-09-15T09:19:46:    - Technician notifications
+2025-09-15T09:19:51: 📨 Received callback: my_orders from Afiah
+2025-09-15T09:19:55: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:19:55: 📱 Bot will handle all features properly
+2025-09-15T09:19:55: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:19:55: ✅ Complete bot started successfully!
+2025-09-15T09:19:55: 📱 Send /start to your bot to test
+2025-09-15T09:19:55: 🔧 Bot features:
+2025-09-15T09:19:55:    - Complete user registration
+2025-09-15T09:19:55:    - Full order creation flow
+2025-09-15T09:19:55:    - Progress tracking
+2025-09-15T09:19:55:    - Evidence upload (basic)
+2025-09-15T09:19:55:    - Report generation
+2025-09-15T09:19:55:    - Database integration
+2025-09-15T09:19:55:    - Session management
+2025-09-15T09:19:55:    - Technician notifications
+2025-09-15T09:19:56: 📨 Received callback: update_progress from Afiah
+2025-09-15T09:20:01: 📨 Received callback: progress_order_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T09:20:04: 📨 Received callback: progress_survey_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T09:20:06: 📨 Received callback: survey_not_ready_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T09:20:36: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:20:36: 📱 Bot will handle all features properly
+2025-09-15T09:20:36: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:20:36: ✅ Complete bot started successfully!
+2025-09-15T09:20:36: 📱 Send /start to your bot to test
+2025-09-15T09:20:36: 🔧 Bot features:
+2025-09-15T09:20:36:    - Complete user registration
+2025-09-15T09:20:36:    - Full order creation flow
+2025-09-15T09:20:36:    - Progress tracking
+2025-09-15T09:20:36:    - Evidence upload (basic)
+2025-09-15T09:20:36:    - Report generation
+2025-09-15T09:20:36:    - Database integration
+2025-09-15T09:20:36:    - Session management
+2025-09-15T09:20:36:    - Technician notifications
+2025-09-15T09:24:12: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:24:12: 📱 Bot will handle all features properly
+2025-09-15T09:24:12: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:24:12: ✅ Complete bot started successfully!
+2025-09-15T09:24:12: 📱 Send /start to your bot to test
+2025-09-15T09:24:51: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:24:51: 📱 Bot will handle all features properly
+2025-09-15T09:24:51: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:24:51: ✅ Complete bot started successfully!
+2025-09-15T09:24:51: 📱 Send /start to your bot to test
+2025-09-15T09:25:48: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:25:48: 📱 Bot will handle all features properly
+2025-09-15T09:25:48: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:25:48: ✅ Complete bot started successfully!
+2025-09-15T09:25:48: 📱 Send /start to your bot to test
+2025-09-15T09:26:05: 📨 Received /start from Afiah (6924062588)
+2025-09-15T09:26:09: 📨 Received callback: update_progress from Afiah
+2025-09-15T09:26:12: 📨 Received callback: progress_order_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T09:26:16: 📨 Received callback: progress_survey_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T09:26:24: 📨 Received callback: survey_not_ready_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T09:29:42: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:29:42: 📱 Bot will handle all features properly
+2025-09-15T09:29:42: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:29:42: ✅ Complete bot started successfully!
+2025-09-15T09:29:42: 📱 Send /start to your bot to test
+2025-09-15T09:34:47: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:34:47: 📱 Bot will handle all features properly
+2025-09-15T09:34:47: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:34:47: ✅ Complete bot started successfully!
+2025-09-15T09:34:47: 📱 Send /start to your bot to test
+2025-09-15T09:36:15: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:36:15: 📱 Bot will handle all features properly
+2025-09-15T09:36:15: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:36:15: ✅ Complete bot started successfully!
+2025-09-15T09:36:15: 📱 Send /start to your bot to test
+2025-09-15T09:36:28: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:36:28: 📱 Bot will handle all features properly
+2025-09-15T09:36:28: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:36:28: ✅ Complete bot started successfully!
+2025-09-15T09:36:28: 📱 Send /start to your bot to test
+2025-09-15T09:36:37: 📨 Received callback: progress_order_0987f390-5921-4395-afc8-2a2afebebbd4 from Afiah
+2025-09-15T09:40:50: 🤖 Starting Complete Order Management Bot...
+2025-09-15T09:40:50: 📱 Bot will handle all features properly
+2025-09-15T09:40:50: ⚠️  Press Ctrl+C to stop
+2025-09-15T09:40:50: ✅ Complete bot started successfully!
+2025-09-15T09:40:50: 📱 Send /start to your bot to test

@@ -5,7 +5,7 @@ module.exports = {
       "script": "scripts/bot.js",
       "instances": 1,
       "autorestart": true,
-      "watch": false,
+      "watch": true,
       "max_memory_restart": "1G",
       "env": {
         "NODE_ENV": "production"

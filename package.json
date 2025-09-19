@@ -44,6 +44,7 @@
     "vercel:deploy": "vercel --prod",
     "vercel:dev": "vercel dev",
     "vercel:env": "powershell -ExecutionPolicy Bypass -File setup-vercel-env-basic.ps1",
+    "vercel:setup": "node scripts/setup-vercel-bot.js",
     "deploy": "powershell -ExecutionPolicy Bypass -File deploy-vercel.ps1"
   },
   "dependencies": {

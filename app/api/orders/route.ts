@@ -9,6 +9,9 @@ export async function GET() {
         customer_name: 'Customer 1',
         customer_address: 'Address 1',
         contact: '08123456789',
+        sto: 'CBB',
+        transaction_type: 'new install',
+        service_type: 'metro',
         status: 'Pending',
         created_at: new Date().toISOString()
       },
@@ -17,6 +20,9 @@ export async function GET() {
         customer_name: 'Customer 2',
         customer_address: 'Address 2',
         contact: '08987654321',
+        sto: 'GAN',
+        transaction_type: 'modify',
+        service_type: 'Astinet',
         status: 'In Progress',
         created_at: new Date().toISOString()
       }

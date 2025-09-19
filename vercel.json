@@ -5,5 +5,8 @@
       "src": "package.json",
       "use": "@vercel/next"
     }
-  ]
+  ],
+  "env": {
+    "TELEGRAM_BOT_TOKEN": "8497928167:AAEE9zuCvRwV0347IYkzLJOQflZiq74mPnc"
+  }
 }

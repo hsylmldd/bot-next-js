@@ -2,6 +2,78 @@ const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 require('dotenv').config({ path: '.env.local' });
 
+// Handle reply keyboard button presses atau ini adalah markup keyboard
+async function handleReplyKeyboardButtons(chatId, telegramId, text, role) {
+  try {
+    switch (text) {
+      case '📋 Buat Order':
+      case '📋 Order Saya':
+        if (role === 'HD') {
+          startCreateOrder(chatId, telegramId);
+        } else {
+          showMyOrders(chatId, telegramId, role);
+        }
+        break;
+      
+      case '📊 Lihat Order':
+        showMyOrders(chatId, telegramId, 'HD');
+        break;
+      
+      case '📈 Laporan':
+        showReportMenu(chatId, telegramId);
+        break;
+      
+      case '⚙️ Update Status':
+        // Show update status menu for HD
+        bot.sendMessage(chatId, 'Fitur update status order akan segera tersedia.', getReplyMenuKeyboard(role));
+        break;
+      
+      case '📝 Update Progress':
+        showProgressMenu(chatId, telegramId);
+        break;
+      
+      case '📸 Upload Evidence':
+        showEvidenceMenu(chatId, telegramId);
+        break;
+      
+      case '❓ Bantuan':
+        showHelpByRole(chatId, role);
+        break;
+      
+      
+      default:
+        // If text doesn't match any button, show menu
+        const firstName2 = await getUserName(telegramId);
+        showWelcomeMessage(chatId, role, firstName2);
+        break;
+    }
+  } catch (error) {
+    console.error('Error handling reply keyboard:', error);
+    bot.sendMessage(chatId, '❌ Terjadi kesalahan. Silakan coba lagi.', getReplyMenuKeyboard(role));
+  }
+}
+
+// Helper function to get user name
+async function getUserName(telegramId) {
+  try {
+    const { createClient } = require('@supabase/supabase-js');
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL,
+      process.env.SUPABASE_SERVICE_ROLE_KEY
+    );
+    
+    const { data: user } = await supabase
+      .from('users')
+      .select('name')
+      .eq('telegram_id', telegramId)
+      .single();
+    
+    return user?.name || 'User';
+  } catch (error) {
+    return 'User';
+  }
+}
+
 const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, { polling: true });
 
 // User sessions untuk menyimpan state
@@ -133,6 +205,9 @@ bot.on('callback_query', (callbackQuery) => {
   handleCallbackQuery(callbackQuery);
 });
 
+// Store media groups temporarily to handle batch uploads
+const mediaGroups = new Map();
+
 // Handle photo uploads
 bot.on('photo', (msg) => {
   const chatId = msg.chat.id;
@@ -140,24 +215,233 @@ bot.on('photo', (msg) => {
   
   console.log(`📨 Received photo from ${msg.from.first_name} (${chatId})`);
   
-  handlePhotoUpload(msg, telegramId);
+  // Handle media group (multiple photos sent together)
+  if (msg.media_group_id) {
+    handleMediaGroup(msg, telegramId);
+  } else {
+    // Single photo
+    handleSinglePhoto(msg, telegramId);
+  }
 });
 
-// Handle text messages (for session input)
-bot.on('message', (msg) => {
+// Handle media group (batch photos)
+async function handleMediaGroup(msg, telegramId) {
   const chatId = msg.chat.id;
-  const telegramId = msg.from.id.toString();
-  const text = msg.text;
+  const mediaGroupId = msg.media_group_id;
   
-  // Skip if it's a command
-  if (text && text.startsWith('/')) {
+  // Initialize or add to media group
+  if (!mediaGroups.has(mediaGroupId)) {
+    mediaGroups.set(mediaGroupId, {
+      photos: [],
+      chatId: chatId,
+      telegramId: telegramId,
+      timeout: null
+    });
+  }
+  
+  const group = mediaGroups.get(mediaGroupId);
+  group.photos.push(msg);
+  
+  // Clear existing timeout
+  if (group.timeout) {
+    clearTimeout(group.timeout);
+  }
+  
+  // Set timeout to process group after 1 second of no new photos
+  group.timeout = setTimeout(async () => {
+    await processBatchPhotos(mediaGroupId);
+    mediaGroups.delete(mediaGroupId);
+  }, 1000);
+}
+
+// Process batch photos
+async function processBatchPhotos(mediaGroupId) {
+  const group = mediaGroups.get(mediaGroupId);
+  if (!group) return;
+  
+  const { photos, chatId, telegramId } = group;
+  console.log(`Processing batch of ${photos.length} photos for media group ${mediaGroupId}`);
+  
+  // Process each photo in sequence to avoid race conditions
+  for (const photo of photos) {
+    await handleSinglePhoto(photo, telegramId);
+    // Small delay between photos to ensure proper sequencing
+    await new Promise(resolve => setTimeout(resolve, 100));
+  }
+}
+
+// Handle single photo (extracted from original code)
+async function handleSinglePhoto(msg, telegramId) {
+  const chatId = msg.chat.id;
+  const session = userSessions.get(chatId);
+  
+  if (!session || session.step !== 'photos') {
+    bot.sendMessage(chatId, '❌ Tidak ada sesi upload foto yang aktif. Silakan mulai dengan /evidence terlebih dahulu.');
+    return;
+  }
+
+  // Prevent duplicate processing
+  const photoId = msg.photo[msg.photo.length - 1].file_unique_id;
+  if (session.processedPhotos && session.processedPhotos.has(photoId)) {
+    console.log('Photo already processed, skipping duplicate');
     return;
   }
   
-  // Handle session input
+  // Initialize processed photos set if not exists
+  if (!session.processedPhotos) {
+    session.processedPhotos = new Set();
+  }
+  
+  // Mark photo as being processed
+  session.processedPhotos.add(photoId);
+
+  try {
+    const { createClient } = require('@supabase/supabase-js');
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL,
+      process.env.SUPABASE_SERVICE_ROLE_KEY
+    );
+
+    // Define photo types with correct field names matching database schema
+    const photoTypes = {
+      1: { field: 'photo_sn_ont', label: 'Foto SN ONT' },
+      2: { field: 'photo_technician_customer', label: 'Foto Teknisi + Pelanggan' },
+      3: { field: 'photo_customer_house', label: 'Foto Rumah Pelanggan' },
+      4: { field: 'photo_odp_front', label: 'Foto Depan ODP' },
+      5: { field: 'photo_odp_inside', label: 'Foto Dalam ODP' },
+      6: { field: 'photo_label_dc', label: 'Foto Label DC' },
+      7: { field: 'photo_test_result', label: 'Foto Test Redaman' }
+    };
+
+    // Get current photo number
+    const photoNumber = session.data.uploadedPhotos + 1;
+    
+    // Check if we've already uploaded 7 photos
+    if (photoNumber > 7) {
+      bot.sendMessage(chatId, '✅ Semua 7 foto evidence sudah berhasil diupload!');
+      return;
+    }
+    
+    const currentPhoto = photoTypes[photoNumber];
+
+    console.log(`Processing photo ${photoNumber}: ${currentPhoto.label}`); // Debug log
+
+    // Get file from Telegram
+    const fileId = msg.photo[msg.photo.length - 1].file_id;
+    const file = await bot.getFile(fileId);
+    const response = await axios({
+      method: 'get',
+      url: `https://api.telegram.org/file/bot${process.env.TELEGRAM_BOT_TOKEN}/${file.file_path}`,
+      responseType: 'arraybuffer'
+    });
+
+    // Prepare file for upload
+    const buffer = Buffer.from(response.data);
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    const filename = `evidence-${session.orderId}-${currentPhoto.field}-${timestamp}.jpg`;
+
+    console.log('Uploading file:', filename); // Debug log
+
+    // Upload to Supabase Storage
+    const { error: uploadError, data: uploadData } = await supabase.storage
+      .from('evidence-photos')
+      .upload(filename, buffer, {
+        contentType: 'image/jpeg',
+        upsert: true
+      });
+
+    if (uploadError) {
+      console.error('Upload error:', uploadError);
+      bot.sendMessage(chatId, `❌ Gagal upload ${currentPhoto.label}. Silakan coba lagi.`);
+      return;
+    }
+
+    // Get public URL
+    const { data: urlData } = supabase.storage
+      .from('evidence-photos')
+      .getPublicUrl(filename);
+
+    console.log('Got public URL:', urlData.publicUrl); // Debug log
+
+    // Update evidence record in database
+    const { error: updateError } = await supabase
+      .from('evidence')
+      .update({
+        [currentPhoto.field]: urlData.publicUrl
+      })
+      .eq('order_id', session.orderId);
+
+    if (updateError) {
+      console.error('Evidence update error:', updateError);
+      bot.sendMessage(chatId, `❌ Gagal menyimpan ${currentPhoto.label} ke database.`);
+      return;
+    }
+
+    console.log(`Updated database for ${currentPhoto.field}`); // Debug log
+
+    // Increment counter AFTER successful save
+    session.data.uploadedPhotos++;
+
+    // Send success message
+    bot.sendMessage(chatId,
+      `✅ ${currentPhoto.label} Berhasil Disimpan!\n\n` +
+      `📊 Progress: ${session.data.uploadedPhotos}/7 foto\n\n` +
+      (session.data.uploadedPhotos < 7 
+        ? `Silakan upload foto ke-${session.data.uploadedPhotos + 1}: ${photoTypes[session.data.uploadedPhotos + 1].label}`
+        : '🎉 Semua evidence berhasil disimpan!')
+    );
+
+    // Close order if all photos are uploaded
+    if (session.data.uploadedPhotos >= 7) {
+      const { error: closeError } = await supabase
+        .from('orders')
+        .update({ status: 'Closed' })
+        .eq('order_id', session.orderId);
+
+      if (closeError) {
+        console.error('Error closing order:', closeError);
+        bot.sendMessage(chatId, '⚠️ Order berhasil diselesaikan tapi gagal update status.');
+      } else {
+        bot.sendMessage(chatId, '🎉 Order berhasil diselesaikan dan status telah diupdate ke "Closed"!');
+      }
+
+      // Clear session
+      userSessions.delete(chatId);
+    }
+
+  } catch (error) {
+    console.error('Error in handleSinglePhoto:', error);
+    bot.sendMessage(chatId, '❌ Terjadi kesalahan saat memproses foto. Silakan coba lagi.');
+  }
+}
+
+// Handle text messages (for session input)
+bot.on('message', async (msg) => {
+  const chatId = msg.chat.id;
+  const telegramId = msg.from.id.toString();
+  const text = msg.text;
+
+  // Skip command
+  if (text && text.startsWith('/')) return;
+
+  // Check if user has active session first
   const session = userSessions.get(chatId);
   if (session) {
-    handleSessionInput(chatId, telegramId, text, session);
+    if (session.type === 'evidence_upload') {
+      await handleEvidenceUploadFlow(chatId, telegramId, text, msg, session);
+      return;
+    }
+    await handleSessionInput(chatId, telegramId, text, msg, session);
+    return;
+  }
+
+  // Handle reply keyboard buttons only if no active session
+  if (text && !text.startsWith('/')) {
+    const role = await getUserRole(telegramId);
+    if (role) {
+      await handleReplyKeyboardButtons(chatId, telegramId, text, role);
+      return;
+    }
   }
 });
 
@@ -233,7 +517,11 @@ function showWelcomeMessage(chatId, role, name) {
     `Role: ${roleEmoji} ${roleName}\n\n` +
     'Selamat datang kembali di Order Management Bot!\n\n' +
     'Gunakan menu di bawah untuk mengakses fitur:',
-    getMainMenuKeyboard(role)
+    {
+      
+      ...getMainMenuKeyboard(role),
+      ...getReplyMenuKeyboard(role)
+    }
   );
 }
 
@@ -247,6 +535,7 @@ function getMainMenuKeyboard(role) {
           [{ text: '📈 Generate Laporan', callback_data: 'generate_report' }],
           [{ text: '⚙️ Update Status Order', callback_data: 'update_status' }],
           [{ text: '❓ Bantuan', callback_data: 'help' }]
+         
         ]
       }
     };
@@ -258,7 +547,41 @@ function getMainMenuKeyboard(role) {
           [{ text: '📝 Update Progress', callback_data: 'update_progress' }],
           [{ text: '📸 Upload Evidence', callback_data: 'upload_evidence' }],
           [{ text: '❓ Bantuan', callback_data: 'help' }]
+        
         ]
+      }
+    };
+  }
+}
+
+
+
+// Fungsi untuk reply keyboard menu yang muncul di text input
+function getReplyMenuKeyboard(role) {
+  if (role === 'HD') {
+    return {
+      reply_markup: {
+        keyboard: [
+          ['📋 Buat Order', '📊 Lihat Order'],
+          ['📈 Laporan', '⚙️ Update Status'],
+          ['❓ Bantuan']
+        ],
+        resize_keyboard: true,
+        one_time_keyboard: false,
+        persistent: true
+      }
+    };
+  } else {
+    return {
+      reply_markup: {
+        keyboard: [
+          ['📋 Order Saya', '📝 Update Progress'],
+          ['📸 Upload Evidence', '❓ Bantuan']
+          
+        ],
+        resize_keyboard: true,
+        one_time_keyboard: false,
+        persistent: true
       }
     };
   }
@@ -268,13 +591,23 @@ function startCreateOrder(chatId, telegramId) {
   // Set session untuk order creation
   userSessions.set(chatId, {
     type: 'create_order',
-    step: 'customer_name',
+    step: 'order_id',
     data: {}
   });
-  
-  bot.sendMessage(chatId, 
-    '📋 **Membuat Order Baru**\n\n' +
-    'Silakan masukkan nama pelanggan:'
+   
+bot.sendMessage(chatId,
+  '📋 Membuat Order Baru\n\n' +
+  '🆔 Silakan masukkan Order ID:'
+
+
+
+
+
+  // bot.sendMessage(chatId, 
+  //   '📋 Membuat Order Baru\n\n' +
+  //   'Silakan masukkan informasi order secara lengkap:\n\n' +
+  //   '1️⃣ Nama Pelanggan:',
+  //   getPersistentMenuKeyboard()
   );
 }
 
@@ -310,17 +643,20 @@ async function showMyOrders(chatId, telegramId, role) {
     }
     
     if (!orders || orders.length === 0) {
-      bot.sendMessage(chatId, '📋 **Daftar Order**\n\nTidak ada order yang ditemukan.');
+      bot.sendMessage(chatId, '📋 Daftar Order\n\nTidak ada order yang ditemukan.');
       return;
     }
     
-    let message = '📋 **Daftar Order**\n\n';
+    let message = '📋 Daftar Order\n\n';
     orders.forEach((order, index) => {
       const statusEmoji = getStatusEmoji(order.status);
-      message += `${index + 1}. **${order.customer_name}**\n`;
+      message += `${index + 1}. ${order.customer_name}\n`;
       message += `   Status: ${statusEmoji} ${order.status}\n`;
       message += `   Alamat: ${order.customer_address}\n`;
       message += `   Kontak: ${order.contact}\n`;
+      message += `   STO: ${order.sto || 'Belum diisi'}\n`;
+      message += `   Type: ${order.transaction_type || 'Belum diisi'}\n`;
+      message += `   Layanan: ${order.service_type || 'Belum diisi'}\n`;
       message += `   Dibuat: ${new Date(order.created_at).toLocaleDateString('id-ID')}\n\n`;
     });
     
@@ -336,20 +672,22 @@ function showProgressMenu(chatId, telegramId) {
   // Get user's assigned orders first
   getUserAssignedOrders(telegramId).then(orders => {
     if (!orders || orders.length === 0) {
-      bot.sendMessage(chatId, '📝 **Update Progress**\n\nTidak ada order yang ditugaskan kepada Anda.');
+      bot.sendMessage(chatId, '📝 Update Progress\n\nTidak ada order aktif yang ditugaskan kepada Anda.', getPersistentMenuKeyboard());
       return;
     }
     
-    let message = '📝 **Update Progress**\n\nPilih order yang akan diupdate:\n\n';
+    let message = '📝 Update Progress\n\nPilih order yang akan diupdate:\n\n';
     const keyboard = [];
     
     orders.forEach((order, index) => {
-      message += `${index + 1}. **${order.customer_name}** (${order.status})\n`;
+      message += `${index + 1}. ${order.customer_name} (${order.status})\n`;
       keyboard.push([{ 
         text: `${index + 1}. ${order.customer_name}`, 
-        callback_data: `progress_order_${order.id}` 
+        callback_data: `progress_order_${order.order_id}` 
       }]);
     });
+    
+    
     
     bot.sendMessage(chatId, message, {
       reply_markup: {
@@ -363,18 +701,18 @@ function showEvidenceMenu(chatId, telegramId) {
   // Get user's assigned orders first
   getUserAssignedOrders(telegramId).then(orders => {
     if (!orders || orders.length === 0) {
-      bot.sendMessage(chatId, '📸 **Upload Evidence**\n\nTidak ada order yang ditugaskan kepada Anda.');
+      bot.sendMessage(chatId, '📸 Upload Evidence\n\nTidak ada order aktif yang ditugaskan kepada Anda.');
       return;
     }
     
-    let message = '📸 **Upload Evidence**\n\nPilih order untuk upload evidence:\n\n';
+    let message = '📸 Upload Evidence\n\nPilih order untuk memulai proses evidence close:\n\n';
     const keyboard = [];
     
     orders.forEach((order, index) => {
-      message += `${index + 1}. **${order.customer_name}** (${order.status})\n`;
+      message += `${index + 1}. ${order.customer_name} (${order.status})\n`;
       keyboard.push([{ 
         text: `${index + 1}. ${order.customer_name}`, 
-        callback_data: `evidence_order_${order.id}` 
+        callback_data: `evidence_order_${order.order_id}` 
       }]);
     });
     
@@ -388,7 +726,7 @@ function showEvidenceMenu(chatId, telegramId) {
 
 function showReportMenu(chatId, telegramId) {
   bot.sendMessage(chatId, 
-    '📈 **Generate Laporan**\n\n' +
+    '📈 Generate Laporan\n\n' +
     'Pilih jenis laporan:',
     {
       reply_markup: {
@@ -459,14 +797,14 @@ function getProgressStatusEmoji(status) {
   return statusEmojis[status] || '❓';
 }
 
-async function handleSessionInput(chatId, telegramId, text, session) {
+async function handleSessionInput(chatId, telegramId, text, msg, session) {
   try {
     if (session.type === 'create_order') {
       await handleCreateOrderInput(chatId, telegramId, text, session);
     } else if (session.type === 'update_progress') {
       await handleUpdateProgressInput(chatId, telegramId, text, session);
-    } else if (session.type === 'evidence_data') {
-      await handleEvidenceDataInput(chatId, telegramId, text, session);
+    } else if (session.type === 'evidence_upload_flow') {
+      await handleEvidenceUploadFlow(chatId, telegramId, text, msg, session);
     }
   } catch (error) {
     console.error('Error handling session input:', error);
@@ -481,13 +819,37 @@ async function handleCreateOrderInput(chatId, telegramId, text, session) {
     process.env.SUPABASE_SERVICE_ROLE_KEY
   );
   
-  if (session.step === 'customer_name') {
+  if (session.step === 'order_id') {
+    // Validasi Order ID tidak duplikat
+    const { data: existingOrder } = await supabase
+      .from('orders')
+      .select('id')
+      .eq('order_id', text)
+      .single();
+    
+    if (existingOrder) {
+      bot.sendMessage(chatId, 
+        '❌ Order ID sudah ada!\n\n' +
+        '🆔 Silakan masukkan Order ID yang berbeda:'
+      );
+      return;
+    }
+    
+    session.data.order_id = text;
+    session.step = 'customer_name';
+    
+    bot.sendMessage(chatId, 
+      '✅ Order ID: ' + text + '\n\n' +
+      '1️⃣ Nama Pelanggan:'
+    );
+    
+  } else if (session.step === 'customer_name') {
     session.data.customer_name = text;
     session.step = 'customer_address';
     
     bot.sendMessage(chatId, 
-      '✅ Nama pelanggan: **' + text + '**\n\n' +
-      'Silakan masukkan alamat pelanggan:'
+      '✅ Nama pelanggan: ' + text + '\n\n' +
+      '2️⃣ Alamat Pelanggan:'
     );
     
   } else if (session.step === 'customer_address') {
@@ -495,14 +857,81 @@ async function handleCreateOrderInput(chatId, telegramId, text, session) {
     session.step = 'customer_contact';
     
     bot.sendMessage(chatId, 
-      '✅ Alamat pelanggan: **' + text + '**\n\n' +
-      'Silakan masukkan kontak pelanggan:'
+      '✅ Alamat pelanggan: ' + text + '\n\n' +
+      '3️⃣ Kontak Pelanggan:'
     );
     
   } else if (session.step === 'customer_contact') {
     session.data.contact = text;
-    session.step = 'assign_technician';
+    session.step = 'sto_selection';
     
+    bot.sendMessage(chatId, 
+      '✅ Kontak pelanggan: ' + text + '\n\n' +
+      '4️⃣ Pilih STO:',
+      {
+        reply_markup: {
+          inline_keyboard: [
+            [
+              { text: 'CBB', callback_data: 'sto_CBB' },
+              { text: 'CWA', callback_data: 'sto_CWA' },
+              { text: 'GAN', callback_data: 'sto_GAN' },
+              { text: 'JTN', callback_data: 'sto_JTN' }
+            ],
+            [
+              { text: 'KLD', callback_data: 'sto_KLD' },
+              { text: 'KRG', callback_data: 'sto_KRG' },
+              { text: 'PDK', callback_data: 'sto_PDK' },
+              { text: 'PGB', callback_data: 'sto_PGB' }
+            ],
+            [
+              { text: 'PGG', callback_data: 'sto_PGG' },
+              { text: 'PSR', callback_data: 'sto_PSR' },
+              { text: 'RMG', callback_data: 'sto_RMG' },
+              { text: 'BIN', callback_data: 'sto_BIN' }
+            ],
+            [
+              { text: 'CPE', callback_data: 'sto_CPE' },
+              { text: 'JAG', callback_data: 'sto_JAG' },
+              { text: 'KAL', callback_data: 'sto_KAL' },
+              { text: 'KBY', callback_data: 'sto_KBY' }
+            ],
+            [
+              { text: 'KMG', callback_data: 'sto_KMG' },
+              { text: 'PSM', callback_data: 'sto_PSM' },
+              { text: 'TBE', callback_data: 'sto_TBE' },
+              { text: 'NAS', callback_data: 'sto_NAS' }
+            ]
+          ]
+        }
+      }
+    );
+    
+  } else if (session.step === 'transaction_type') {
+    session.step = 'service_type';
+    
+    bot.sendMessage(chatId, 
+      '✅ Type Transaksi: ' + session.data.transaction_type + '\n\n' +
+      '6️⃣ Pilih Jenis Layanan:',
+      {
+        reply_markup: {
+          inline_keyboard: [
+            [
+              { text: 'Astinet', callback_data: 'service_Astinet' },
+              { text: 'metro', callback_data: 'service_metro' }
+            ],
+            [
+              { text: 'vpn ip', callback_data: 'service_vpn ip' },
+              { text: 'ip transit', callback_data: 'service_ip transit' }
+            ],
+            [
+              { text: 'siptrunk', callback_data: 'service_siptrunk' }
+            ]
+          ]
+        }
+      }
+    );
+    
+  } else if (session.step === 'assign_technician') {
     // Get available technicians
     const { data: technicians, error } = await supabase
       .from('users')
@@ -515,8 +944,8 @@ async function handleCreateOrderInput(chatId, telegramId, text, session) {
       return;
     }
     
-    let message = '✅ Kontak pelanggan: **' + text + '**\n\n';
-    message += 'Pilih teknisi yang akan ditugaskan:\n\n';
+    let message = '✅ Jenis Layanan: ' + session.data.service_type + '\n\n';
+    message += '7️⃣ Pilih Teknisi yang akan ditugaskan:\n\n';
     
     const keyboard = [];
     technicians.forEach((tech, index) => {
@@ -564,14 +993,14 @@ async function handleUpdateProgressInput(chatId, telegramId, text, session) {
     await supabase
       .from('orders')
       .update({ status: 'In Progress' })
-      .eq('id', session.orderId)
+      .eq('order_id', session.orderId)
       .eq('status', 'Pending');
     
     bot.sendMessage(chatId, 
-      `✅ **Progress Berhasil Diupdate!**\n\n` +
-      `📝 **Tahapan**: ${session.stage}\n` +
-      `📊 **Status**: Selesai\n` +
-      `📝 **Catatan**: ${text || 'Tidak ada catatan'}\n\n` +
+      `✅ Progress Berhasil Diupdate!\n\n` +
+      `📝 Tahapan: ${session.stage}\n` +
+      `📊 Status: Selesai\n` +
+      `📝 Catatan: ${text || 'Tidak ada catatan'}\n\n` +
       'Progress telah tersimpan ke database.'
     );
     
@@ -579,59 +1008,6 @@ async function handleUpdateProgressInput(chatId, telegramId, text, session) {
     
   } catch (error) {
     console.error('Error handling progress update:', error);
-    bot.sendMessage(chatId, '❌ Terjadi kesalahan. Silakan coba lagi.');
-  }
-}
-
-async function handleEvidenceDataInput(chatId, telegramId, text, session) {
-  try {
-    const { createClient } = require('@supabase/supabase-js');
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
-    
-    if (session.step === 'odp_name') {
-      session.data.odp_name = text;
-      session.step = 'ont_sn';
-      
-      bot.sendMessage(chatId, 
-        '✅ Nama ODP: **' + text + '**\n\n' +
-        'Silakan masukkan SN ONT:'
-      );
-      
-    } else if (session.step === 'ont_sn') {
-      session.data.ont_sn = text;
-      
-      // Save evidence data to database
-      const { error } = await supabase
-        .from('evidence')
-        .upsert({
-          order_id: session.orderId,
-          odp_name: session.data.odp_name,
-          ont_sn: session.data.ont_sn,
-          uploaded_at: new Date().toISOString()
-        });
-      
-      if (error) {
-        console.error('Error saving evidence data:', error);
-        bot.sendMessage(chatId, '❌ Gagal menyimpan data evidence. Silakan coba lagi.');
-        return;
-      }
-      
-      bot.sendMessage(chatId, 
-        '✅ **Data Evidence Berhasil Disimpan!**\n\n' +
-        `📝 **Nama ODP**: ${session.data.odp_name}\n` +
-        `📱 **SN ONT**: ${session.data.ont_sn}\n\n` +
-        'Data telah tersimpan ke database.\n' +
-        'Silakan lanjutkan upload foto evidence lainnya.'
-      );
-      
-      userSessions.delete(chatId);
-    }
-    
-  } catch (error) {
-    console.error('Error handling evidence data input:', error);
     bot.sendMessage(chatId, '❌ Terjadi kesalahan. Silakan coba lagi.');
   }
 }
@@ -647,16 +1023,16 @@ async function handleCallbackQuery(callbackQuery) {
     if (data === 'register_hd') {
       await registerUser(telegramId, callbackQuery.from.first_name, 'HD');
       bot.sendMessage(chatId, 
-        '✅ **Registrasi Berhasil!**\n\n' +
-        'Anda telah terdaftar sebagai **HD (Helpdesk)**.\n\n' +
+        '✅ Registrasi Berhasil!\n\n' +
+        'Anda telah terdaftar sebagai HD (Helpdesk).\n\n' +
         'Selamat datang di Order Management Bot!'
       );
       showWelcomeMessage(chatId, 'HD', callbackQuery.from.first_name);
     } else if (data === 'register_teknis') {
       await registerUser(telegramId, callbackQuery.from.first_name, 'Teknisi');
       bot.sendMessage(chatId, 
-        '✅ **Registrasi Berhasil!**\n\n' +
-        'Anda telah terdaftar sebagai **Teknisi**.\n\n' +
+        '✅ Registrasi Berhasil!\n\n' +
+        'Anda telah terdaftar sebagai Teknisi.\n\n' +
         'Selamat datang di Order Management Bot!'
       );
       showWelcomeMessage(chatId, 'Teknisi', callbackQuery.from.first_name);
@@ -678,6 +1054,16 @@ async function handleCallbackQuery(callbackQuery) {
           showHelpByRole(chatId, role);
         }
       });
+   
+    } else if (data.startsWith('sto_')) {
+      const sto = data.split('_')[1];
+      await handleSTOSelection(chatId, telegramId, sto);
+    } else if (data.startsWith('transaction_')) {
+      const transactionType = data.split('_')[1];
+      await handleTransactionTypeSelection(chatId, telegramId, transactionType);
+    } else if (data.startsWith('service_')) {
+      const serviceType = data.split('_')[1];
+      await handleServiceTypeSelection(chatId, telegramId, serviceType);
     } else if (data.startsWith('assign_tech_')) {
       const techId = data.split('_')[2];
       await assignTechnician(chatId, telegramId, techId);
@@ -698,24 +1084,55 @@ async function handleCallbackQuery(callbackQuery) {
       await handleProgressInstalasi(chatId, telegramId, orderId);
     } else if (data.startsWith('evidence_order_')) {
       const orderId = data.split('_')[2];
-      await showEvidenceTypes(chatId, telegramId, orderId);
-    } else if (data.startsWith('evidence_data_')) {
-      const orderId = data.split('_')[2];
-      await handleEvidenceData(chatId, telegramId, orderId);
-    } else if (data.startsWith('evidence_photo_')) {
-      const orderId = data.split('_')[2];
-      const photoType = data.split('_')[3];
-      await handleEvidencePhoto(chatId, telegramId, orderId, photoType);
+      await startEvidenceUploadFlow(chatId, telegramId, orderId);
     } else if (data.startsWith('survey_ready_')) {
       const orderId = data.split('_')[2];
       await handleSurveyResult(chatId, telegramId, orderId, 'Ready');
     } else if (data.startsWith('survey_not_ready_')) {
-      const orderId = data.split('_')[2];
+      const orderId = data.split('_')[3];
       await handleSurveyResult(chatId, telegramId, orderId, 'Not Ready');
     } else if (data === 'report_daily') {
       await generateDailyReport(chatId, telegramId);
     } else if (data === 'report_weekly') {
       await generateWeeklyReport(chatId, telegramId);
+    } else if (data.startsWith('update_pt2_selesai_')) {
+      const orderId = data.split('_')[3];
+      // Update status order ke PT2 Selesai
+      const { createClient } = require('@supabase/supabase-js');
+      const supabase = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL,
+        process.env.SUPABASE_SERVICE_ROLE_KEY
+      );
+      await supabase
+        .from('orders')
+        .update({ 
+          status: 'PT2 Selesai',
+          pt2_completion_time: new Date().toISOString()
+        })
+        .eq('order_id', orderId);
+
+      bot.sendMessage(chatId, '✅ Waktu PT2 selesai telah diupdate. TTI Comply 3x24 jam dimulai otomatis!');
+      await notifyHDPT2SelesaiWithTTI(orderId);
+    } else if (data.startsWith('update_lme_pt2_')) {
+      const orderId = data.split('_')[3];
+      // Update LME PT2 time
+      const { createClient } = require('@supabase/supabase-js');
+      const supabase = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL,
+        process.env.SUPABASE_SERVICE_ROLE_KEY
+      );
+      await supabase
+        .from('orders')
+        .update({ 
+          status: 'LME PT2 Updated',
+          lme_pt2_update_time: new Date().toISOString()
+        })
+        .eq('order_id', orderId);
+
+      bot.sendMessage(chatId, '✅ Waktu LME PT2 telah diupdate. Teknisi dapat melanjutkan pekerjaan.');
+    } else if (data.startsWith('view_order_')) {
+      const orderId = data.split('_')[2];
+      await showOrderDetails(chatId, orderId);
     } else {
       bot.sendMessage(chatId, 'Fitur ini sedang dalam pengembangan.');
     }
@@ -724,6 +1141,120 @@ async function handleCallbackQuery(callbackQuery) {
     console.error('Error handling callback query:', error);
     bot.sendMessage(chatId, '❌ Terjadi kesalahan. Silakan coba lagi.');
   }
+}
+
+async function handleSTOSelection(chatId, telegramId, sto) {
+  const session = userSessions.get(chatId);
+  if (!session || session.type !== 'create_order') {
+    bot.sendMessage(chatId, '❌ Session tidak valid. Silakan mulai ulang.');
+    return;
+  }
+  
+  session.data.sto = sto;
+  session.step = 'transaction_type';
+  
+  bot.sendMessage(chatId, 
+    '✅ STO: ' + sto + '\n\n' +
+    '5️⃣ Pilih Type Transaksi:',
+    {
+      reply_markup: {
+        inline_keyboard: [
+          [
+            { text: 'Disconnect', callback_data: 'transaction_Disconnect' },
+            { text: 'modify', callback_data: 'transaction_modify' }
+          ],
+          [
+            { text: 'new install existing', callback_data: 'transaction_new install existing' },
+            { text: 'new install jt', callback_data: 'transaction_new install jt' }
+          ],
+          [
+            { text: 'new install', callback_data: 'transaction_new install' },
+            { text: 'PDA', callback_data: 'transaction_PDA' }
+          ]
+        ]
+      }
+    }
+  );
+}
+
+async function handleTransactionTypeSelection(chatId, telegramId, transactionType) {
+  const session = userSessions.get(chatId);
+  if (!session || session.type !== 'create_order') {
+    bot.sendMessage(chatId, '❌ Session tidak valid. Silakan mulai ulang.');
+    return;
+  }
+  
+  session.data.transaction_type = transactionType;
+  session.step = 'service_type';
+  
+  bot.sendMessage(chatId, 
+    '✅ Type Transaksi: ' + transactionType + '\n\n' +
+    '6️⃣ Pilih Jenis Layanan:',
+    {
+      reply_markup: {
+        inline_keyboard: [
+          [
+            { text: 'Astinet', callback_data: 'service_Astinet' },
+            { text: 'Metro', callback_data: 'service_metro' }
+          ],
+          [
+            { text: 'Vpn Ip', callback_data: 'service_vpn ip' },
+            { text: 'Ip Transit', callback_data: 'service_ip transit' }
+          ],
+          [
+            { text: 'Siptrunk', callback_data: 'service_siptrunk' }
+          ]
+        ]
+      }
+    }
+  );
+}
+
+async function handleServiceTypeSelection(chatId, telegramId, serviceType) {
+  const session = userSessions.get(chatId);
+  if (!session || session.type !== 'create_order') {
+    bot.sendMessage(chatId, '❌ Session tidak valid. Silakan mulai ulang.');
+    return;
+  }
+  
+  session.data.service_type = serviceType;
+  session.step = 'assign_technician';
+  
+  // Get available technicians
+  const { createClient } = require('@supabase/supabase-js');
+  const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL,
+    process.env.SUPABASE_SERVICE_ROLE_KEY
+  );
+  
+  const { data: technicians, error } = await supabase
+    .from('users')
+    .select('id, name')
+    .eq('role', 'Teknisi');
+  
+  if (error || !technicians || technicians.length === 0) {
+    bot.sendMessage(chatId, '❌ Tidak ada teknisi yang tersedia. Silakan hubungi admin.');
+    userSessions.delete(chatId);
+    return;
+  }
+  
+  let message = '✅ Jenis Layanan: ' + serviceType + '\n\n';
+  message += '7️⃣ Pilih Teknisi yang akan ditugaskan:\n\n';
+  
+  const keyboard = [];
+  technicians.forEach((tech, index) => {
+    message += `${index + 1}. ${tech.name}\n`;
+    keyboard.push([{ 
+      text: `${index + 1}. ${tech.name}`, 
+      callback_data: `assign_tech_${tech.id}` 
+    }]);
+  });
+  
+  bot.sendMessage(chatId, message, {
+    reply_markup: {
+      inline_keyboard: keyboard
+    }
+  });
 }
 
 async function assignTechnician(chatId, telegramId, techId) {
@@ -751,9 +1282,13 @@ async function assignTechnician(chatId, telegramId, techId) {
     const { data: order, error } = await supabase
       .from('orders')
       .insert({
+        order_id: session.data.order_id,
         customer_name: session.data.customer_name,
         customer_address: session.data.customer_address,
         contact: session.data.contact,
+        sto: session.data.sto,
+        transaction_type: session.data.transaction_type,
+        service_type: session.data.service_type,
         assigned_technician: techId,
         status: 'Pending'
       })
@@ -771,13 +1306,16 @@ async function assignTechnician(chatId, telegramId, techId) {
     
     // Send success message
     bot.sendMessage(chatId, 
-      '✅ **Order Berhasil Dibuat!**\n\n' +
-      `📋 **Order ID**: ${order.id}\n` +
-      `👤 **Pelanggan**: ${order.customer_name}\n` +
-      `🏠 **Alamat**: ${order.customer_address}\n` +
-      `📞 **Kontak**: ${order.contact}\n` +
-      `🔧 **Teknisi**: ${tech.name}\n` +
-      `📊 **Status**: Pending\n\n` +
+      '✅ Order Berhasil Dibuat!\n\n' +
+      `📋 Order ID: ${order.order_id}\n` +
+      `👤 Pelanggan: ${order.customer_name}\n` +
+      `🏠 Alamat: ${order.customer_address}\n` +
+      `📞 Kontak: ${order.contact}\n` +
+      `🏢 STO: ${order.sto}\n` +
+      `🔄 Type Transaksi: ${order.transaction_type}\n` +
+      `🌐 Jenis Layanan: ${order.service_type}\n` +
+      `🔧 Teknisi: ${tech.name}\n` +
+      `📊 Status: Pending\n\n` +
       'Teknisi akan mendapat notifikasi order baru.'
     );
     
@@ -807,12 +1345,15 @@ async function notifyTechnician(techId, order) {
     
     if (tech && tech.telegram_id) {
       bot.sendMessage(tech.telegram_id, 
-        '🔔 **Order Baru Ditugaskan!**\n\n' +
-        `📋 **Order ID**: ${order.id}\n` +
-        `👤 **Pelanggan**: ${order.customer_name}\n` +
-        `🏠 **Alamat**: ${order.customer_address}\n` +
-        `📞 **Kontak**: ${order.contact}\n` +
-        `📊 **Status**: Pending\n\n` +
+        '🔔 Order Baru Ditugaskan!\n\n' +
+        `📋 Order ID: ${order.order_id}\n` +
+        `👤 Pelanggan: ${order.customer_name}\n` +
+        `🏠 Alamat: ${order.customer_address}\n` +
+        `📞 Kontak: ${order.contact}\n` +
+        `🏢 STO: ${order.sto}\n` +
+        `🔄 Type Transaksi: ${order.transaction_type}\n` +
+        `🌐 Jenis Layanan: ${order.service_type}\n` +
+        `📊 Status: Pending\n\n` +
         'Silakan mulai dengan melakukan survey jaringan.'
       );
     }
@@ -833,7 +1374,7 @@ async function showProgressStages(chatId, telegramId, orderId) {
     const { data: order, error } = await supabase
       .from('orders')
       .select('*')
-      .eq('id', orderId)
+      .eq('order_id', orderId)
       .single();
     
     if (error || !order) {
@@ -852,13 +1393,13 @@ async function showProgressStages(chatId, telegramId, orderId) {
       console.error('Error fetching progress:', progressError);
     }
     
-    let message = '📝 **Update Progress**\n\n';
-    message += `📋 **Order**: ${order.customer_name}\n`;
-    message += `🏠 **Alamat**: ${order.customer_address}\n`;
-    message += `📊 **Status**: ${getStatusEmoji(order.status)} ${order.status}\n\n`;
+    let message = '📝 Update Progress\n\n';
+    message += `📋 Order: ${order.customer_name}\n`;
+    message += `🏠 Alamat: ${order.customer_address}\n`;
+    message += `📊 Status: ${getStatusEmoji(order.status)} ${order.status}\n\n`;
     
     if (progress && progress.length > 0) {
-      message += '📈 **Progress Terakhir:**\n';
+      message += '📈 Progress Terakhir:\n';
       progress.slice(0, 3).forEach(p => {
         message += `• ${p.stage}: ${getProgressStatusEmoji(p.status)} ${p.status}\n`;
       });
@@ -880,87 +1421,6 @@ async function showProgressStages(chatId, telegramId, orderId) {
     
   } catch (error) {
     console.error('Error showing progress stages:', error);
-    bot.sendMessage(chatId, '❌ Terjadi kesalahan. Silakan coba lagi.');
-  }
-}
-
-async function showEvidenceTypes(chatId, telegramId, orderId) {
-  try {
-    const { createClient } = require('@supabase/supabase-js');
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
-    
-    // Get order details
-    const { data: order, error } = await supabase
-      .from('orders')
-      .select('*')
-      .eq('id', orderId)
-      .single();
-    
-    if (error || !order) {
-      bot.sendMessage(chatId, '❌ Order tidak ditemukan.');
-      return;
-    }
-    
-    // Get existing evidence
-    const { data: existingEvidence, error: evidenceError } = await supabase
-      .from('evidence')
-      .select('*')
-      .eq('order_id', orderId)
-      .single();
-    
-    if (evidenceError && evidenceError.code !== 'PGRST116') {
-      console.error('Error checking existing evidence:', evidenceError);
-    }
-    
-    let message = '📸 **Upload Evidence**\n\n';
-    message += `📋 **Order**: ${order.customer_name}\n`;
-    message += `🏠 **Alamat**: ${order.customer_address}\n\n`;
-    
-    if (existingEvidence) {
-      message += '📊 **Status Evidence:**\n';
-      const evidenceStatus = [
-        { key: 'odp_name', label: 'Nama ODP', value: existingEvidence.odp_name },
-        { key: 'ont_sn', label: 'SN ONT', value: existingEvidence.ont_sn },
-        { key: 'photo_sn_ont', label: 'Foto SN ONT', value: existingEvidence.photo_sn_ont },
-        { key: 'photo_technician_customer', label: 'Foto Teknisi + Pelanggan', value: existingEvidence.photo_technician_customer },
-        { key: 'photo_customer_house', label: 'Foto Rumah Pelanggan', value: existingEvidence.photo_customer_house },
-        { key: 'photo_odp_front', label: 'Foto Depan ODP', value: existingEvidence.photo_odp_front },
-        { key: 'photo_odp_inside', label: 'Foto Dalam ODP', value: existingEvidence.photo_odp_inside },
-        { key: 'photo_label_dc', label: 'Foto Label DC', value: existingEvidence.photo_label_dc },
-        { key: 'photo_test_result', label: 'Foto Test Redaman', value: existingEvidence.photo_test_result }
-      ];
-      
-      evidenceStatus.forEach(item => {
-        const status = item.value ? '✅' : '❌';
-        message += `${status} ${item.label}\n`;
-      });
-      message += '\n';
-    }
-    
-    message += 'Pilih jenis evidence:';
-    
-    const keyboard = [
-      [{ text: '📝 Input Data ODP & SN', callback_data: `evidence_data_${orderId}` }],
-      [{ text: '📸 Foto SN ONT', callback_data: `evidence_photo_sn_${orderId}` }],
-      [{ text: '👥 Foto Teknisi + Pelanggan', callback_data: `evidence_photo_tech_${orderId}` }],
-      [{ text: '🏠 Foto Rumah Pelanggan', callback_data: `evidence_photo_house_${orderId}` }],
-      [{ text: '📦 Foto Depan ODP', callback_data: `evidence_photo_odp_front_${orderId}` }],
-      [{ text: '🔧 Foto Dalam ODP', callback_data: `evidence_photo_odp_inside_${orderId}` }],
-      [{ text: '🏷️ Foto Label DC', callback_data: `evidence_photo_label_${orderId}` }],
-      [{ text: '📊 Foto Test Redaman', callback_data: `evidence_photo_test_${orderId}` }]
-    ];
-    
-    bot.sendMessage(chatId, message, {
-      reply_markup: {
-        inline_keyboard: keyboard
-      }
-    });
-    
-  } catch (error) {
-    console.error('Error showing evidence types:', error);
     bot.sendMessage(chatId, '❌ Terjadi kesalahan. Silakan coba lagi.');
   }
 }
@@ -1002,7 +1462,7 @@ async function generateDailyReport(chatId, telegramId) {
       report += `${getStatusEmoji(status)} ${status}: ${count}\n`;
     });
     
-    report += `\n📋 **Total Order**: ${orders.length}\n`;
+    report += `\n📋 Total Order*: ${orders.length}\n`;
     
     bot.sendMessage(chatId, report);
     
@@ -1041,15 +1501,15 @@ async function generateWeeklyReport(chatId, telegramId) {
       statusCounts[order.status] = (statusCounts[order.status] || 0) + 1;
     });
     
-    let report = '📈 **Laporan Mingguan**\n\n';
+    let report = '📈 Laporan Mingguan\n\n';
     report += `📅 Periode: ${startOfWeek.toLocaleDateString('id-ID')} - ${endOfWeek.toLocaleDateString('id-ID')}\n\n`;
-    report += '📈 **Statistik Order:**\n';
+    report += '📈 Statistik Order:\n';
     
     Object.entries(statusCounts).forEach(([status, count]) => {
       report += `${getStatusEmoji(status)} ${status}: ${count}\n`;
     });
     
-    report += `\n📋 **Total Order**: ${orders.length}\n`;
+    report += `\n📋 Total Order: ${orders.length}\n`;
     
     bot.sendMessage(chatId, report);
     
@@ -1072,7 +1532,7 @@ async function handleProgressSurvey(chatId, telegramId, orderId) {
     const { data: order, error } = await supabase
       .from('orders')
       .select('*')
-      .eq('id', orderId)
+      .eq('order_id', orderId)
       .single();
     
     if (error || !order) {
@@ -1081,9 +1541,9 @@ async function handleProgressSurvey(chatId, telegramId, orderId) {
     }
     
     bot.sendMessage(chatId, 
-      '🔍 **Survey Jaringan**\n\n' +
-      `📋 **Order**: ${order.customer_name}\n` +
-      `🏠 **Alamat**: ${order.customer_address}\n\n` +
+      '🔍 Survey Jaringan\n\n' +
+      `📋 Order: ${order.customer_name}\n` +
+      `🏠 Alamat: ${order.customer_address}\n\n` +
       'Pilih hasil survey:',
       {
         reply_markup: {
@@ -1101,6 +1561,9 @@ async function handleProgressSurvey(chatId, telegramId, orderId) {
   }
 }
 
+
+  
+
 async function handleProgressPenarikan(chatId, telegramId, orderId) {
   try {
     const { createClient } = require('@supabase/supabase-js');
@@ -1113,7 +1576,7 @@ async function handleProgressPenarikan(chatId, telegramId, orderId) {
     const { data: order, error } = await supabase
       .from('orders')
       .select('*')
-      .eq('id', orderId)
+      .eq('order_id', orderId)
       .single();
     
     if (error || !order) {
@@ -1131,9 +1594,9 @@ async function handleProgressPenarikan(chatId, telegramId, orderId) {
     });
     
     bot.sendMessage(chatId, 
-      '🔌 **Penarikan Kabel**\n\n' +
-      `📋 **Order**: ${order.customer_name}\n` +
-      `🏠 **Alamat**: ${order.customer_address}\n\n` +
+      '🔌 Penarikan Kabel\n\n' +
+      `📋 Order: ${order.customer_name}\n` +
+      `🏠 Alamat: ${order.customer_address}\n\n` +
       'Masukkan catatan penarikan kabel (opsional):'
     );
     
@@ -1155,7 +1618,7 @@ async function handleProgressP2P(chatId, telegramId, orderId) {
     const { data: order, error } = await supabase
       .from('orders')
       .select('*')
-      .eq('id', orderId)
+      .eq('order_id', orderId)
       .single();
     
     if (error || !order) {
@@ -1173,9 +1636,9 @@ async function handleProgressP2P(chatId, telegramId, orderId) {
     });
     
     bot.sendMessage(chatId, 
-      '📡 **P2P (Point-to-Point)**\n\n' +
-      `📋 **Order**: ${order.customer_name}\n` +
-      `🏠 **Alamat**: ${order.customer_address}\n\n` +
+      '📡 P2P (Point-to-Point)\n\n' +
+      `📋 Order: ${order.customer_name}\n` +
+      `🏠 Alamat: ${order.customer_address}\n\n` +
       'Masukkan catatan P2P (opsional):'
     );
     
@@ -1197,7 +1660,7 @@ async function handleProgressInstalasi(chatId, telegramId, orderId) {
     const { data: order, error } = await supabase
       .from('orders')
       .select('*')
-      .eq('id', orderId)
+      .eq('order_id', orderId)
       .single();
     
     if (error || !order) {
@@ -1215,172 +1678,14 @@ async function handleProgressInstalasi(chatId, telegramId, orderId) {
     });
     
     bot.sendMessage(chatId, 
-      '📱 **Instalasi ONT**\n\n' +
-      `📋 **Order**: ${order.customer_name}\n` +
-      `🏠 **Alamat**: ${order.customer_address}\n\n` +
+      '📱 Instalasi ONT\n\n' +
+      `📋 Order: ${order.customer_name}\n` +
+      `🏠 Alamat: ${order.customer_address}\n\n` +
       'Masukkan catatan instalasi ONT (opsional):'
     );
     
   } catch (error) {
     console.error('Error handling instalasi:', error);
-    bot.sendMessage(chatId, '❌ Terjadi kesalahan. Silakan coba lagi.');
-  }
-}
-
-async function handleEvidenceData(chatId, telegramId, orderId) {
-  try {
-    const { createClient } = require('@supabase/supabase-js');
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
-    
-    // Get order details
-    const { data: order, error } = await supabase
-      .from('orders')
-      .select('*')
-      .eq('id', orderId)
-      .single();
-    
-    if (error || !order) {
-      bot.sendMessage(chatId, '❌ Order tidak ditemukan.');
-      return;
-    }
-    
-    // Check if evidence already exists
-    const { data: existingEvidence, error: evidenceError } = await supabase
-      .from('evidence')
-      .select('*')
-      .eq('order_id', orderId)
-      .single();
-    
-    if (evidenceError && evidenceError.code !== 'PGRST116') {
-      console.error('Error checking existing evidence:', evidenceError);
-      bot.sendMessage(chatId, '❌ Terjadi kesalahan. Silakan coba lagi.');
-      return;
-    }
-    
-    if (existingEvidence) {
-      bot.sendMessage(chatId, 
-        '📝 **Data Evidence Sudah Ada**\n\n' +
-        `📋 **Order**: ${order.customer_name}\n` +
-        `🏠 **Alamat**: ${order.customer_address}\n\n` +
-        `📝 **Nama ODP**: ${existingEvidence.odp_name || 'Belum diisi'}\n` +
-        `📱 **SN ONT**: ${existingEvidence.ont_sn || 'Belum diisi'}\n\n` +
-        'Apakah Anda ingin mengupdate data evidence?',
-        {
-          reply_markup: {
-            inline_keyboard: [
-              [{ text: '✅ Update Data', callback_data: `evidence_data_${orderId}` }],
-              [{ text: '📸 Upload Foto', callback_data: `evidence_order_${orderId}` }]
-            ]
-          }
-        }
-      );
-      return;
-    }
-    
-    // Set session for evidence data input
-    userSessions.set(chatId, {
-      type: 'evidence_data',
-      step: 'odp_name',
-      orderId: orderId,
-      data: {}
-    });
-    
-    bot.sendMessage(chatId, 
-      '📝 **Input Data Evidence**\n\n' +
-      `📋 **Order**: ${order.customer_name}\n` +
-      `🏠 **Alamat**: ${order.customer_address}\n\n` +
-      'Masukkan nama ODP:'
-    );
-    
-  } catch (error) {
-    console.error('Error handling evidence data:', error);
-    bot.sendMessage(chatId, '❌ Terjadi kesalahan. Silakan coba lagi.');
-  }
-}
-
-async function handleEvidencePhoto(chatId, telegramId, orderId, photoType) {
-  try {
-    const { createClient } = require('@supabase/supabase-js');
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    );
-    
-    // Get order details
-    const { data: order, error } = await supabase
-      .from('orders')
-      .select('*')
-      .eq('id', orderId)
-      .single();
-    
-    if (error || !order) {
-      bot.sendMessage(chatId, '❌ Order tidak ditemukan.');
-      return;
-    }
-    
-    // Check if evidence already exists for this photo type
-    const { data: existingEvidence, error: evidenceError } = await supabase
-      .from('evidence')
-      .select('*')
-      .eq('order_id', orderId)
-      .single();
-    
-    if (evidenceError && evidenceError.code !== 'PGRST116') {
-      console.error('Error checking existing evidence:', evidenceError);
-      bot.sendMessage(chatId, '❌ Terjadi kesalahan. Silakan coba lagi.');
-      return;
-    }
-    
-    const photoTypeNames = {
-      'sn': 'Foto SN ONT',
-      'tech': 'Foto Teknisi + Pelanggan',
-      'house': 'Foto Rumah Pelanggan',
-      'odp_front': 'Foto Depan ODP',
-      'odp_inside': 'Foto Dalam ODP',
-      'label': 'Foto Label DC',
-      'test': 'Foto Test Redaman'
-    };
-    
-    const photoFieldMap = {
-      'sn': 'photo_sn_ont',
-      'tech': 'photo_technician_customer',
-      'house': 'photo_customer_house',
-      'odp_front': 'photo_odp_front',
-      'odp_inside': 'photo_odp_inside',
-      'label': 'photo_label_dc',
-      'test': 'photo_test_result'
-    };
-    
-    const photoField = photoFieldMap[photoType];
-    const hasExistingPhoto = existingEvidence && existingEvidence[photoField];
-    
-    // Set session for evidence photo upload
-    userSessions.set(chatId, {
-      type: 'evidence_photo',
-      orderId: orderId,
-      photoType: photoType,
-      data: {}
-    });
-    
-    let message = `📸 **Upload ${photoTypeNames[photoType] || 'Foto'}**\n\n`;
-    message += `📋 **Order**: ${order.customer_name}\n`;
-    message += `🏠 **Alamat**: ${order.customer_address}\n\n`;
-    
-    if (hasExistingPhoto) {
-      message += `⚠️ **Foto sudah ada sebelumnya**\n`;
-      message += `🔗 **URL Lama**: ${existingEvidence[photoField]}\n\n`;
-      message += 'Kirim foto baru untuk mengganti foto yang sudah ada:';
-    } else {
-      message += 'Silakan kirim foto yang diminta:';
-    }
-    
-    bot.sendMessage(chatId, message);
-    
-  } catch (error) {
-    console.error('Error handling evidence photo:', error);
     bot.sendMessage(chatId, '❌ Terjadi kesalahan. Silakan coba lagi.');
   }
 }
@@ -1392,74 +1697,65 @@ async function handleSurveyResult(chatId, telegramId, orderId, result) {
       process.env.NEXT_PUBLIC_SUPABASE_URL,
       process.env.SUPABASE_SERVICE_ROLE_KEY
     );
-    
+
     // Get order details
     const { data: order, error } = await supabase
       .from('orders')
-      .select('*')
-      .eq('id', orderId)
+      .select('*, users!assigned_technician(*)')
+      .eq('order_id', orderId)
       .single();
-    
+
     if (error || !order) {
       bot.sendMessage(chatId, '❌ Order tidak ditemukan.');
       return;
     }
-    
-    // Save survey progress
-    const { error: progressError } = await supabase
-      .from('progress')
-      .insert({
-        order_id: orderId,
-        stage: 'Survey',
-        status: result,
-        note: null,
-        timestamp: new Date().toISOString()
-      });
-    
-    if (progressError) {
-      console.error('Error saving survey progress:', progressError);
-      bot.sendMessage(chatId, '❌ Gagal menyimpan hasil survey. Silakan coba lagi.');
-      return;
-    }
-    
+
+    // Save progress based on result
     if (result === 'Ready') {
       // Update order status to In Progress
       await supabase
         .from('orders')
         .update({ status: 'In Progress' })
-        .eq('id', orderId);
-      
+        .eq('order_id', orderId);
+
+      // Save survey progress
+      await supabase
+        .from('progress')
+        .insert({
+          order_id: orderId,
+          stage: 'Survey',
+          status: 'Ready',
+          timestamp: new Date().toISOString()
+        });
+
       bot.sendMessage(chatId, 
-        `✅ <b>Survey Selesai!</b>\n\n` +
-        `📋 <b>Order</b>: ${order.customer_name}\n` +
-        `🏠 <b>Alamat</b>: ${order.customer_address}\n` +
-        `🔍 <b>Hasil Survey</b>: ✅ Jaringan Ready\n\n` +
-        'Order status telah diupdate ke <b>In Progress</b>.\n' +
-        'Silakan lanjutkan ke tahapan berikutnya.',
-        { parse_mode: 'HTML' }
+        '✅ Survey Selesai!\n\n' +
+        `📋 Order: ${order.customer_name}\n` +
+        `📊 Status: Jaringan Ready\n\n` +
+        'Silakan lanjutkan ke tahap penarikan kabel.'
       );
-      
+
     } else {
       // Update order status to On Hold
       await supabase
         .from('orders')
         .update({ status: 'On Hold' })
-        .eq('id', orderId);
-      
-      bot.sendMessage(chatId, 
-        `❌ <b>Survey Selesai!</b>\n\n` +
-        `📋 <b>Order</b>: ${order.customer_name}\n` +
-        `🏠 <b>Alamat</b>: ${order.customer_address}\n` +
-        `🔍 <b>Hasil Survey</b>: ❌ Jaringan Not Ready\n\n` +
-        'Order status telah diupdate ke <b>On Hold</b>.\n' +
-        'HD akan mendapat notifikasi untuk update LME PT2.',
-        { parse_mode: 'HTML' }
-      );
-      
-      // Notify HD about network not ready
+        .eq('order_id', orderId);
+
+      // Save survey progress
+      await supabase
+        .from('progress')
+        .insert({
+          order_id: orderId,
+          stage: 'Survey',
+          status: 'Not Ready',
+          timestamp: new Date().toISOString()
+        });
+
+      bot.sendMessage(chatId, '❌ Jaringan Not Ready. Status order diupdate ke On Hold.');
       await notifyHDAboutNetworkNotReady(orderId);
     }
-    
+
   } catch (error) {
     console.error('Error handling survey result:', error);
     bot.sendMessage(chatId, '❌ Terjadi kesalahan. Silakan coba lagi.');
@@ -1478,7 +1774,7 @@ async function notifyHDAboutNetworkNotReady(orderId) {
     const { data: order, error } = await supabase
       .from('orders')
       .select('*, users!assigned_technician(*)')
-      .eq('id', orderId)
+      .eq('order_id', orderId)
       .single();
     
     if (error || !order) {
@@ -1497,59 +1793,404 @@ async function notifyHDAboutNetworkNotReady(orderId) {
       return;
     }
     
+    // Save notification record
+    try {
+      await supabase
+        .from('notifications')
+        .insert({
+          order_id: orderId,
+          type: 'network_not_ready',
+          message: 'HD notified about network not ready status',
+          sent_at: new Date().toISOString(),
+          status: 'sent'
+        });
+    } catch (notifError) {
+      console.log('Notification logging failed (table may not exist):', notifError.message);
+    }
+    
     // Notify all HD users
     for (const hd of hdUsers) {
       if (hd.telegram_id) {
         bot.sendMessage(hd.telegram_id, 
-          `🚨 **Notifikasi: Jaringan Not Ready**\n\n` +
-          `📋 **Order ID**: ${order.id}\n` +
+          `🚨 **NETWORK NOT READY ALERT**\n\n` +
+          `📋 **Order ID**: #${order.order_id}\n` +
           `👤 **Pelanggan**: ${order.customer_name}\n` +
           `🏠 **Alamat**: ${order.customer_address}\n` +
-          `🔧 **Teknisi**: ${order.users.name}\n` +
-          `📊 **Status**: On Hold\n\n` +
-          'Silakan update LME PT2 untuk order ini.'
+          `🔧 **Teknisi**: ${order.users?.name || 'Unknown'}\n\n` +
+          `⚠️ **Status**: On Hold - Jaringan Not Ready\n` +
+          `📝 **Instruksi**: Silakan update waktu LME PT2\n\n` +
+          `⏰ **Waktu Notifikasi**: ${new Date().toLocaleString('id-ID')}\n\n` +
+          `🎯 **Action Required**: TTI Comply dalam 3x24 jam setelah PT2 selesai`,
+          { 
+            parse_mode: 'Markdown',
+            reply_markup: {
+              inline_keyboard: [
+                [
+                  { text: ' Update LME PT2', callback_data: `update_lme_pt2_${orderId}` },
+                  { text: ' Lihat Detail', callback_data: `view_order_${orderId}` }
+                ]
+              ]
+            }
+          }
         );
       }
     }
     
+    console.log(`✅ Network not ready notification sent to HD for order ${orderId}`);
+    
   } catch (error) {
     console.error('Error notifying HD about network not ready:', error);
+  }
+
+// ini yng upload photo dengan benar
+async function handleUpdateProgressInput(chatId, telegramId, text, session) {
+  try {
+    const { createClient } = require('@supabase/supabase-js');
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL,
+      process.env.SUPABASE_SERVICE_ROLE_KEY
+    );
+    
+    // Save progress to database
+    const { error } = await supabase
+      .from('progress')
+      .insert({
+        order_id: session.orderId,
+        stage: session.stage,
+        status: 'Selesai',
+        note: text || null,
+        timestamp: new Date().toISOString()
+      });
+    
+    if (error) {
+      console.error('Error saving progress:', error);
+      bot.sendMessage(chatId, '❌ Gagal menyimpan progress. Silakan coba lagi.');
+      return;
+    }
+    
+    // Update order status to In Progress if it's still Pending
+    await supabase
+      .from('orders')
+      .update({ status: 'In Progress' })
+      .eq('id', session.orderId)
+      .eq('status', 'Pending');
+    
+    bot.sendMessage(chatId, 
+      `✅ **Progress Berhasil Diupdate!**\n\n` +
+      `📝 **Tahapan**: ${session.stage}\n` +
+      `📊 **Status**: Selesai\n` +
+      `📝 **Catatan**: ${text || 'Tidak ada catatan'}\n\n` +
+      'Progress telah tersimpan ke database.'
+    );
+    
+    userSessions.delete(chatId);
+    
+  } catch (error) {
+    console.error('Error handling progress update:', error);
+    bot.sendMessage(chatId, '❌ Terjadi kesalahan. Silakan coba lagi.');
+  }
+}}
+
+
+
+
+async function notifyHDPT2SelesaiWithTTI(orderId) {
+  try {
+    const { createClient } = require('@supabase/supabase-js');
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL,
+      process.env.SUPABASE_SERVICE_ROLE_KEY
+    );
+
+    // Get order details
+    const { data: order } = await supabase
+      .from('orders')
+      .select('*, users!assigned_technician(*)')
+      .eq('order_id', orderId)
+      .single();
+
+    // Get all HD users
+    const { data: hdUsers } = await supabase
+      .from('users')
+      .select('telegram_id, name')
+      .eq('role', 'HD');
+
+    // Notify all HD users
+    for (const hd of hdUsers) {
+      if (hd.telegram_id) {
+        bot.sendMessage(hd.telegram_id,
+          `✅ **PT2 SELESAI - TTI COMPLY DIMULAI**\n\n` +
+          `📋 **Order ID**: #${order.order_id}\n` +
+          `👤 **Pelanggan**: ${order.customer_name}\n` +
+          `🏠 **Alamat**: ${order.customer_address}\n` +
+          `🔧 **Teknisi**: ${order.users?.name || 'Unknown'}\n` +
+          `📊 **Status**: PT2 Selesai\n` +
+          `⏰ **Waktu PT2 Selesai**: ${new Date().toLocaleString('id-ID')}\n\n` +
+          `🚀 **TTI COMPLY 3x24 JAM DIMULAI OTOMATIS!**\n` +
+          `⏰ **Deadline**: ${new Date(Date.now() + 72*60*60*1000).toLocaleString('id-ID')}\n` +
+          `📊 **Monitoring**: Otomatis dengan reminder berkala`,
+          { parse_mode: 'Markdown' }
+        );
+      }
+    }
+    
+    // Start TTI Comply countdown automatically
+    await startTTIComplyCountdown(orderId);
+    
+    console.log(`✅ PT2 completion notification sent and TTI Comply started for order ${orderId}`);
+    
+  } catch (error) {
+    console.error('Error notifying HD PT2 selesai with TTI:', error);
+  }
+}
+
+// TTI Comply system functions
+async function startTTIComplyCountdown(orderId) {
+  try {
+    const { createClient } = require('@supabase/supabase-js');
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL,
+      process.env.SUPABASE_SERVICE_ROLE_KEY
+    );
+    
+    // Calculate TTI Comply deadline (3x24 hours = 72 hours)
+    const startTime = new Date();
+    const deadlineTime = new Date(startTime.getTime() + (72 * 60 * 60 * 1000)); // 72 hours
+    
+    // Save TTI Comply record
+    const ttiData = {
+      order_id: orderId,
+      start_time: startTime.toISOString(),
+      deadline_time: deadlineTime.toISOString(),
+      status: 'active',
+      remaining_hours: 72
+    };
+    
+    try {
+      await supabase
+        .from('tti_comply')
+        .insert(ttiData);
+    } catch (ttiError) {
+      console.log('TTI Comply tracking failed (table may not exist):', ttiError.message);
+    }
+    
+    // Schedule reminder notifications
+    scheduleTTIReminders(orderId, deadlineTime);
+    
+    console.log(`✅ TTI Comply countdown started for order ${orderId}`);
+    
+  } catch (error) {
+    console.error('Error starting TTI Comply countdown:', error);
+  }
+}
+
+// Schedule TTI reminder notifications
+function scheduleTTIReminders(orderId, deadlineTime) {
+  const now = new Date();
+  const timeToDeadline = deadlineTime.getTime() - now.getTime();
+  
+  // Reminder at 48 hours remaining (24 hours after start)
+  const reminder48h = timeToDeadline - (48 * 60 * 60 * 1000);
+  if (reminder48h > 0) {
+    setTimeout(() => {
+      sendTTIReminder(orderId, '48 jam', 'warning');
+    }, reminder48h);
+  }
+  
+  // Reminder at 24 hours remaining (48 hours after start)
+  const reminder24h = timeToDeadline - (24 * 60 * 60 * 1000);
+  if (reminder24h > 0) {
+    setTimeout(() => {
+      sendTTIReminder(orderId, '24 jam', 'urgent');
+    }, reminder24h);
+  }
+  
+  // Reminder at 6 hours remaining
+  const reminder6h = timeToDeadline - (6 * 60 * 60 * 1000);
+  if (reminder6h > 0) {
+    setTimeout(() => {
+      sendTTIReminder(orderId, '6 jam', 'critical');
+    }, reminder6h);
+  }
+  
+  // Final reminder at deadline
+  if (timeToDeadline > 0) {
+    setTimeout(() => {
+      sendTTIReminder(orderId, '0 jam', 'expired');
+    }, timeToDeadline);
+  }
+}
+
+// Send TTI reminder notification
+async function sendTTIReminder(orderId, remainingTime, urgencyLevel) {
+  try {
+    const { createClient } = require('@supabase/supabase-js');
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL,
+      process.env.SUPABASE_SERVICE_ROLE_KEY
+    );
+    
+    // Get order details
+    const { data: order } = await supabase
+      .from('orders')
+      .select('*, users!assigned_technician(*)')
+      .eq('order_id', orderId)
+      .single();
+    
+    // Get all HD users
+    const { data: hdUsers } = await supabase
+      .from('users')
+      .select('telegram_id, name')
+      .eq('role', 'HD');
+    
+    // Determine message based on urgency level
+    let emoji, title, priority;
+    switch (urgencyLevel) {
+      case 'warning':
+        emoji = '⚠️';
+        title = 'TTI COMPLY WARNING';
+        priority = 'MEDIUM';
+        break;
+      case 'urgent':
+        emoji = '🚨';
+        title = 'TTI COMPLY URGENT';
+        priority = 'HIGH';
+        break;
+      case 'critical':
+        emoji = '🔴';
+        title = 'TTI COMPLY CRITICAL';
+        priority = 'CRITICAL';
+        break;
+      case 'expired':
+        emoji = '💀';
+        title = 'TTI COMPLY EXPIRED';
+        priority = 'EXPIRED';
+        break;
+      default:
+        emoji = '⏰';
+        title = 'TTI COMPLY REMINDER';
+        priority = 'INFO';
+    }
+    
+    // Send reminder to all HD users
+    for (const hd of hdUsers) {
+      if (hd.telegram_id) {
+        bot.sendMessage(hd.telegram_id, 
+          `${emoji} **${title}**\n\n` +
+          `📋 **Order ID**: #${order.order_id}\n` +
+          `👤 **Pelanggan**: ${order.customer_name}\n` +
+          `🏠 **Alamat**: ${order.customer_address}\n` +
+          `🔧 **Teknisi**: ${order.users?.name || 'Unknown'}\n\n` +
+          `⏳ **Sisa Waktu**: ${remainingTime}\n` +
+          `⚠️ **Prioritas**: ${priority}\n\n` +
+          `${urgencyLevel === 'expired' ? 
+            '💀 **TTI COMPLY SUDAH EXPIRED!**\n📞 Segera ambil tindakan darurat!' :
+            '🎯 **TTI harus comply sebelum deadline!**'
+          }`,
+          { parse_mode: 'Markdown' }
+        );
+      }
+    }
+    
+    console.log(`✅ TTI reminder sent for order ${orderId} - ${remainingTime} remaining`);
+    
+  } catch (error) {
+    console.error('Error sending TTI reminder:', error);
+  }
+}
+
+// Show order details function
+async function showOrderDetails(chatId, orderId) {
+  try {
+    const { createClient } = require('@supabase/supabase-js');
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL,
+      process.env.SUPABASE_SERVICE_ROLE_KEY
+    );
+    
+    // Get order details
+    const { data: order, error } = await supabase
+      .from('orders')
+      .select('*, users!assigned_technician(*)')
+      .eq('order_id', orderId)
+      .single();
+    
+    if (error || !order) {
+      bot.sendMessage(chatId, '❌ Order tidak ditemukan.');
+      return;
+    }
+    
+    // Get progress history
+    const { data: progress } = await supabase
+      .from('progress')
+      .select('*')
+      .eq('order_id', orderId)
+      .order('timestamp', { ascending: true });
+    
+    let progressText = '';
+    if (progress && progress.length > 0) {
+      progressText = '\n\n📋 **Progress History:**\n';
+      progress.forEach((p, index) => {
+        progressText += `${index + 1}. ${p.stage} - ${p.status}\n`;
+        progressText += `   ⏰ ${new Date(p.timestamp).toLocaleString('id-ID')}\n`;
+        if (p.note) progressText += `   📝 ${p.note}\n`;
+      });
+    }
+    
+    bot.sendMessage(chatId, 
+      `📋 **Detail Order #${order.order_id}**\n\n` +
+      `👤 **Pelanggan**: ${order.customer_name}\n` +
+      `🏠 **Alamat**: ${order.customer_address}\n` +
+      `📞 **Kontak**: ${order.customer_phone || 'N/A'}\n` +
+      `🔧 **Teknisi**: ${order.users?.name || 'Belum ditugaskan'}\n` +
+      `📊 **Status**: ${order.status}\n` +
+      `⏰ **Dibuat**: ${new Date(order.created_at).toLocaleString('id-ID')}\n` +
+      `🏢 **STO**: ${order.sto || 'N/A'}\n` +
+      `💼 **Tipe Transaksi**: ${order.transaction_type || 'N/A'}\n` +
+      `🔧 **Tipe Service**: ${order.service_type || 'N/A'}` +
+      progressText,
+      { parse_mode: 'Markdown' }
+    );
+    
+  } catch (error) {
+    console.error('Error showing order details:', error);
+    bot.sendMessage(chatId, '❌ Terjadi kesalahan saat mengambil detail order.');
   }
 }
 
 function showHelpByRole(chatId, role) {
-  let helpText = `**Panduan Penggunaan Bot**\n\n`;
+  let helpText = `Panduan Penggunaan Bot\n\n`;
   
   if (role === 'HD') {
-    helpText += `**Untuk Helpdesk (HD):**\n\n` +
-      `📋 **Buat Order Baru** - Membuat order instalasi baru\n` +
-      `📊 **Lihat Semua Order** - Melihat semua order dalam sistem\n` +
-      `📈 **Generate Laporan** - Membuat laporan harian/mingguan\n` +
-      `⚙️ **Update Status Order** - Update status order (SOD, E2E, LME PT2)\n\n` +
-      `**Commands:**\n` +
+    helpText += `Untuk Helpdesk (HD):\n\n` +
+      `📋 Buat Order Baru - Membuat order instalasi baru\n` +
+      `📊 Lihat Semua Order - Melihat semua order dalam sistem\n` +
+      `📈 Generate Laporan - Membuat laporan harian/mingguan\n` +
+      `⚙️ Update Status Order - Update status order (SOD, E2E, LME PT2)\n\n` +
+      `Commands:\n` +
       `/start - Memulai bot\n` +
       `/help - Menampilkan panduan ini\n` +
       `/order - Membuat order baru\n` +
       `/myorders - Melihat semua order\n` +
       `/report - Generate laporan\n\n` +
-      `**Flow Order:**\n` +
+      `Flow Order:\n` +
       `1. Buat order → Assign teknisi\n` +
       `2. Input SOD & E2E time\n` +
       `3. Monitor progress teknisi\n` +
       `4. Update LME PT2 jika diperlukan\n` +
       `5. Review evidence sebelum close`;
   } else {
-    helpText += `**Untuk Teknisi:**\n\n` +
-      `📋 **Order Saya** - Melihat order yang ditugaskan\n` +
-      `📝 **Update Progress** - Update progress instalasi\n` +
-      `📸 **Upload Evidence** - Upload foto dan data evidence\n\n` +
-      `**Commands:**\n` +
+    helpText += `Untuk Teknisi:\n\n` +
+      `📋 Order Saya - Melihat order yang ditugaskan\n` +
+      `📝 Update Progress - Update progress instalasi\n` +
+      `📸 Upload Evidence - Upload foto dan data evidence\n\n` +
+      `Commands:\n` +
       `/start - Memulai bot\n` +
       `/help - Menampilkan panduan ini\n` +
       `/myorders - Melihat order saya\n` +
       `/progress - Update progress\n` +
       `/evidence - Upload evidence\n\n` +
-      `**Flow Instalasi:**\n` +
+      `Flow Instalasi:\n` +
       `1. Terima notifikasi order baru\n` +
       `2. Survey jaringan (Ready/Not Ready)\n` +
       `3. Penarikan kabel\n` +
@@ -1586,114 +2227,105 @@ async function registerUser(telegramId, firstName, role) {
   }
 }
 
-async function handlePhotoUpload(msg, telegramId) {
-  const chatId = msg.chat.id;
-  
+// 1. Start evidence flow
+async function startEvidenceUploadFlow(chatId, telegramId, orderId) {
   try {
     const { createClient } = require('@supabase/supabase-js');
     const supabase = createClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL,
       process.env.SUPABASE_SERVICE_ROLE_KEY
     );
-    
-    // Check if user is in evidence photo session
-    const session = userSessions.get(chatId);
-    if (!session || session.type !== 'evidence_photo') {
-      bot.sendMessage(chatId, 
-        '📸 **Foto Diterima!**\n\n' +
-        'Silakan pilih jenis evidence terlebih dahulu dengan menggunakan menu /evidence'
-      );
+
+    // Get order details first
+    const { data: order, error } = await supabase
+      .from('orders')
+      .select('*')
+      .eq('order_id', orderId)
+      .single();
+
+    if (error || !order) {
+      console.error('Error getting order:', error);
+      bot.sendMessage(chatId, '❌ Order tidak ditemukan.');
       return;
     }
-    
-    // Get the highest quality photo
-    const photo = msg.photo[msg.photo.length - 1];
-    const fileId = photo.file_id;
-    
-    // Get file info from Telegram
-    const fileInfo = await bot.getFile(fileId);
-    const fileUrl = `https://api.telegram.org/file/bot${process.env.TELEGRAM_BOT_TOKEN}/${fileInfo.file_path}`;
-    
-    // Download photo using axios
-    const response = await axios.get(fileUrl, { responseType: 'arraybuffer' });
-    const buffer = Buffer.from(response.data);
-    
-    // Generate unique filename
-    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-    const filename = `evidence-${session.orderId}-${session.photoType}-${timestamp}-${fileId}.jpg`;
-    
-    // Upload to Supabase Storage
-    const { data, error } = await supabase.storage
-      .from('evidence-photos')
-      .upload(filename, buffer, {
-        contentType: 'image/jpeg',
-        upsert: false
-      });
-    
-    if (error) {
-      console.error('Error uploading photo to Supabase:', error);
-      bot.sendMessage(chatId, '❌ Gagal mengupload foto. Silakan coba lagi.');
-      return;
-    }
-    
-    // Get public URL
-    const { data: urlData } = supabase.storage
-      .from('evidence-photos')
-      .getPublicUrl(filename);
-    
-    // Update evidence record in database
-    const photoFieldMap = {
-      'sn': 'photo_sn_ont',
-      'tech': 'photo_technician_customer',
-      'house': 'photo_customer_house',
-      'odp_front': 'photo_odp_front',
-      'odp_inside': 'photo_odp_inside',
-      'label': 'photo_label_dc',
-      'test': 'photo_test_result'
-    };
-    
-    const photoField = photoFieldMap[session.photoType];
-    if (photoField) {
-      const { error: updateError } = await supabase
-        .from('evidence')
-        .upsert({
-          order_id: session.orderId,
-          [photoField]: urlData.publicUrl,
-          uploaded_at: new Date().toISOString()
-        });
-      
-      if (updateError) {
-        console.error('Error updating evidence record:', updateError);
+
+    // Set session with order details
+    userSessions.set(chatId, {
+      type: 'evidence_upload',
+      step: 'odp',
+      orderId,
+      data: {
+        order_name: order.customer_name,
+        order_address: order.customer_address
       }
-    }
+    });
+
     
-    const photoTypeNames = {
-      'sn': 'Foto SN ONT',
-      'tech': 'Foto Teknisi + Pelanggan',
-      'house': 'Foto Rumah Pelanggan',
-      'odp_front': 'Foto Depan ODP',
-      'odp_inside': 'Foto Dalam ODP',
-      'label': 'Foto Label DC',
-      'test': 'Foto Test Redaman'
-    };
-    
+
+    // Start evidence flow
     bot.sendMessage(chatId, 
-      `✅ **${photoTypeNames[session.photoType] || 'Foto'} Berhasil Diupload!**\n\n` +
-      `📸 **File**: ${filename}\n` +
-      `🔗 **URL**: ${urlData.publicUrl}\n\n` +
-      'Foto telah tersimpan ke Supabase Storage dan database.\n' +
-      'Silakan lanjutkan upload foto evidence lainnya atau gunakan menu /evidence untuk memilih jenis foto lain.'
+      '📸 Upload Evidence\n\n' +
+      `📋 Order: ${order.customer_name}\n` +
+      `🏠 Alamat: ${order.customer_address}\n\n` +
+      'Silakan masukkan nama ODP:',
     );
+
     
-    // Clear session after successful upload
-    userSessions.delete(chatId);
+
+  } catch (error) {
+    console.error('Error starting evidence flow:', error);
+    bot.sendMessage(chatId, '❌ Terjadi kesalahan. Silakan coba lagi.');
+  }
+}
+
+// 2. Handle evidence input
+async function handleEvidenceUploadFlow(chatId, telegramId, text, msg, session) {
+  try {
+    const { createClient } = require('@supabase/supabase-js');
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL,
+      process.env.SUPABASE_SERVICE_ROLE_KEY
+    );
+
+    // Handle ODP input
+    if (session.step === 'odp') {
+      session.data.odp = text;
+      session.step = 'sn_ont';
+      bot.sendMessage(chatId, 'Silakan masukkan SN ONT:');
+      return;
+    }
+
+    // Handle SN ONT input  
+    if (session.step === 'sn_ont') {
+      session.data.sn_ont = text;
+      session.step = 'photos';
+      session.data.uploadedPhotos = 0;
+
+      // Create initial evidence record
+      const { error: createError } = await supabase
+        .from('evidence')
+        .insert({
+          order_id: session.orderId,
+          odp_name: session.data.odp,
+          ont_sn: text
+        });
+
+      if (createError) {
+        console.error('Error creating evidence:', createError);
+        bot.sendMessage(chatId, '❌ Gagal menyimpan data awal. Silakan coba lagi.');
+        return;
+      }
+
+      bot.sendMessage(chatId, 'Silakan kirim 7 foto evidence secara berurutan:\n\n1. Foto SN ONT\n2. Foto Teknisi + Pelanggan\n3. Foto Rumah Pelanggan\n4. Foto Depan ODP\n5. Foto Dalam ODP\n6. Foto Label DC\n7. Foto Test Redaman');
+      return;
+    }
+
+    // Photo uploads are now handled by the main photo handler (bot.on('photo'))
+    // This prevents duplicate processing
     
   } catch (error) {
-    console.error('Error handling photo upload:', error);
-    bot.sendMessage(chatId, 
-      '❌ Terjadi kesalahan saat mengupload foto.\n' +
-      'Silakan coba lagi atau hubungi admin.'
-    );
+    console.error('Error in evidence flow:', error);
+    bot.sendMessage(chatId, '❌ Terjadi kesalahan. Silakan coba lagi.');
   }
 }
 
@@ -1708,12 +2340,3 @@ bot.on('polling_error', (error) => {
 
 console.log('✅ Complete bot started successfully!');
 console.log('📱 Send /start to your bot to test');
-console.log('🔧 Bot features:');
-console.log('   - Complete user registration');
-console.log('   - Full order creation flow');
-console.log('   - Progress tracking');
-console.log('   - Evidence upload (basic)');
-console.log('   - Report generation');
-console.log('   - Database integration');
-console.log('   - Session management');
-console.log('   - Technician notifications');
